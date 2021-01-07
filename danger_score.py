@@ -1,23 +1,19 @@
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-import matplotlib as mpl
-mpl.use("TKAgg")
-from datetime import datetime
-from dateutil import parser
-import re
+
 
 crash_data = 'nyc_database.csv'
 df = pd.read_csv(crash_data, low_memory=False)
 
-drop_list = ['off_street_name', ]
 
-df = df.drop(df.loc[:, 'Accelerator Defective':'Van'].columns, axis=1)
-df = df.drop(drop_list, axis=1)
+# Remove any blank spaces
+def strip_str(x):
+    if type(x) is str:
+        return x.strip()
+    return x
+data = df.applymap(strip_str)
 
-#print(df.columns)
 
 #Calculate the dangerous score based on dummy variable values of different columns
 def dangerous_score(df):
@@ -48,8 +44,15 @@ def dangerous_score(df):
     return x
 
 # Add the danger score column in the database
-df['danger_score'] = df.apply(dangerous_score)
+df['danger_score'] = df.apply(dangerous_score, axis=1)
 
-street = df.grouby(['on_street_name']).count()
+# Melvin's function :)
+df['on_street_name'] = df(remove_houses_numbers).apply
+df['on_street_name'] = df(add_termination).apply
 
-print(df.head())
+# Sum the danger_score based on on_street_name
+street = df.grouby('on_street_name')['danger_score'].count()
+
+df_final = pd.DataFrame(df[["danger_score",'on_street_name']])
+
+df_final.to_csv('df_final.csv')
