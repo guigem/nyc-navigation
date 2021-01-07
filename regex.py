@@ -14,8 +14,6 @@ def add_termination(address:str) -> str:
     pattern = "[0-9]+"
     numbers_in_address = re.findall(pattern, address)
 
-    print(numbers_in_address)
-
     new_numbers = []
 
     for i in numbers_in_address:
@@ -45,23 +43,34 @@ def add_termination(address:str) -> str:
         else:
             i += "th"
             new_numbers += [i]
-    
-    print(new_numbers)
 
     change_dict = dict(zip(numbers_in_address, new_numbers))
-    address = address.replace("-", " ")
     address = address.split(" ")
     
 
     for i in range(len(address)):
         word = address[i]
         if word in change_dict.keys():
-            print(word, "ok")
             address[i] = change_dict[word]
-        else:
-            print(word, "nope")
     
     address = " ".join(address)
-    address = address.replace("  ", " ")
+    
+    return address
+
+def remove_houses_numbers(address:str) -> str :
+    """
+    Remove the houses' numbers in the addresses.
+
+    Parameters:
+        address (str): The base address.
+
+    Returns:
+        address (str): The new address.
+    """
+    pattern = "[0-9]+-[0-9]*"
+    houses_numbers = re.findall(pattern, address)
+
+    for i in houses_numbers:
+        address = address.replace(i, "")
     
     return address
