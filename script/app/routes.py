@@ -7,9 +7,9 @@ import plotly_express as px
 import networkx as nx
 import osmnx as ox
 
-from app import navig, G
-from app.forms import Location,GraphLoc
-from app.routing_animation import create_line_gdf,create_graph
+from script.app import navig, G
+from script.app.forms import Location,GraphLoc
+from script.app.routing_animation import create_line_gdf,create_graph
 
 
 #W = create_graph("New York",2500,'walk')
