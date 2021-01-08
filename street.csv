@@ -1,0 +1,5114 @@
+on_street_name,danger_score
+ 100th Avenue,8
+ 100th Street,15
+ 101st Avenue,30
+ 101st Street,10
+ 102nd Avenue,2
+ 102nd Street,17
+ 103rd Avenue,11
+ 103rd Street,27
+ 104th Avenue,14
+ 104th Road,1
+ 104th Street,26
+ 105th Avenue,9
+ 105th Street,9
+ 106th Avenue,1
+ 106th Street,11
+ 107th Avenue,22
+ 107th Street,12
+ 108th Avenue,1
+ 108th Street,32
+ 109th Avenue,9
+ 109th Road,5
+ 109th Street,6
+ 10th Avenue,4
+ 10th Street,13
+ 110th Avenue,12
+ 110th Road,4
+ 110th Street,12
+ 111th Avenue,5
+ 111th Street,33
+ 112th Avenue,5
+ 112th Road,5
+ 112th Street,8
+ 113th Avenue,8
+ 113th Drive,1
+ 113th Road,1
+ 113th Street,6
+ 114th Drive,1
+ 114th Road,10
+ 114th Street,14
+ 115th Avenue,9
+ 115th Drive,3
+ 115th Road,3
+ 115th Street,6
+ 116th Avenue,11
+ 116th Street,6
+ 117th Street,12
+ 118th Avenue,7
+ 118th Street,9
+ 119th Avenue,8
+ 119th Road,2
+ 11th Avenue,1
+ 11th Street,4
+ 120th Avenue,6
+ 120th Street,6
+ 121st Avenue,1
+ 121st Street,10
+ 122nd Avenue,3
+ 122nd Place,4
+ 122nd Street,3
+ 123rd Avenue,2
+ 123rd Street,12
+ 124th Place,1
+ 124th Street,8
+ 125th Avenue,3
+ 125th Street,7
+ 126th Street,6
+ 127th Avenue,1
+ 127th Place,1
+ 127th Street,9
+ 128th Avenue,3
+ 128th Road,1
+ 128th Street,3
+ 129th Avenue,1
+ 129th Street,8
+ 12th Avenue,1
+ 12th Street,6
+ 130th Avenue,6
+ 130th Street,11
+ 131st Avenue,1
+ 131st Street,6
+ 132nd Avenue,1
+ 132nd Street,8
+ 133rd Avenue,12
+ 133rd Street,1
+ 134th Avenue,1
+ 134th Street,19
+ 135th Avenue,15
+ 135th Street,10
+ 136th Avenue,2
+ 136th Street,2
+ 137th Avenue,3
+ 137th Street,2
+ 138th Avenue,2
+ 138th Place,2
+ 138th Road,1
+ 138th Street,5
+ 139th Avenue,3
+ 139th Street,7
+ 13th Avenue,1
+ 13th Street,3
+ 140th Avenue,4
+ 140th Street,4
+ 141st Avenue,5
+ 141st Road,1
+ 141st Street,2
+ 142nd Place,1
+ 142nd Street,6
+ 143rd Avenue,1
+ 143rd Road,1
+ 143rd Street,3
+ 144th Avenue,3
+ 144th Road,2
+ 144th Street,9
+ 144th Terrace,1
+ 145th Avenue,9
+ 145th Drive,1
+ 145th Road,3
+ 145th Street,2
+ 146th Avenue,1
+ 146th Drive,1
+ 146th Street,5
+ 147th Avenue,4
+ 147th Place,2
+ 147th Road,1
+ 147th Street,5
+ 148th Avenue,8
+ 148th Road,2
+ 148th Street,3
+ 149th Avenue,7
+ 149th Drive,3
+ 149th Road,1
+ 149th Street,4
+ 14th Avenue,10
+ 14th Road,5
+ 14th Street,1
+ 150th Avenue,2
+ 150th Street,17
+ 151st Avenue,1
+ 152nd Avenue,1
+ 153rd Avenue,8
+ 153rd Street,12
+ 154th Street,6
+ 155th Avenue,1
+ 155th Street,4
+ 156th Street,8
+ 157th Street,7
+ 158th Avenue,1
+ 158th Street,3
+ 159th Street,20
+ 160th Street,15
+ 161st Street,13
+ 162nd Street,14
+ 163rd Road,1
+ 163rd Street,3
+ 164th Drive,1
+ 164th Place,7
+ 164th Street,20
+ 165th Avenue,2
+ 165th Street,16
+ 166th Place,3
+ 166th Street,3
+ 167th Street,14
+ 168th Place,6
+ 168th Street,21
+ 169th Street,6
+ 16th Road,1
+ 170th Street,10
+ 171st Street,9
+ 172nd Street,15
+ 173rd Street,10
+ 174th Street,4
+ 175th Street,10
+ 176th Street,1
+ 177th Place,2
+ 177th Street,4
+ 178th Place,3
+ 178th Street,10
+ 179th Place,1
+ 179th Street,3
+ 17th Road,1
+ 180th Street,10
+ 181st Place,3
+ 181st Street,5
+ 182nd Place,1
+ 182nd Street,4
+ 183rd Place,1
+ 183rd Street,7
+ 184th Street,5
+ 185th Street,4
+ 186th Street,9
+ 187th Place,5
+ 187th Street,4
+ 188th Street,28
+ 189th Street,6
+ 18th Street,3
+ 190th Street,4
+ 191st Street,2
+ 192nd Street,3
+ 193rd Street,10
+ 194th Street,4
+ 195th Place,4
+ 195th Street,5
+ 196th Street,4
+ 197th Street,6
+ 198th Street,6
+ 199th Street,16
+ 19th Avenue,1
+ 19th Street,2
+ 1st Street,1
+ 200th Street,7
+ 201st Street,7
+ 202nd Street,8
+ 203rd Street,1
+ 204th Street,14
+ 205th Place,1
+ 205th Street,5
+ 207th Street,8
+ 208th Place,1
+ 208th Street,17
+ 209th Street,7
+ 20th Avenue,35
+ 20th Road,2
+ 20th Street,2
+ 210th Street,2
+ 211th Place,3
+ 211th Street,5
+ 212th Place,1
+ 212th Street,11
+ 213th Street,6
+ 214th Place,1
+ 214th Street,5
+ 215th Place,3
+ 215th Street,10
+ 216th Street,8
+ 217th Lane,1
+ 217th Street,1
+ 218th Place,1
+ 218th Street,9
+ 219th Street,4
+ 21st Avenue,4
+ 21st Street,41
+ 220th Place,1
+ 220th Street,15
+ 221st Street,5
+ 222nd Street,18
+ 223rd Place,1
+ 223rd Street,7
+ 224th Street,6
+ 225th Street,5
+ 226th Street,8
+ 227th Street,7
+ 228th Street,7
+ 229th Street,8
+ 22nd Avenue,1
+ 22nd Street,5
+ 230th Street,6
+ 231st Street,9
+ 232nd Street,9
+ 233rd Street,4
+ 234th Place,1
+ 234th Street,10
+ 235th Street,1
+ 23rd Avenue,16
+ 23rd Street,5
+ 240th Street,2
+ 241st Street,1
+ 242nd Street,4
+ 243rd Street,11
+ 244th Street,7
+ 246th Street,3
+ 248th Street,3
+ 249th Street,9
+ 24th Avenue,3
+ 24th Street,6
+ 251st Street,1
+ 252nd Street,3
+ 253rd Street,3
+ 254th Street,1
+ 256th Street,6
+ 257th Street,6
+ 258th Street,1
+ 259th Street,5
+ 25th Avenue,13
+ 25th Road,1
+ 260th Street,7
+ 261st Street,1
+ 262nd Street,1
+ 263rd Street,3
+ 264th Street,1
+ 265th Street,1
+ 266th Street,1
+ 268th Street,3
+ 269th Street,1
+ 26th Avenue,9
+ 26th Road,2
+ 26th Street,1
+ 270th Street,2
+ 271st Street,1
+ 27th Avenue,4
+ 27th Road,1
+ 27th Street,9
+ 28th Avenue,6
+ 28th Street,12
+ 29th Avenue,6
+ 29th Road,1
+ 29th Street,24
+ 30th Avenue,19
+ 30th Drive,1
+ 30th Road,1
+ 30th Street,5
+ 31st Avenue,51
+ 31st Drive,3
+ 31st Street,27
+ 32nd Avenue,8
+ 32nd Street,9
+ 33rd Avenue,1
+ 33rd Road,3
+ 33rd Street,22
+ 34th Avenue,40
+ 34th Road,3
+ 34th Street,11
+ 35th Avenue,32
+ 35th Street,11
+ 36th Avenue,7
+ 36th Street,6
+ 37th Avenue,75
+ 37th Drive,4
+ 37th Street,25
+ 38th Avenue,18
+ 38th Street,8
+ 39th Avenue,23
+ 39th Street,1
+ 3rd Street,1
+ 40th Avenue,7
+ 40th Drive,1
+ 40th Road,5
+ 40th Street,2
+ 41st Avenue,25
+ 41st Road,4
+ 41st Street,8
+ 42nd Avenue,16
+ 42nd Street,8
+ 43rd Avenue,22
+ 43rd Street,14
+ 44th Avenue,4
+ 44th Street,10
+ 45th Avenue,9
+ 45th Road,3
+ 45th Street,16
+ 46th Avenue,12
+ 46th Street,4
+ 47th Avenue,4
+ 47th Street,10
+ 48th Avenue,5
+ 48th Street,11
+ 49th Avenue,2
+ 49th Street,4
+ 4th Street,3
+ 50th Avenue,9
+ 50th Street,1
+ 51st Avenue,14
+ 51st Road,2
+ 51st Street,10
+ 52nd Avenue,8
+ 52nd Court,1
+ 53rd Avenue,7
+ 53rd Drive,1
+ 54th Avenue,7
+ 54th Street,1
+ 55th Avenue,10
+ 55th Drive,2
+ 55th Road,2
+ 55th Street,12
+ 56th Avenue,14
+ 56th Drive,5
+ 56th Road,4
+ 56th Street,2
+ 57th Avenue,22
+ 57th Drive,5
+ 57th Road,4
+ 57th Street,5
+ 58th Avenue,3
+ 58th Lane,1
+ 58th Place,1
+ 58th Road,3
+ 58th Street,6
+ 59th Avenue,9
+ 59th Place,1
+ 59th Road,1
+ 59th Street,4
+ 5th Avenue,3
+ 60th Avenue,4
+ 60th Drive,5
+ 60th Lane,6
+ 60th Place,1
+ 60th Road,4
+ 60th Street,9
+ 61st Avenue,5
+ 61st Road,1
+ 61st Street,13
+ 62nd Avenue,3
+ 62nd Drive,2
+ 62nd Road,1
+ 62nd Street,4
+ 63rd Road,1
+ 63rd Street,4
+ 64th Avenue,10
+ 64th Place,3
+ 64th Road,1
+ 64th Street,10
+ 65th Avenue,5
+ 65th Place,5
+ 65th Street,2
+ 66th Avenue,1
+ 66th Street,5
+ 67th Avenue,6
+ 67th Drive,5
+ 67th Place,2
+ 67th Street,3
+ 68th Avenue,11
+ 68th Drive,1
+ 68th Place,4
+ 68th Road,6
+ 68th Street,7
+ 69th Avenue,11
+ 69th Drive,2
+ 69th Lane,5
+ 69th Place,6
+ 69th Road,7
+ 69th Street,29
+ 70th Avenue,3
+ 70th Road,1
+ 70th Street,13
+ 71st Avenue,14
+ 71st Place,1
+ 71st Road,1
+ 71st Street,15
+ 72nd Avenue,6
+ 72nd Place,5
+ 72nd Street,5
+ 73rd Avenue,10
+ 73rd Place,6
+ 73rd Street,25
+ 74th Avenue,3
+ 74th Street,11
+ 75th Avenue,11
+ 75th Place,1
+ 75th Road,1
+ 75th Street,12
+ 76th Avenue,14
+ 76th Drive,1
+ 76th Road,2
+ 76th Street,18
+ 77th Avenue,5
+ 77th Crescent,1
+ 77th Road,4
+ 77th Street,27
+ 78th Avenue,5
+ 78th Road,3
+ 78th Street,16
+ 79th Avenue,10
+ 79th Place,3
+ 79th Street,24
+ 80th Avenue,2
+ 80th Road,2
+ 80th Street,35
+ 81st Avenue,3
+ 81st Street,11
+ 82nd Avenue,6
+ 82nd Place,1
+ 82nd Street,36
+ 83rd Avenue,1
+ 83rd Place,1
+ 83rd Street,16
+ 84th Avenue,6
+ 84th Drive,10
+ 84th Road,3
+ 84th Street,23
+ 85th Avenue,7
+ 85th Drive,7
+ 85th Road,2
+ 85th Street,20
+ 86th Avenue,9
+ 86th Road,1
+ 86th Street,9
+ 87th Avenue,12
+ 87th Road,8
+ 87th Street,11
+ 88th Avenue,9
+ 88th Road,4
+ 88th Street,31
+ 89th Avenue,29
+ 89th Road,1
+ 89th Street,10
+ 8th Street,1
+ 90th Avenue,15
+ 90th Street,11
+ 91st Avenue,10
+ 91st Place,1
+ 91st Street,11
+ 92nd Street,18
+ 93rd Avenue,10
+ 93rd Street,13
+ 94th Avenue,12
+ 94th Drive,1
+ 94th Street,29
+ 95th Avenue,12
+ 95th Street,8
+ 96th Avenue,1
+ 96th Street,18
+ 97th Avenue,9
+ 97th Place,8
+ 97th Street,28
+ 98th Place,1
+ 98th Street,30
+ 99th Avenue,8
+ 99th Street,27
+ 9th Street,3
+ Abingdon Road,2
+ Admiral Avenue,1
+ Aguilar Avenue,2
+ Albert Road,2
+ Albion Avenue,4
+ Alderton Street,3
+ Allendale Street,1
+ Almeda Avenue,5
+ Alstyne Avenue,5
+ Andrews Avenue,1
+ Arcade Avenue,1
+ Archer Avenue,3
+ Arlington Terrace,3
+ Astoria Boulevard,68
+ Astoria Park South,2
+ Atlantic Avenue,37
+ Austin Street,12
+ Avery Avenue,10
+ Avon Street,3
+ Babylon Avenue,1
+ Baisley Boulevard,18
+ Barclay Avenue,2
+ Baxter Avenue,2
+ Bayport Place,1
+ Bayside Avenue,3
+ Beach 12th Street,1
+ Beach 20th Street,2
+ Beach 22nd Street,1
+ Beach Channel Drive,88
+ Beaver Road,2
+ Bedell Street,3
+ Beech Avenue,2
+ Belknap Street,1
+ Bell Boulevard,14
+ Bellaire Place,1
+ Benham Street,1
+ Beverly Road,2
+ Bleecker Street,2
+ Booth Memorial Avenue,1
+ Booth Street,1
+ Borden Avenue,4
+ Borkel Place,1
+ Bowne Street,1
+ Braddock Avenue,7
+ Brewer Boulevard,50
+ Brinkerhoff Avenue,2
+ Brisbin Street,2
+ Britton Avenue,3
+ Broadway,66
+ Brookhaven Avenue,8
+ Brooklyn Queens Expressway,7
+ Brookville Boulevard,19
+ Brown Place,2
+ Browvale Lane,1
+ Buell Street,1
+ Burden Crescent,1
+ Burling Street,1
+ Calamus Avenue,1
+ Calloway Street,3
+ Caney Road,3
+ Carpenter Avenue,1
+ Case Street,3
+ Catalpa Avenue,4
+ Central Avenue,5
+ Centreville Avenue,4
+ Chapin Parkway,3
+ Chelsea Street,1
+ Chevy Chase Street,1
+ Christie Avenue,1
+ Claude Avenue,4
+ Clearview Expressway,3
+ Clinton Avenue,1
+ Clintonville Street,2
+ Clover Place,1
+ Cohancy Street,3
+ Colden Street,1
+ Coldspring Road,1
+ College Point Boulevard,28
+ Collier Avenue,1
+ Commonwealth Boulevard,3
+ Coombs Street,1
+ Cooper Avenue,27
+ Cornaga Avenue,2
+ Cornish Avenue,1
+ Corona Avenue,42
+ Country Point Circle,3
+ Crescent Street,18
+ Cresskill Place,1
+ Crocheron Avenue,3
+ Cross Bay Boulevard,43
+ Cross Island Parkway,10
+ Croydon Road,1
+ Curtis Street,1
+ Cypress Avenue,13
+ Cypress Hills Street,4
+ Dalny Road,1
+ Decatur Street,5
+ Deerfield Road,1
+ Delevan Street,1
+ Delong Street,3
+ Denman Street,1
+ Depot Road,3
+ Dieterle Crescent,1
+ Dillon Street,1
+ Ditmars Boulevard,56
+ Dix Avenue,1
+ Doran Avenue,1
+ Dormans Road,1
+ Douglaston Parkway,1
+ Downing Street,1
+ Dry Harbor Road,5
+ Dunkirk Street,1
+ Dunton Avenue,1
+ Dutch Kills Street,1
+ East Williston Avenue,1
+ Eckford Avenue,1
+ Edgemere Avenue,2
+ Eggert Place,1
+ Elbertson Street,4
+ Eliot Avenue,14
+ Elm Avenue,1
+ Elmhurst Avenue,11
+ Everdell Avenue,1
+ Fairbury Avenue,1
+ Falcon Avenue,1
+ Farmers Boulevard,23
+ Farrington Street,9
+ Fdr Drive,3
+ Fern Place,5
+ Ferndale Avenue,5
+ Fitchett Street,1
+ Flushing Avenue,18
+ Foam Place,1
+ Foch Boulevard,5
+ Forest Avenue,24
+ Forest Parkway,3
+ Forley Street,5
+ Fowler Avenue,3
+ Francis Lewis Boulevard,70
+ Franklin Avenue,1
+ Frankton Street,1
+ Fresh Meadow Lane,5
+ Fresh Pond Road,20
+ Gale Avenue,2
+ Garfield Avenue,1
+ Gates Avenue,2
+ Gateway Boulevard,1
+ Gettysburg Street,2
+ Gillmore Street,2
+ Gipson Street,8
+ Glassboro Avenue,1
+ Gleane Street,3
+ Goethals Avenue,4
+ Gold Road,3
+ Gothic Drive,1
+ Grand Avenue,53
+ Grand Central Parkway,42
+ Greenpoint Avenue,4
+ Grenfell Street,1
+ Grosvenor Lane,1
+ Grosvenor Road,1
+ Grove Street,3
+ Haddon Street,1
+ Haight Street,3
+ Hamilton Place,1
+ Hampton Street,4
+ Harlem River Drive,4
+ Harper Street,6
+ Hartland Avenue,1
+ Hartman Lane,2
+ Hassock Street,1
+ Hazen Street,3
+ Healy Avenue,3
+ Hempstead Avenue,23
+ Henderson Avenue,4
+ Henley Road,6
+ Hewlett Street,2
+ Hiawatha Avenue,1
+ Highland Avenue,13
+ Hillside Avenue,148
+ Hillyer Street,3
+ Hollis Avenue,10
+ Hollis Court Boulevard,6
+ Home Lawn Street,3
+ Hook Creek Boulevard,4
+ Hoover Avenue,9
+ Horace Harding Expressway,89
+ Hoyt Avenue North,1
+ Hoyt Avenue South,3
+ Hull Avenue,1
+ Humphreys Street,3
+ Hungry Harbor Road,3
+ Huxley Street,1
+ Ilion Avenue,1
+ Inwood Street,3
+ Ithaca Street,3
+ Jackson Avenue,2
+ Jamaica Avenue,173
+ James Court,1
+ Jay Avenue,2
+ Jewel Avenue,16
+ Judge Street,1
+ Junction Boulevard,69
+ Justice Avenue,1
+ Kennedy Street,1
+ Ketcham Street,1
+ Kissena Boulevard,38
+ Laburnum Avenue,1
+ Lakewood Avenue,10
+ Lamont Avenue,2
+ Langdale Street,4
+ Laurel Hill Boulevard,4
+ Laurelton Parkway,6
+ Layton Street,1
+ Lefferts Boulevard,36
+ Leslie Road,2
+ Liberty Avenue,48
+ Lincoln Street,1
+ Linden Boulevard,44
+ Linden Place,2
+ Linden Street,1
+ Little Neck Parkway,14
+ Liverpool Street,5
+ Long Island Expressway,1
+ Long Street,2
+ Loretta Road,2
+ Lowe Court,1
+ Macnish Street,1
+ Madison Street,4
+ Main Avenue,3
+ Main Street,43
+ Manilla Street,1
+ Manton Street,1
+ Maple Avenue,3
+ Marathon Parkway,3
+ Marsden Street,1
+ Martense Avenue,9
+ Martin Court,1
+ Maspeth Avenue,6
+ Maurice Avenue,5
+ Mayda Road,5
+ Mayfield Road,1
+ Mazeau Street,2
+ Mcbride Street,1
+ Mclaughlin Avenue,1
+ Meadow Drive,1
+ Meadow Road,1
+ Melbourne Avenue,6
+ Memphis Avenue,1
+ Menahan Street,2
+ Mentone Avenue,2
+ Merrick Boulevard,75
+ Metropolitan Avenue,98
+ Midland Parkway,2
+ Mott Avenue,23
+ Mount Olivet Crescent,2
+ Murdock Avenue,10
+ Musket Street,1
+ Myrtle Avenue,72
+ Nameoke Avenue,4
+ Nameoke Street,1
+ Nashville Boulevard,8
+ Nassau Boulevard,1
+ National Street,7
+ Neilson Street,2
+ New Haven Avenue,16
+ Newhall Avenue,2
+ Newport Avenue,1
+ Newtown Avenue,4
+ Newtown Road,2
+ Nicolls Avenue,2
+ North Conduit Avenue,23
+ Northern Boulevard,229
+ Norton Drive,1
+ Nurge Avenue,1
+ Oconnell Court,1
+ Otto Road,1
+ Page Place,2
+ Palmetto Street,1
+ Park Drive East,13
+ Park Lane,1
+ Park Lane South,18
+ Parsons Boulevard,52
+ Peck Avenue,1
+ Penelope Avenue,2
+ Pershing Crescent,3
+ Pidgeon Meadow Road,1
+ Pinegrove Street,1
+ Pineville Lane,1
+ Pinson Street,5
+ Pitkin Avenue,1
+ Polhemas Avenue,2
+ Prince Street,5
+ Princeton Street,1
+ Purves Street,1
+ Putnam Avenue,5
+ Queens Boulevard,104
+ Queens Plaza North,3
+ Queens Plaza South,1
+ Radcliff Avenue,2
+ Redfern Avenue,8
+ Reeder Street,1
+ Regina Avenue,3
+ Remington Street,6
+ Rene Court,1
+ Review Avenue,1
+ Richland Avenue,1
+ Riverside Drive,1
+ Riverside Drive West,1
+ Rockaway Beach Boulevard,57
+ Rockaway Boulevard,84
+ Rockaway Point Boulevard,3
+ Roosevelt Avenue,145
+ Rose Avenue,2
+ Rose Street,1
+ Ruscoe Street,1
+ Russell Street,1
+ Rust Street,2
+ Sage Street,1
+ Sanford Avenue,4
+ Saull Street,1
+ Saultell Avenue,2
+ Saunders Street,1
+ Sayres Avenue,2
+ Seagirt Boulevard,12
+ Selover Road,1
+ Seward Avenue,1
+ Shore Boulevard,5
+ Shore Front Parkway,12
+ Shore Parkway,2
+ Simonson Street,1
+ Skillman Avenue,2
+ Sloan Street,1
+ Somerset Street,1
+ South Conduit Avenue,37
+ South Road,7
+ Springfield Boulevard,48
+ Steinway Street,77
+ Stratton Street,1
+ Strong Avenue,1
+ Summerfield Avenue,1
+ Sunbury Road,1
+ Sutphin Boulevard,44
+ Sutter Avenue,6
+ Sutton Place,1
+ Thomson Avenue,4
+ Traffic Avenue,1
+ Ulmer Street,2
+ Union Hall Street,5
+ Union Street,21
+ Union Turnpike,69
+ Utopia Parkway,14
+ Vancleef Street,3
+ Vandam Street,4
+ Vandoren Street,1
+ Vanhorn Street,4
+ Vanloon Street,1
+ Vanwyck Expressway,32
+ Vaswani Avenue,1
+ Vernon Boulevard,29
+ Village Road,1
+ Waldron Street,3
+ Waltham Street,2
+ Wareham Place,1
+ Warren Street,4
+ Watson Place,1
+ Weller Lane,1
+ Welling Court,1
+ Westgate Street,5
+ Wetherole Street,1
+ Wexford Terrace,3
+ Whitehall Terrace,1
+ Whitestone Expressway,4
+ Whitney Avenue,2
+ Willets Point Boulevard,3
+ Winchester Boulevard,5
+ Witthoff Street,1
+ Woodbine Street,6
+ Woodhaven Boulevard,22
+ Woodhull Avenue,1
+ Woodside Avenue,12
+ Xenia Street,1
+ Yellowstone Boulevard,1
+100th Avenue,11
+100th Street,48
+101st Avenue,121
+101st Street,23
+102nd Avenue,5
+102nd Road,2
+102nd Street,75
+103rd Avenue,79
+103rd Street,18
+104th Avenue,28
+104th Street,57
+105th Avenue,2
+105th Street,26
+106th Avenue,6
+106th Street,11
+107th Avenue,78
+107th Street,24
+108th Avenue,12
+108th Street,144
+109th Avenue,86
+109th Road,4
+109th Street,21
+10th Avenue,298
+10th Street,17
+110th Avenue,36
+110th Road,10
+110th Street,26
+111th Avenue,93
+111th Road,3
+111th Street,102
+112B Broad Street,1
+112th Avenue,13
+112th Road,13
+112th Street,41
+1135A Morris Park Avenue,3
+113th Avenue,25
+113th Drive,1
+113th Street,20
+114th Road,9
+114th Street,61
+115th Avenue,116
+115th Road,12
+115th Street,30
+116th Avenue,45
+116th Road,3
+116th Street,34
+1177B Flushing Avenue,1
+117th Road,1
+117th Street,7
+118th Avenue,37
+118th Road,2
+118th Street,24
+119th Avenue,30
+119th Drive,1
+119th Road,1
+119th Street,6
+11th Avenue,226
+11th Place,1
+11th Street,50
+120th Avenue,71
+120th Street,34
+121st Avenue,8
+121st Street,17
+122nd Avenue,21
+122nd Place,2
+122nd Street,28
+123rd Avenue,23
+123rd Street,32
+124th Street,19
+125th Avenue,2
+125th Street,24
+126th Avenue,2
+126th Place,1
+126th Street,48
+127th Avenue,17
+127th Street,41
+128th Avenue,8
+128th Drive,1
+128th Street,19
+129th Avenue,7
+129th Street,33
+12th Avenue,72
+12th Road,4
+12th Street,25
+1300B Central Avenue,3
+130th Avenue,51
+130th Street,65
+131st Avenue,21
+131st Street,23
+132nd Avenue,6
+132nd Street,18
+133rd Avenue,57
+133rd Drive,1
+133rd Road,2
+133rd Street,21
+134th Avenue,15
+134th Street,25
+135th Avenue,73
+135th Place,1
+135th Street,18
+136th Avenue,12
+136th Street,11
+137th Avenue,36
+137th Road,3
+137th Street,9
+138th Avenue,12
+138th Place,2
+138th Street,39
+139th Avenue,15
+139th Street,30
+13th Avenue,100
+13th Street,19
+140th Avenue,27
+140th Street,17
+141st Avenue,9
+141st Street,17
+142nd Avenue,4
+142nd Place,5
+142nd Street,23
+143rd Avenue,22
+143rd Road,1
+143rd Street,26
+144th Avenue,32
+144th Drive,1
+144th Place,4
+144th Road,5
+144th Street,22
+145th Avenue,8
+145th Drive,4
+145th Road,8
+145th Street,9
+146th Avenue,4
+146th Drive,2
+146th Road,1
+146th Street,55
+147th Avenue,45
+147th Drive,6
+147th Road,3
+147th Street,90
+148th Avenue,2
+148th Drive,3
+148th Road,4
+148th Street,31
+149th Avenue,30
+149th Place,11
+149th Road,6
+149th Street,67
+14th Avenue,168
+14th Road,10
+14th Street,38
+150th Avenue,6
+150th Drive,3
+150th Place,4
+150th Street,174
+151st Avenue,7
+151st Street,3
+152nd Avenue,1
+152nd Street,8
+153rd Avenue,5
+153rd Lane,1
+153rd Street,31
+154th Street,39
+155th Avenue,2
+155th Street,60
+156th Avenue,4
+156th Street,15
+157th Avenue,17
+157th Street,39
+158th Avenue,7
+158th Street,25
+159th Avenue,6
+159th Street,24
+15th Avenue,87
+15th Street,27
+160th Avenue,13
+160th Street,59
+161st Street,29
+162nd Avenue,3
+162nd Street,40
+163A West 228th Street,1
+163rd Avenue,3
+163rd Street,22
+164th Avenue,3
+164th Place,9
+164th Street,83
+165th Avenue,3
+165th Street,29
+166th Street,21
+167th Street,19
+1689B Saint Johns Place,1
+168th Place,18
+168th Street,54
+169th Place,1
+169th Street,18
+16A Dewey Place,1
+16th Avenue,61
+16th Road,2
+16th Street,20
+170th Place,1
+170th Street,16
+171st Street,20
+172nd Street,31
+173rd Street,37
+174th Place,1
+174th Street,3
+175th Street,11
+176th Street,4
+177th Street,25
+178th Place,4
+178th Street,4
+179th Place,3
+179th Street,6
+17B Dwight Street,1
+17th Avenue,70
+17th Road,1
+17th Street,22
+180th Street,13
+1819C West Farms Road,1
+181st Street,10
+182nd Place,1
+182nd Street,22
+183rd Street,21
+184th Street,6
+185th Street,5
+186th Street,6
+187th Place,5
+187th Street,1
+188th Street,46
+189th Street,11
+18th Avenue,139
+18th Street,11
+190th Lane,1
+190th Street,15
+191st Street,7
+192nd Street,12
+193rd Street,14
+194th Street,8
+1954A Rockaway Parkway,1
+195A Canal Street,1
+195th Street,19
+196A Flatbush Avenue,1
+196th Place,1
+196th Street,12
+197th Street,28
+198th Street,12
+199th Street,26
+19th Avenue,73
+19th Road,1
+19th Street,42
+1st Avenue,579
+1st Place,13
+1st Street,7
+200th Street,15
+201st Place,5
+201st Street,26
+202nd Street,16
+203rd Street,12
+204th Street,24
+205th Street,19
+207th Street,10
+208th Street,15
+209th Street,13
+20th Avenue,127
+20th Drive,1
+20th Road,5
+20th Street,23
+210th Street,7
+211th Street,16
+212th Place,1
+212th Street,41
+213th Street,12
+214th Place,4
+214th Street,9
+215th Place,9
+215th Street,15
+216th Street,2
+217th Place,2
+217th Street,37
+2183A Ralph Avenue,2
+218th Street,12
+2193A New England Thruway,1
+219th Street,26
+21st Avenue,91
+21st Road,1
+21st Street,224
+220th Place,1
+220th Street,24
+221st Street,34
+222nd Street,36
+223rd Street,46
+224th Street,19
+225th Street,42
+226th Street,14
+227th Street,12
+228th Street,10
+229th Street,11
+22nd Avenue,14
+22nd Street,27
+230B Edgewater Park,1
+230th Place,5
+230th Street,6
+231st Street,11
+232nd Street,5
+233rd Street,13
+234th Street,16
+235th Court,1
+235th Street,5
+237th Street,2
+238th Street,1
+239th Street,1
+23rd Avenue,90
+23rd Road,6
+23rd Street,41
+23rd Terrace,1
+240th Street,1
+241st Street,20
+242nd Street,3
+243rd Street,26
+244th Street,7
+245th Street,3
+246th Street,9
+247th Street,3
+248th Street,15
+249th Street,24
+24th Avenue,37
+24th Road,4
+24th Street,30
+250th Street,1
+251st Street,5
+252nd Street,2
+253rd Street,11
+254B Livonia Avenue,3
+254th Street,8
+255A Canal Street,1
+255th Street,11
+256th Street,1
+257th Street,6
+258th Street,2
+259th Street,12
+25th Avenue,36
+25th Drive,1
+25th Road,12
+25th Street,5
+260th Street,7
+262nd Place,3
+263rd Street,17
+264th Street,5
+265th Street,5
+266th Street,1
+267th Street,2
+268th Street,8
+26th Avenue,27
+26th Road,1
+26th Street,5
+271st Street,2
+2737B Kingsbridge Terrace,1
+27th Avenue,18
+27th Street,28
+2804A 3rd Avenue,3
+28th Avenue,34
+28th Road,2
+28th Street,32
+29th Avenue,3
+29th Road,1
+29th Street,35
+2nd Avenue,724
+2nd Place,3
+2nd Street,11
+30th Avenue,67
+30th Drive,6
+30th Place,14
+30th Road,5
+30th Street,32
+311A Leonard Street,1
+31st Avenue,128
+31st Drive,11
+31st Place,3
+31st Road,6
+31st Street,143
+324A Utica Avenue,1
+326A 9th Street,1
+32nd Avenue,68
+32nd Place,5
+32nd Street,12
+339A Bainbridge Street,1
+33rd Avenue,19
+33rd Road,1
+33rd Street,67
+344B Maujer Street,1
+34H Saint Marks Place,1
+34th Avenue,157
+34th Street,27
+3555A White Plains Road,3
+358E East 112th Street,1
+35A Prospect Place,1
+35th Avenue,103
+35th Street,50
+36th Avenue,35
+36th Road,5
+36th Street,40
+37th Avenue,147
+37th Road,2
+37th Street,80
+386B Chauncey Street,1
+38th Avenue,47
+38th Street,46
+39A Gramercy Park North,1
+39th Avenue,65
+39th Place,1
+39th Road,2
+39th Street,108
+3rd Avenue,1164
+3rd Avenue Bridge,3
+3rd Place,10
+3rd Street,10
+40th Avenue,24
+40th Road,11
+40th Street,50
+41A Grand Street,1
+41st Avenue,59
+41st Road,5
+41st Street,47
+42nd Avenue,19
+42nd Place,2
+42nd Road,5
+42nd Street,62
+43rd Avenue,92
+43rd Street,81
+44th Avenue,14
+44th Drive,13
+44th Road,1
+44th Street,64
+45th Avenue,57
+45th Drive,3
+45th Road,5
+45th Street,60
+460N Brielle Avenue,1
+46th Avenue,24
+46th Road,5
+46th Street,77
+47th Avenue,38
+47th Road,1
+47th Street,68
+48th Avenue,49
+48th Street,89
+49th Avenue,14
+49th Lane,1
+49th Street,77
+4th Avenue,310
+4th Place,3
+4th Street,12
+504B East 98th Street,1
+50th Avenue,22
+50th Street,54
+5104A Post Road,1
+51st Avenue,42
+51st Road,2
+51st Street,72
+52nd Avenue,2
+52nd Drive,2
+52nd Road,2
+52nd Street,42
+530F Grand Street,1
+535A 6th Avenue,1
+53rd Avenue,9
+53rd Place,1
+53rd Street,33
+545A Quincy Street,1
+54th Avenue,13
+54th Road,3
+54th Street,37
+55th Avenue,28
+55th Drive,3
+55th Road,3
+55th Street,45
+56th Avenue,16
+56th Drive,5
+56th Road,29
+56th Street,42
+57th Avenue,33
+57th Drive,1
+57th Road,6
+57th Street,54
+585A Lafayette Avenue,1
+58th Avenue,18
+58th Drive,1
+58th Lane,2
+58th Place,2
+58th Road,14
+58th Street,110
+59th Avenue,17
+59th Drive,5
+59th Place,4
+59th Road,2
+59th Street,78
+5th Avenue,667
+5th Street,18
+60th Avenue,12
+60th Lane,1
+60th Place,7
+60th Road,2
+60th Street,141
+616A Macdonough Street,1
+61st Avenue,9
+61st Drive,1
+61st Road,3
+61st Street,60
+62nd Avenue,5
+62nd Drive,19
+62nd Road,3
+62nd Street,43
+63rd Avenue,22
+63rd Drive,29
+63rd Road,12
+63rd Street,32
+64th Avenue,26
+64th Circle,1
+64th Place,1
+64th Road,14
+64th Street,73
+65th Avenue,12
+65th Place,33
+65th Road,6
+65th Street,256
+66th Avenue,15
+66th Place,2
+66th Road,7
+66th Street,72
+67th Avenue,20
+67th Drive,2
+67th Place,2
+67th Road,16
+67th Street,43
+68th Avenue,15
+68th Drive,7
+68th Place,1
+68th Road,14
+68th Street,56
+69th Avenue,30
+69th Place,5
+69th Road,18
+69th Street,114
+6th Avenue,116
+6th Street,21
+70th Avenue,9
+70th Road,15
+70th Street,58
+711C Seagirt Avenue,1
+71st Avenue,47
+71st Road,5
+71st Street,52
+72nd Avenue,18
+72nd Drive,5
+72nd Place,1
+72nd Road,3
+72nd Street,43
+736A East 233rd Street,1
+73B Visitation Place,1
+73rd Avenue,63
+73rd Place,9
+73rd Street,47
+74th Avenue,5
+74th Street,62
+75th Avenue,25
+75th Road,3
+75th Street,18
+76th Avenue,12
+76th Road,2
+76th Street,67
+77A Richmond Hill Road,1
+77th Avenue,17
+77th Road,7
+77th Street,50
+78th Avenue,26
+78th Road,4
+78th Street,102
+79th Avenue,5
+79th Lane,1
+79th Street,71
+7th Avenue,575
+7th Avenue South,37
+7th Street,16
+80th Avenue,7
+80th Road,4
+80th Street,113
+81st Avenue,32
+81st Road,1
+81st Street,91
+82nd Avenue,22
+82nd Drive,1
+82nd Road,5
+82nd Street,81
+83rd Avenue,5
+83rd Place,5
+83rd Street,33
+845A East 222nd Street,1
+84th Avenue,5
+84th Drive,4
+84th Place,5
+84th Road,3
+84th Street,79
+85th Avenue,31
+85th Drive,1
+85th Road,7
+85th Street,85
+860A Remsen Avenue,1
+860A Willoughby Avenue,1
+86th Avenue,21
+86th Crescent,1
+86th Road,5
+86th Street,285
+87th Avenue,10
+87th Drive,3
+87th Road,8
+87th Street,18
+88th Avenue,21
+88th Lane,1
+88th Street,56
+89th Avenue,54
+89th Street,40
+8th Avenue,690
+8th Street,22
+90th Avenue,22
+90th Road,1
+90th Street,55
+91st Avenue,54
+91st Street,34
+92nd Avenue,11
+92nd Street,66
+93rd Avenue,29
+93rd Road,3
+93rd Street,29
+94th Avenue,16
+94th Road,1
+94th Street,74
+95th Avenue,50
+95th Street,49
+96th Street,27
+97th Avenue,24
+97th Place,2
+97th Street,63
+98th Street,29
+99th Avenue,36
+99th Place,1
+99th Street,85
+9th Avenue,281
+9th Street,38
+A 14th Street,1
+A 186th Lane,1
+A 225th Street,1
+A College Point Boulevard,1
+A Flatbush Avenue,1
+A Lafayette Avenue,3
+A Main Street,1
+A Moultrie Street,1
+Aaron Lane,1
+Abbey Court,1
+Abbot Street,1
+Aberdeen Street,1
+Abingdon Avenue,4
+Abingdon Road,5
+Academy Place,4
+Academy Street,10
+Ada Drive,1
+Adams Avenue,5
+Adams Place,5
+Adams Street,49
+Adee Avenue,49
+Adelphi Street,12
+Adler Place,1
+Adlers Lane,1
+Adrian Avenue,3
+Agar Place,3
+Agnes Place,1
+Aguilar Avenue,1
+Ainslie Street,17
+Akron Street,1
+Alabama Avenue,48
+Alaska Street,8
+Albany Avenue,168
+Albany Crescent,9
+Albany Street,8
+Albee Avenue,1
+Albemarle Road,39
+Albert Road,5
+Alcott Place,6
+Alcott Street,1
+Alderton Street,12
+Aldrich Street,1
+Aldus Street,5
+Alexander Avenue,23
+Alexander Hamilton Bridge,4
+Allen Avenue,2
+Allen Street,49
+Allendale Street,2
+Allerton Avenue,103
+Alley Park,1
+Allison Avenue,1
+Almeda Avenue,1
+Alstyne Avenue,3
+Altavista Court,1
+Amador Street,2
+Amber Street,2
+Amboy Road,105
+Amboy Street,29
+Amersfort Place,2
+Amethyst Street,1
+Amherst Avenue,3
+Amherst Street,1
+Amity Place,7
+Amity Street,3
+Ampere Avenue,4
+Amsterdam Avenue,444
+Amundson Avenue,4
+Anderson Avenue,21
+Anderson Road,1
+Anderson Street,3
+Andrea Place,1
+Andrews Avenue,25
+Andrews Street,3
+Andros Avenue,1
+Ann Street,6
+Annadale Road,23
+Anthony Avenue,38
+Anthony Street,8
+Apollo Street,7
+Appleby Avenue,1
+Applegate Court,1
+Aqueduct Avenue,20
+Arbutus Avenue,1
+Archer Avenue,38
+Archer Road,1
+Archer Street,7
+Arden Avenue,51
+Arden Street,4
+Ardsley Loop,1
+Argyle Road,15
+Arion Place,9
+Arlene Street,14
+Arlington Avenue,42
+Arlington Place,5
+Armstrong Avenue,21
+Arnold Avenue,1
+Arnow Avenue,25
+Arnow Place,1
+Arthur Avenue,38
+Arthur Kill Road,157
+Arverne Boulevard,6
+Ascan Avenue,7
+Asch Loop,7
+Ash Avenue,2
+Ash Street,1
+Ashford Street,44
+Ashland Avenue,1
+Ashland Place,36
+Aske Street,4
+Aspinwall Street,1
+Aster Court,1
+Astor Avenue,24
+Astoria Boulevard,185
+Astoria Park South,7
+Atkins Avenue,35
+Atlantic Avenue,1396
+Attorney Street,1
+Aubrey Avenue,3
+Auburn Place,2
+Auburndale Lane,2
+Audley Street,1
+Audubon Avenue,86
+Augustina Avenue,3
+Aultman Avenue,1
+Aurelia Court,4
+Austin Place,6
+Austin Street,62
+Autumn Avenue,34
+Avenue,33
+Avenue A,49
+Avenue B,68
+Avenue C,56
+Avenue D,148
+Avenue F,10
+Avenue H,83
+Avenue I,109
+Avenue J,199
+Avenue K,115
+Avenue L,152
+Avenue M,126
+Avenue N,111
+Avenue O,70
+Avenue Of The Americas,371
+Avenue P,123
+Avenue R,66
+Avenue S,72
+Avenue T,86
+Avenue U,210
+Avenue V,65
+Avenue W,58
+Avenue X,66
+Avenue Y,73
+Avenue Z,73
+Avery Avenue,6
+Aviation Road,3
+Avon Street,2
+Azalea Court,3
+B 186th Lane,1
+Babbage Street,1
+Bache Avenue,1
+Baden Place,1
+Bailey Avenue,77
+Bainbridge Avenue,84
+Bainbridge Street,29
+Baisley Avenue,5
+Baisley Boulevard,99
+Baker Avenue,1
+Balcom Avenue,14
+Balfour Place,1
+Baltic Street,13
+Bancroft Avenue,15
+Bancroft Place,3
+Bank Street,3
+Banker Street,3
+Banner Avenue,3
+Barbey Street,16
+Barclay Avenue,23
+Barclay Circle,3
+Barclay Street,9
+Bard Avenue,15
+Barker Avenue,11
+Barker Street,1
+Barkley Avenue,7
+Barnard Avenue,1
+Barnes Avenue,87
+Barnett Avenue,3
+Barnwell Avenue,4
+Barretto Street,11
+Barrow Street,3
+Barry Street,8
+Bartholdi Street,4
+Bartlett Avenue,1
+Bartlett Street,2
+Bartow Avenue,109
+Baruch Drive,3
+Baruch Place,1
+Bassett Avenue,2
+Bassford Avenue,3
+Batchelder Street,12
+Bath Avenue,63
+Bathgate Avenue,39
+Battery Avenue,1
+Battery Place,12
+Baxter Avenue,16
+Baxter Street,6
+Bay 10th Street,3
+Bay 11th Street,3
+Bay 13th Street,3
+Bay 14th Street,3
+Bay 16th Street,12
+Bay 17th Street,6
+Bay 19th Street,7
+Bay 20th Street,4
+Bay 22nd Street,1
+Bay 23rd Street,8
+Bay 25th Street,12
+Bay 26th Street,4
+Bay 28th Street,3
+Bay 29th Street,8
+Bay 31st Street,1
+Bay 32nd Street,7
+Bay 35th Street,6
+Bay 38th Street,1
+Bay 40th Street,10
+Bay 43rd Street,4
+Bay 44th Street,4
+Bay 46th Street,3
+Bay 48th Street,1
+Bay 49th Street,1
+Bay 50th Street,1
+Bay 52nd Street,3
+Bay 53rd Street,1
+Bay 54th Street,8
+Bay 7th Street,1
+Bay 8th Street,15
+Bay Avenue,9
+Bay Court,1
+Bay Parkway,142
+Bay Ridge Avenue,76
+Bay Ridge Parkway,102
+Bay Ridge Place,1
+Bay Street,124
+Bay Terrace,8
+Bay View Avenue,3
+Bayard Street,21
+Baychester Avenue,143
+Bayfield Avenue,1
+Bayside Avenue,3
+Bayside Lane,3
+Bayswater Avenue,5
+Beach 100th Street,2
+Beach 101st Street,3
+Beach 105th Street,3
+Beach 108th Street,14
+Beach 109th Street,5
+Beach 111th Street,3
+Beach 112th Street,1
+Beach 113th Street,4
+Beach 114th Street,1
+Beach 116th Street,8
+Beach 119th Street,2
+Beach 11th Street,4
+Beach 120th Street,1
+Beach 121st Street,2
+Beach 122nd Street,1
+Beach 123rd Street,4
+Beach 124th Street,3
+Beach 129th Street,3
+Beach 12th Street,1
+Beach 133rd Street,3
+Beach 134th Street,1
+Beach 136th Street,4
+Beach 138th Street,1
+Beach 13th Street,2
+Beach 148th Street,1
+Beach 15th Street,1
+Beach 169th Street,3
+Beach 16th Street,1
+Beach 17th Street,6
+Beach 19th Street,31
+Beach 20th Street,30
+Beach 21st Street,10
+Beach 221st Street,3
+Beach 22nd Street,8
+Beach 26th Street,6
+Beach 28th Street,5
+Beach 29th Street,6
+Beach 32nd Street,5
+Beach 35th Street,3
+Beach 36th Street,3
+Beach 37th Street,4
+Beach 38th Street,8
+Beach 39th Street,4
+Beach 3rd Street,1
+Beach 40th Street,4
+Beach 41st Street,6
+Beach 42nd Street,4
+Beach 43rd Street,1
+Beach 44th Street,5
+Beach 45th Street,1
+Beach 46th Street,3
+Beach 51st Street,4
+Beach 53rd Street,3
+Beach 54th Street,10
+Beach 56th Place,5
+Beach 56th Street,4
+Beach 57th Street,3
+Beach 58th Street,2
+Beach 59th Street,14
+Beach 5th Street,1
+Beach 60th Street,2
+Beach 61st Street,2
+Beach 62nd Street,4
+Beach 63rd Street,2
+Beach 64th Street,3
+Beach 65th Street,6
+Beach 66th Street,2
+Beach 67th Street,10
+Beach 68th Street,2
+Beach 69th Street,12
+Beach 6th Street,4
+Beach 72nd Street,5
+Beach 73rd Street,5
+Beach 77th Street,1
+Beach 79th Street,2
+Beach 81st Street,1
+Beach 82nd Street,3
+Beach 84th Street,1
+Beach 85th Street,1
+Beach 86th Street,2
+Beach 87th Street,4
+Beach 88th Street,5
+Beach 90th Street,4
+Beach 91st Street,4
+Beach 92nd Street,6
+Beach 94th Street,7
+Beach 95th Street,5
+Beach 96th Street,5
+Beach 97th Street,1
+Beach 98th Street,1
+Beach 99th Street,3
+Beach 9th Street,12
+Beach Avenue,33
+Beach Channel Drive,192
+Beach Street,7
+Beacon Lane,1
+Beadel Street,3
+Beard Street,2
+Beaumont Avenue,4
+Beaumont Street,1
+Beaver Road,1
+Beaver Street,30
+Beck Street,7
+Bedell Avenue,1
+Bedell Lane,2
+Bedell Street,18
+Bedford Avenue,685
+Bedford Street,9
+Beech Avenue,6
+Beech Terrace,2
+Beechwood Place,1
+Beekman Avenue,1
+Beekman Place,2
+Beekman Street,13
+Belair Road,3
+Belfast Avenue,3
+Belknap Street,9
+Bell Boulevard,82
+Bellaire Place,2
+Bellamy Loop,4
+Belmont Avenue,97
+Belt Parkway,2462
+Bement Avenue,14
+Benchley Place,2
+Benedict Avenue,5
+Bennett Avenue,10
+Bennett Street,3
+Benson Avenue,39
+Benson Street,2
+Bentley Street,1
+Benton Street,1
+Benziger Avenue,3
+Bergen Avenue,29
+Bergen Court,2
+Bergen Street,106
+Berkeley Place,3
+Berrian Boulevard,1
+Berriman Street,19
+Berry Street,41
+Bertram Avenue,1
+Bessemund Avenue,1
+Bethel Avenue,1
+Bethel Loop,1
+Bethune Street,4
+Betts Avenue,1
+Beverley Road,162
+Beverly Road,2
+Bianca Court,1
+Bidwell Avenue,1
+Billings Place,1
+Birch Avenue,3
+Birch Road,3
+Birdsall Avenue,2
+Bishop Street,1
+Bivona Street,3
+Blackrock Avenue,1
+Blackstone Avenue,1
+Blair Avenue,1
+Blake Avenue,112
+Bleecker Street,85
+Bleeker Place,1
+Blondell Avenue,6
+Bloomfield Avenue,3
+Bloomingdale Road,13
+Blossom Avenue,5
+Boardwalk,3
+Bodine Street,1
+Boerum Place,41
+Boerum Street,20
+Bogart Avenue,2
+Bogart Street,14
+Bokee Court,1
+Bolivar Street,1
+Boller Avenue,11
+Bolton Avenue,13
+Bolton Street,1
+Bond Street,45
+Boody Street,6
+Boone Avenue,13
+Booth Memorial Avenue,30
+Booth Street,7
+Borden Avenue,159
+Borinquen Place,25
+Borough Place,1
+Boscobel Place,4
+Boscombe Avenue,7
+Boston Road,513
+Bouck Avenue,9
+Boundary Avenue,1
+Bowen Street,4
+Bowery,137
+Bowery Street,3
+Bowne Street,21
+Box Street,8
+Boyd Avenue,3
+Boyland Street,107
+Boynton Avenue,12
+Brabant Street,1
+Braddock Avenue,16
+Bradford Street,27
+Bradhurst Avenue,24
+Bradley Avenue,22
+Brady Avenue,13
+Bragg Street,11
+Braisted Avenue,1
+Brandis Avenue,1
+Brandt Place,1
+Brenton Place,1
+Brevoort Place,1
+Brewer Boulevard,150
+Bridge Street,17
+Bridgeton Street,2
+Bridgewater Street,4
+Brielle Avenue,14
+Briggs Avenue,34
+Brigham Street,9
+Brighton 10th Street,3
+Brighton 11th Street,10
+Brighton 12th Street,4
+Brighton 13th Street,2
+Brighton 14th Street,2
+Brighton 15th Street,1
+Brighton 1st Place,3
+Brighton 1st Street,5
+Brighton 2nd Street,9
+Brighton 3rd Street,10
+Brighton 4th Street,7
+Brighton 5th Street,3
+Brighton 6th Street,12
+Brighton 7th Street,4
+Brighton 8th Street,2
+Brighton Avenue,3
+Brighton Beach Avenue,70
+Brighton Court,4
+Brightwater Court,12
+Brinkerhoff Avenue,2
+Brinsmade Avenue,3
+Brisbin Street,5
+Bristol Street,39
+Bristow Street,8
+Britton Avenue,5
+Britton Street,6
+Broad Street,29
+Broadway,1802
+Broadway Terrace,5
+Brocher Road,2
+Bronx Boulevard,57
+Bronx Park Avenue,7
+Bronx Park East,79
+Bronx Park South,13
+Bronx River Avenue,93
+Bronx River Parkway,534
+Bronx River Parkway Ramp,1
+Bronx Whitestone Bridge,27
+Bronxdale Avenue,48
+Bronxwood Avenue,98
+Brook Avenue,89
+Brook Street,7
+Brookdale Plaza,5
+Brookhaven Avenue,9
+Brooklyn Avenue,192
+Brooklyn Battery Tunnel,8
+Brooklyn Bridge,25
+Brooklyn Qns Expressway,10
+Brooklyn Queens Expressway,1435
+Brooklyn Queens Expressway Ramp,13
+Brooklyn Queens Expy (Cdr),1
+Brooks Pond Place,1
+Brookside Street,3
+Brookville Boulevard,96
+Broome Street,51
+Brown Place,6
+Brown Street,15
+Bruckner Avenue,1
+Bruckner Boulevard,938
+Bruckner Expressway,659
+Bruckner Expressway Ramp,4
+Bruner Avenue,18
+Brunswick Avenue,1
+Brush Avenue,35
+Bryant Avenue,50
+Bryant Park,4
+Bryant Street,1
+Buchanan Place,2
+Buck Street,3
+Bud Place,1
+Buel Avenue,4
+Buffalo Avenue,67
+Buffalo Street,6
+Buhre Avenue,11
+Bullard Avenue,4
+Bulova Avenue,1
+Bulwer Place,1
+Burbank Avenue,2
+Burgher Avenue,3
+Burke Avenue,54
+Burling Street,3
+Burnett Street,2
+Burns Street,10
+Burr Avenue,3
+Bush Avenue,1
+Bush Street,1
+Bushwick Avenue,540
+Bushwick Place,2
+Bussing Avenue,22
+Butler Avenue,1
+Butler Place,6
+Butler Street,12
+Buttrick Avenue,1
+Byron Avenue,10
+Cabot Road,1
+Cabrini Boulevard,2
+Cadman Plaza East,4
+Cadman Plaza West,33
+Caffrey Avenue,6
+Calamus Avenue,5
+Caldwell Avenue,7
+Calhoun Avenue,3
+Calloway Street,8
+Calyer Street,15
+Cambreleng Avenue,2
+Cambria Avenue,1
+Cambridge Avenue,6
+Cambridge Place,1
+Cameron Place,4
+Campbell Avenue,1
+Campus Road,12
+Canal Avenue,1
+Canal Place,7
+Canal Street,260
+Canarsie Road,9
+Caney Lane,3
+Caney Road,1
+Cannon Boulevard,1
+Cannon Place,6
+Canterbury Avenue,3
+Capodanno Boulevard,64
+Carlton Avenue,25
+Carlton Boulevard,1
+Carlyle Green,1
+Carmine Street,4
+Caroll Street,1
+Carpenter Avenue,44
+Carroll Place,1
+Carroll Street,30
+Carson Street,2
+Carter Avenue,8
+Carteret Street,3
+Carver Loop,4
+Cary Avenue,12
+Casals Place,4
+Casanova Street,6
+Case Street,4
+Cass Place,4
+Cassidy Place,1
+Castle Hill Avenue,116
+Castleton Avenue,74
+Catalpa Avenue,17
+Cathedral Parkway,17
+Cathedral Place,1
+Catherine Street,3
+Caton Avenue,80
+Cauldwell Avenue,43
+Cayuga Avenue,1
+Cebra Avenue,3
+Cedar Avenue,24
+Cedar Lawn Avenue,2
+Cedar Street,10
+Cedar Terrace,1
+Center Boulevard,1
+Center Drive,3
+Center Place,1
+Central Avenue,151
+Central Park North,13
+Central Park South,25
+Central Park West,112
+Centre Mall,1
+Centre Street,58
+Centreville Avenue,10
+Chambers Street,47
+Chandler Street,2
+Channel Avenue,3
+Chapel Street,3
+Chapin Parkway,1
+Chappell Street,1
+Charles Avenue,6
+Charles Street,11
+Charleston Avenue,3
+Charlton Street,2
+Chase Court,1
+Chatham Square,1
+Chatterton Avenue,16
+Chauncey Street,34
+Cheever Place,2
+Chelsea Road,3
+Chelsea Street,2
+Cherry Avenue,12
+Cherry Street,13
+Chester Avenue,2
+Chester Court,1
+Chester Place,1
+Chester Street,45
+Chesterton Avenue,2
+Chestnut Avenue,1
+Chestnut Circle,1
+Chestnut Drive North,1
+Chestnut Street,21
+Chisholm Street,5
+Chisum Place,2
+Christie Avenue,2
+Christopher Lane,5
+Christopher Street,16
+Chrystie Street,73
+Church Avenue,399
+Church Street,46
+Circle Loop,1
+City Island Avenue,63
+City Island Bridge,10
+City Island Road,2
+Claflin Avenue,6
+Clara Street,3
+Claremont Avenue,6
+Claremont Parkway,59
+Clarence Avenue,1
+Clarendon Road,127
+Clark Street,1
+Clarke Avenue,4
+Clarkson Avenue,129
+Clarkson Street,11
+Classon Avenue,100
+Claude Avenue,1
+Claver Place,1
+Clawson Street,7
+Clay Avenue,49
+Clay Street,4
+Clearview Expressway,199
+Clermont Avenue,22
+Cleveland Avenue,6
+Cleveland Place,1
+Cleveland Street,33
+Clifford Place,3
+Clifton Avenue,5
+Clifton Place,13
+Clinton Avenue,43
+Clinton Place,1
+Clinton Street,89
+Clintonville Street,9
+Cloister Place,1
+Close Avenue,5
+Clove Road,100
+Clover Place,5
+Cloverdale Boulevard,7
+Clyde Street,4
+Clymer Street,18
+Coddington Avenue,14
+Cody Avenue,3
+Cody Place,1
+Coffey Street,3
+Cohancy Street,2
+Colden Avenue,11
+Colden Street,5
+Coleman Street,7
+Coleridge Street,1
+Colfax Street,1
+Colgate Avenue,13
+College Avenue,27
+College Place,3
+College Point Boulevard,193
+Collier Avenue,3
+Collins Place,1
+Colon Avenue,1
+Colonial Avenue,2
+Colonial Road,20
+Colony Avenue,3
+Columbia Heights,4
+Columbia Street,50
+Columbus Avenue,109
+Columbus Circle,17
+Columbus Place,1
+Commerce Avenue,16
+Commerce Street,1
+Commercial Street,3
+Commonwealth Boulevard,8
+Commonwlth Avenue,13
+Compton Avenue,1
+Comstock Avenue,2
+Concord Avenue,15
+Concord Street,8
+Concourse Village East,12
+Concourse Village West,11
+Conduit Avenue,4
+Conduit Boulevard,67
+Coney Island Avenue,358
+Congress Street,5
+Conklin Avenue,19
+Conner Street,65
+Conover Street,10
+Conselyea Street,4
+Continental Avenue,3
+Convent Avenue,42
+Conway Street,12
+Conyingham Avenue,1
+Cook Street,5
+Coolidge Avenue,5
+Coonley Court,1
+Coop City Boulevard,31
+Cooper Avenue,65
+Cooper Square,3
+Cooper Street,33
+Copley Street,3
+Corbett Road,1
+Corbin Avenue,1
+Corbin Place,11
+Corlear Avenue,7
+Cornaga Avenue,20
+Cornaga Court,1
+Cornelia Avenue,1
+Cornelia Street,43
+Corona Avenue,41
+Correll Avenue,1
+Corsa Avenue,5
+Corson Avenue,2
+Cortelyou Avenue,4
+Cortelyou Road,103
+Cortlandt Street,5
+Coster Street,8
+Country Club Road,6
+Court Square,3
+Court Street,63
+Courtlandt Avenue,19
+Coverly Avenue,1
+Covert Street,16
+Covington Circle,1
+Cowen Place,1
+Coyle Street,5
+Cozine Avenue,58
+Craft Avenue,1
+Craig Avenue,8
+Crandall Avenue,3
+Cranford Avenue,9
+Cranford Street,3
+Cranston Street,3
+Crawford Avenue,6
+Creamer Street,2
+Crescent Avenue,4
+Crescent Street,164
+Creston Avenue,51
+Crittenden Place,2
+Crocheron Avenue,12
+Croes Avenue,13
+Crommelin Street,1
+Cromwell Avenue,15
+Crooke Avenue,9
+Cropsey Avenue,175
+Crosby Avenue,35
+Crosby Street,6
+Cross Bay Boulevard,221
+Cross Bronx Expressway,172
+Cross Bronx Expy,980
+Cross Bronx Expy Ramp,2
+Cross Bronx Extention,18
+Cross Island Parkway,850
+Cross Street,3
+Crotona Avenue,76
+Crotona Park East,16
+Crotona Park North,24
+Crotona Park South,4
+Crotona Parkway,13
+Crown Street,24
+Cruger Avenue,27
+Crystal Avenue,3
+Crystal Street,6
+Cumberland Street,5
+Cumming Street,3
+Curtis Place,2
+Curzon Road,1
+Cuthbert Road,1
+Cypress Avenue,139
+Cypress Hill Street,11
+Cypress Hills Street,24
+Cyrus Avenue,4
+Cyrus Place,1
+Dahill Road,45
+Dahlgren Place,2
+Dahlia Avenue,2
+Dalny Road,5
+Daly Avenue,7
+Daniel Low Terrace,2
+Daniels Street,1
+Dark Street,3
+Darlington Avenue,6
+Darren Drive,1
+Darrow Place,1
+Dartmouth Street,2
+Dash Place,1
+Davidson Avenue,62
+Davies Road,2
+Davis Avenue,3
+Dawson Street,4
+Dayna Drive,1
+De Costa Avenue,1
+De Graw Street,13
+De Kalb Avenue,237
+De Witt Avenue,24
+Dean Avenue,4
+Dean Street,119
+Dearborn Court,1
+Debevoise Avenue,4
+Debevoise Street,4
+Decatur Avenue,32
+Decatur Street,67
+Decker Avenue,16
+Deerfield Road,1
+Degroot Place,1
+Dekalb Avenue,11
+Dekalb Street,7
+Dekay Street,1
+Delafield Avenue,8
+Delancey Street,200
+Delavall Avenue,2
+Delaware Avenue,5
+Delaware Street,3
+Delmar Avenue,4
+Delmar Loop,1
+Delmonico Place,1
+Delong Street,2
+Denis Street,1
+Depot Place,3
+Dereimer Avenue,12
+Desarc Road,1
+Desmond Court,1
+Detroit Avenue,2
+Devoe Avenue,3
+Devoe Street,11
+Devoe Terrace,2
+Devon Loop,1
+Dewey Avenue,4
+Dewey Place,1
+Dewitt Place,7
+Dexter Court,4
+Diamond Street,8
+Dianas Trail,3
+Dickens Street,9
+Dickie Avenue,1
+Dickinson Avenue,1
+Dieterle Crescent,1
+Digney Avenue,4
+Dikeman Street,2
+Dillon Street,1
+Dinsmore Avenue,4
+Dinsmore Place,3
+Disosway Place,1
+Ditmars Boulevard,77
+Ditmars Street,1
+Ditmas Avenue,98
+Division Avenue,32
+Division Place,2
+Division Street,17
+Dix Avenue,3
+Dixon Avenue,4
+Doane Avenue,1
+Dobbin Street,4
+Dodworth Street,3
+Dogwood Drive,1
+Dominick Street,2
+Dongan Avenue,1
+Dongan Place,4
+Dongan Street,2
+Donizetti Place,2
+Doran Avenue,1
+Dorchester Road,21
+Doris Street,5
+Dormans Road,1
+Dorset Street,1
+Doscher Street,6
+Douglas Avenue,1
+Douglas Road,1
+Douglass Street,11
+Douglaston Parkway,14
+Dover Street,10
+Downes Avenue,1
+Downing Street,10
+Doyers Street,1
+Dreiser Loop,9
+Drew Street,15
+Driggs Avenue,36
+Driggs Street,1
+Drive,1
+Drumgoole Road East,21
+Drumgoole Road West,22
+Dry Harbor Road,7
+Drysdale Street,1
+Duane Street,7
+Dublin Place,1
+Dubois Avenue,5
+Dudley Avenue,1
+Duer Lane,1
+Duffield Street,13
+Dumont Avenue,88
+Duncan Street,6
+Duncomb Avenue,2
+Dunkirk Drive,3
+Dunkirk Street,12
+Dunne Court,2
+Dunton Avenue,1
+Dunton Street,1
+Dupont Street,1
+Durant Avenue,1
+Durland Place,3
+Duryea Avenue,1
+Duryea Court,1
+Dutch Kills Street,1
+Dutchess Avenue,1
+Dwight Street,5
+Dyckman Street,91
+Dyer Avenue,18
+Dyre Avenue,13
+E 186th Lane,1
+Eagle Avenue,12
+Eagle Street,6
+Eames Place,1
+East 100th Street,15
+East 101st Street,24
+East 102nd Street,56
+East 103rd Street,33
+East 104th Street,30
+East 105th Street,42
+East 106th Street,61
+East 107th Street,10
+East 108th Street,46
+East 109th Street,20
+East 10th Street,56
+East 110th Street,32
+East 111th Street,26
+East 112th Street,37
+East 113th Street,8
+East 114th Street,3
+East 115th Street,42
+East 116th Street,146
+East 117th Street,41
+East 118th Street,38
+East 119th Street,38
+East 11th Street,21
+East 120th Street,28
+East 121st Street,4
+East 122nd Street,28
+East 123rd Street,25
+East 124th Street,33
+East 125th Street,162
+East 126th Street,32
+East 127th Street,16
+East 128th Street,45
+East 129th Street,28
+East 12th Street,81
+East 130th Street,11
+East 131st Street,13
+East 132nd Street,51
+East 133rd Street,6
+East 134th Street,39
+East 135th Street,160
+East 136th Street,10
+East 137th Street,37
+East 138th Street,200
+East 139th Street,46
+East 13th Street,66
+East 140th Street,43
+East 141st Street,48
+East 142nd Street,19
+East 143rd Street,30
+East 144th Street,45
+East 145th Street,14
+East 146th Street,20
+East 147th Street,20
+East 148th Street,6
+East 149th Street,295
+East 14th Street,122
+East 150th Street,29
+East 151st Street,40
+East 152nd Street,9
+East 153rd Street,17
+East 154th Street,5
+East 155th Street,6
+East 156th Street,74
+East 157th Street,22
+East 158th Street,16
+East 159th Street,7
+East 15th Street,51
+East 160th Street,12
+East 161st Street,181
+East 162nd Street,15
+East 163rd Street,162
+East 164th Street,34
+East 165th Street,101
+East 166th Street,46
+East 167th Street,91
+East 168th Street,35
+East 169th Street,80
+East 16th Street,54
+East 170th Street,71
+East 171st Street,22
+East 172nd Street,56
+East 173rd Street,53
+East 174th Street,147
+East 175th Street,74
+East 176th Street,64
+East 177th Street,50
+East 178th Street,55
+East 179th Street,52
+East 17th Street,58
+East 180th Street,108
+East 181st Street,54
+East 182nd Street,41
+East 183rd Street,39
+East 184th Street,46
+East 185th Street,5
+East 186th Street,1
+East 187th Street,44
+East 188th Street,57
+East 189th Street,19
+East 18th Street,72
+East 190th Street,1
+East 191st Street,2
+East 192nd Street,9
+East 193rd Street,16
+East 194th Street,25
+East 195th Street,4
+East 196th Street,41
+East 197th Street,10
+East 198th Street,23
+East 199th Street,9
+East 19th Street,72
+East 1st Street,13
+East 201st Street,9
+East 202nd Street,5
+East 203rd Street,5
+East 204th Street,21
+East 205th Street,5
+East 206th Street,3
+East 207th Street,7
+East 208th Street,12
+East 209th Street,5
+East 20th Street,41
+East 210th Street,8
+East 211th Street,25
+East 212th Street,4
+East 213th Street,24
+East 214th Street,14
+East 215th Street,7
+East 216th Street,20
+East 217th Street,17
+East 218th Street,11
+East 219th Street,12
+East 21st Street,79
+East 220th Street,10
+East 221st Street,20
+East 222nd Street,59
+East 223rd Street,22
+East 224th Street,28
+East 225th Street,24
+East 226th Street,23
+East 227th Street,16
+East 228th Street,39
+East 229th Drive North,1
+East 229th Street,22
+East 22nd Street,38
+East 230th Street,12
+East 231st Street,22
+East 232nd Street,26
+East 233rd Street,263
+East 234th Street,19
+East 235th Street,14
+East 236th Street,37
+East 237th Street,17
+East 238th Street,1
+East 239th Street,12
+East 23rd Street,104
+East 240th Street,21
+East 241st Street,41
+East 242nd Street,6
+East 243rd Street,4
+East 24th Street,26
+East 25th Street,25
+East 26th Street,53
+East 27th Street,37
+East 28th Street,54
+East 29th Street,60
+East 2nd Street,34
+East 30th Street,20
+East 31st Street,34
+East 32nd Street,38
+East 33rd Street,23
+East 34th Street,161
+East 35th Street,69
+East 36th Street,53
+East 37th Street,107
+East 38th Street,58
+East 39th Street,36
+East 3rd Street,62
+East 40th Street,29
+East 41st Street,19
+East 42nd Street,94
+East 43rd Street,30
+East 44th Street,13
+East 45th Street,49
+East 46th Street,37
+East 47th Street,14
+East 48th Street,49
+East 49th Street,50
+East 4th Street,35
+East 50th Street,12
+East 51st Street,85
+East 52nd Street,70
+East 53rd Street,74
+East 54th Street,57
+East 55th Street,52
+East 56th Street,56
+East 57th Street,89
+East 58th Street,47
+East 59th Street,102
+East 5th Street,36
+East 60th Street,51
+East 61st Street,58
+East 62nd Street,62
+East 63rd Street,50
+East 64th Street,31
+East 65th Street,35
+East 66th Street,47
+East 67th Street,30
+East 68th Street,22
+East 69th Street,16
+East 6th Street,34
+East 70th Street,25
+East 71st Street,36
+East 72nd Street,44
+East 73rd Street,17
+East 74th Street,28
+East 75th Street,18
+East 76th Street,33
+East 77th Street,22
+East 78th Street,27
+East 79th Street,44
+East 7th Street,41
+East 80th Street,115
+East 81st Street,29
+East 82nd Street,35
+East 83rd Street,49
+East 84th Street,44
+East 85th Street,52
+East 86th Street,53
+East 87th Street,31
+East 88th Street,43
+East 89th Street,29
+East 8th Street,46
+East 90th Street,23
+East 91st Street,39
+East 92nd Street,90
+East 93rd Street,61
+East 94th Street,84
+East 95th Street,77
+East 96th Street,143
+East 97th Street,25
+East 98th Street,95
+East 99th Street,31
+East 9th Street,43
+East Avenue,3
+East Bay Avenue,16
+East Broadway,38
+East Burnside Avenue,65
+East Clarke Place,6
+East Drive,19
+East End Avenue,9
+East Fordham Road,218
+East Gun Hill Road,376
+East Hampton Boulevard,2
+East Houston Street,163
+East Kingsbridge Road,33
+East Mosholu Parkway North,20
+East Mosholu Parkway South,27
+East Mount Eden Avenue,25
+East New York Avenue,168
+East Service Road,1
+East Tremont Avenue,548
+East Williston Avenue,14
+Eastburn Avenue,10
+Eastchester Road,127
+Eastern Parkway,603
+Eaton Place,1
+Ebey Lane,3
+Echo Place,1
+Eckford Avenue,2
+Eckford Street,10
+Edenwald Avenue,21
+Edgecombe Avenue,45
+Edgegrove Avenue,3
+Edgemere Avenue,17
+Edgerton Boulevard,2
+Edgewater Road,47
+Edgewater Street,1
+Edgewood Avenue,7
+Edison Avenue,15
+Edsall Avenue,1
+Edson Avenue,19
+Egbert Avenue,3
+Einstein Loop,7
+Elbertson Street,1
+Elder Avenue,17
+Eldert Street,13
+Elderts Lane,43
+Eldridge Street,22
+Elgar Place,1
+Eliot Avenue,68
+Elizabeth Avenue,1
+Elizabeth Street,29
+Elk Drive,4
+Ellery Street,1
+Elliot Place,9
+Ellis Avenue,15
+Ellison Avenue,1
+Ellsworth Avenue,8
+Ellwell Crescent,1
+Ellwood Street,1
+Elm Place,6
+Elm Street,3
+Elmhurst Avenue,6
+Elmira Loop,2
+Elmwood Avenue,6
+Elmwood Park Drive,1
+Elsmere Place,2
+Eltingville Boulevard,1
+Elton Avenue,8
+Elton Street,58
+Ely Avenue,19
+Emerald Street,1
+Emerson Place,2
+Emmet Avenue,1
+Emmons Avenue,80
+Empire Avenue,2
+Empire Boulevard,153
+Engert Avenue,2
+Englewood Avenue,9
+Enright Road,2
+Epsom Course,1
+Erasmus Street,8
+Erastina Place,1
+Erdman Place,1
+Ericson Place,2
+Ericsson Place,1
+Ericsson Street,1
+Erskine Place,1
+Erskine Street,25
+Essex Street,80
+Etna Street,33
+Euclid Avenue,65
+Eunice Place,2
+Eveleth Road,1
+Evelyn Place,4
+Everdell Avenue,1
+Evergreen Avenue,111
+Everitt Place,1
+Everitt Street,1
+Exchange Place,1
+Exeter Street,6
+Exterior Street,34
+Faber Street,1
+Fahy Avenue,5
+Faile Street,54
+Fairbanks Avenue,1
+Fairfield Street,1
+Fairmount Avenue,4
+Fairmount Place,5
+Fairview Avenue,29
+Fairview Place,2
+Fanchon Place,1
+Fanning Street,1
+Far Rockaway Boulevard,1
+Faraday Avenue,1
+Farmers Boulevard,231
+Farragut Avenue,2
+Farragut Place,2
+Farragut Road,147
+Farrington Street,13
+Fayette Street,3
+Fdr Drive,1306
+Fdr Drive Ramp,6
+Featherbed Lane,27
+Fenimore Street,23
+Fenton Avenue,11
+Fern Place,2
+Ferndale Avenue,2
+Fernside Place,3
+Ferris Place,3
+Ferris Street,4
+Field Place,4
+Field Street,1
+Fieldston Road,4
+Fieldway Avenue,3
+Fillat Street,1
+Fillmore Avenue,30
+Fillmore Street,8
+Findlay Avenue,17
+Fingerboard Road,9
+Finlay Street,1
+Fish Avenue,12
+Fisher Avenue,2
+Fitchett Street,1
+Flatbush Avenue,1056
+Flatbush Avenue Extension,118
+Flatlands 1st Street,1
+Flatlands 3rd Street,3
+Flatlands 8th Street,1
+Flatlands 9th Street,1
+Flatlands Avenue,338
+Fleet Street,4
+Fleet Walk,2
+Flushing Avenue,341
+Foam Place,3
+Foch Boulevard,58
+Food Center Drive,21
+Forbell Street,14
+Ford Street,2
+Fordham Street,1
+Forest Avenue,276
+Forest Hill Road,44
+Forest Park Drive,6
+Forest Parkway,8
+Forley Street,8
+Forrest Street,1
+Forsyth Street,16
+Fort George Avenue,6
+Fort George Hill,20
+Fort Greene Place,8
+Fort Hamilton Parkway,133
+Fort Independence Street,6
+Fort Place,7
+Fort Washington Avenue,53
+Foster Avenue,195
+Foster Road,14
+Fountain Avenue,68
+Four Corners Road,9
+Fowler Avenue,6
+Fox Hill Terrace,1
+Fox Street,16
+Frame Place,1
+Francis Lewis Boulevard,229
+Frankfort Street,7
+Franklin Avenue,160
+Franklin Place,2
+Franklin Street,53
+Frawley Circle,1
+Freeman Street,30
+Freeport Loop,2
+Fremont Avenue,1
+Fresh Meadow Lane,5
+Fresh Pond Road,80
+Friel Place,1
+Frisby Avenue,10
+Frisco Avenue,1
+Front Street,17
+Frost Street,8
+Fteley Avenue,26
+Fuller Place,1
+Fuller Street,1
+Fulton Avenue,43
+Fulton Street,579
+Furman Avenue,8
+Furman Street,24
+G.C.P. / Jewel (Cdr),1
+G.C.P. / L.I.E (Cdr),1
+G.C.P. / Laguardia (Cdr),1
+Gale Avenue,4
+Gallatin Place,1
+Gansevoort Boulevard,4
+Garden Street,11
+Gardner Avenue,7
+Garfield Avenue,1
+Garfield Place,4
+Garfield Street,1
+Garnet Street,8
+Garretson Avenue,6
+Garrison Avenue,28
+Gates Avenue,181
+Gateway Boulevard,1
+Gateway Drive,76
+Gatling Place,10
+Gauldy Avenue,1
+Gem Street,1
+Genesee Avenue,7
+George Street,12
+Georgia Avenue,24
+Georgia Road,3
+Geranium Avenue,1
+Gerard Avenue,58
+Gerritsen Avenue,29
+Gerry Street,6
+Gervil Street,1
+Gettysburg Street,4
+Giffords Lane,12
+Giles Place,3
+Gillespie Avenue,1
+Gillmore Street,6
+Gipson Street,7
+Givan Avenue,26
+Glassboro Avenue,2
+Gleane Street,7
+Gleason Avenue,36
+Glebe Avenue,5
+Glen Avenue,1
+Glen Street,6
+Glendale Court,1
+Glenmore Avenue,65
+Glenwood Road,170
+Glenwood Street,1
+Glover Street,1
+Goble Place,4
+Godwin Terrace,3
+Goethals Avenue,8
+Goethals Road North,6
+Gold Road,1
+Gold Street,33
+Goodwin Place,1
+Gordon Street,18
+Gothic Drive,1
+Goulden Avenue,10
+Gouverneur Avenue,1
+Gouverneur Place,2
+Gouverneur Street,4
+Gowanus Expressway,5
+Gowanus Expy (Bqe),275
+Gowanus Ramp,15
+Grace Avenue,12
+Graff Avenue,1
+Grafton Street,15
+Graham Avenue,110
+Gramercy Park North,3
+Grand Army Plaza,20
+Grand Avenue,163
+Grand Central Parkway,91
+Grand Central Pkwy,1364
+Grand Concourse,456
+Grand Street,255
+Grandview Avenue,31
+Granger Street,2
+Granite Street,2
+Grant Avenue,30
+Grant Circle,4
+Grant Highway,30
+Grant Place,3
+Grasmere Avenue,1
+Grassmere Terrace,10
+Grattan Street,3
+Graves Street,3
+Gravesend Neck Road,12
+Grayson Street,5
+Great Jones Street,1
+Great Kills Road,6
+Greaves Avenue,10
+Greaves Lane,3
+Greeley Avenue,11
+Green Street,3
+Greencroft Avenue,1
+Greene Avenue,72
+Greene Street,3
+Greenfield Avenue,1
+Greenpoint Avenue,98
+Greentree Lane,1
+Greenway Drive,1
+Greenway Terrace,3
+Greenwich Avenue,6
+Greenwich Street,42
+Greenwood Avenue,6
+Grenada Place,4
+Grenfell Street,5
+Greystone Avenue,10
+Grimsby Street,1
+Grinnell Place,3
+Griswold Avenue,5
+Grote Street,4
+Grove Street,35
+Guerlain Street,5
+Guernsey Street,3
+Guider Avenue,15
+Gunther Avenue,22
+Gunther Place,1
+Gurley Avenue,6
+Guyon Avenue,6
+Gwenn Loop,1
+H Peck Avenue,1
+Hagaman Place,1
+Haight Avenue,8
+Hale Avenue,13
+Hale Street,1
+Hall Place,2
+Hall Street,3
+Halleck Street,14
+Halpin Avenue,1
+Halsey Street,126
+Hamilton Avenue,121
+Hamilton Place,19
+Hamilton Terrace,2
+Hammersley Avenue,20
+Hampden Place,1
+Hampton Avenue,5
+Hampton Place,4
+Hampton Street,9
+Hancock Place,5
+Hancock Street,48
+Hannah Street,3
+Hannibal Street,4
+Hanover Avenue,1
+Hanover Square,2
+Hanover Street,6
+Hanson Place,10
+Harbor Road,13
+Harding Avenue,10
+Harding Park,3
+Haring Street,5
+Harkness Avenue,5
+Harlem River Drive,309
+Harlem River Drive Ramp,1
+Harlem River Park,3
+Harman Street,29
+Harold Avenue,1
+Harold Street,1
+Harper Avenue,5
+Harper Court,3
+Harrington Avenue,1
+Harrison Avenue,38
+Harrison Place,7
+Harrison Street,1
+Harrod Avenue,12
+Harrod Place,3
+Harrow Street,5
+Hart Boulevard,1
+Hart Place,1
+Hart Street,37
+Hartman Lane,7
+Harvest Avenue,2
+Harway Avenue,6
+Hastings Street,2
+Hatfield Place,1
+Haughwout Avenue,3
+Hausman Street,4
+Havemeyer Avenue,15
+Havemeyer Street,18
+Haven Avenue,8
+Haviland Avenue,15
+Hawthorne Avenue,2
+Hawthorne Street,27
+Hawtree Creek Road,2
+Hawtree Street,4
+Hay Street,3
+Hazen Street,12
+Heaney Avenue,1
+Heath Avenue,16
+Heathcote Avenue,4
+Heberton Avenue,2
+Hegeman Avenue,107
+Heinz Avenue,1
+Hemlock Street,18
+Hempstead Avenue,95
+Henderson Avenue,23
+Hendricks Avenue,7
+Hendrickson Street,10
+Hendrix Street,37
+Hennessey Place,1
+Henry Hudson Parkway,528
+Henry Hudson Parkway Ramp,4
+Henry Place,3
+Henry Street,52
+Henshaw Street,1
+Henwood Place,1
+Herbert Street,9
+Hering Avenue,7
+Herkimer Place,5
+Herkimer Street,82
+Hermany Avenue,5
+Herschell Street,1
+Herzl Street,11
+Hester Street,18
+Hett Avenue,3
+Heusden Street,3
+Hewes Street,6
+Hewitt Place,2
+Hewlett Street,3
+Heyson Road,5
+Heyward Street,6
+Hickory Avenue,3
+Hicks Street,66
+Highland Avenue,9
+Highland Boulevard,21
+Highland Place,5
+Highlawn Avenue,11
+Hilburn Avenue,2
+Hill Avenue,4
+Hill Street,18
+Hillel Place,1
+Hillman Avenue,1
+Hillside Avenue,284
+Hillside Terrace,5
+Hillyer Street,6
+Himrod Street,41
+Hinsdale Street,38
+Hitchcock Avenue,1
+Hobart Avenue,8
+Hobart Street,1
+Hoe Avenue,39
+Hoffman Drive,4
+Hoffman Street,7
+Hogan Place,1
+Holden Boulevard,1
+Holland Avenue,48
+Hollers Avenue,8
+Hollis Avenue,41
+Hollis Court Boulevard,24
+Hollis Hills Terrace,1
+Holly Avenue,6
+Hollywood Avenue,10
+Holsman Road,1
+Home Lawn Street,12
+Home Street,18
+Homecrest Avenue,17
+Homer Avenue,7
+Hone Avenue,19
+Honeywell Avenue,6
+Honeywell Street,4
+Hook Creek Boulevard,59
+Hooker Place,3
+Hooper Street,13
+Hoover Avenue,12
+Hope Street,4
+Horace Harding Expressway,130
+Horatio Street,2
+Horizon Lane,1
+Hornell Loop,2
+Horton Avenue,2
+Hosmer Avenue,1
+Houseman Avenue,2
+Howard Avenue,135
+Howard Street,2
+Howe Avenue,2
+Hoyt Avenue North,32
+Hoyt Avenue South,22
+Hoyt Street,18
+Hubbard Place,2
+Hubbard Street,8
+Hudson Avenue,3
+Hudson Manor Terrace,2
+Hudson Parkway,4
+Hudson Street,47
+Hudson Walk,1
+Hughes Avenue,12
+Huguenot Avenue,36
+Hull Avenue,27
+Hull Street,7
+Humboldt Street,92
+Humphreys Street,7
+Hunt Avenue,2
+Hunter Avenue,19
+Hunter Street,1
+Hunterfly Place,5
+Hunters Point Avenue,37
+Huntington Avenue,2
+Huntington Street,12
+Hunts Point Avenue,91
+Huron Street,6
+Hurst Street,1
+Husson Avenue,1
+Husson Street,1
+Hutchinson Avenue,2
+Hutchinson River Parkway,209
+Hutchinson River Parkway East,10
+Hutchinson River Parkway Ramp,4
+Huxley Avenue,2
+Huxley Street,9
+Hylan Boulevard,382
+Hymen Court,1
+Ilion Avenue,4
+Ilyse Court,3
+Ilyssa Way,2
+Independence Avenue,12
+India Street,10
+Ingraham Street,6
+Innis Street,10
+Intervale Avenue,55
+Inwood Avenue,9
+Inwood Street,23
+Ionia Avenue,3
+Irving Avenue,96
+Irving Place,7
+Irwin Avenue,3
+Isham Street,7
+Ithaca Street,2
+Ittner Place,1
+Jackie Robinson Pkwy,525
+Jackson Avenue,98
+Jackson Mill Road,1
+Jackson Street,13
+Jacobus Place,2
+Jacques Avenue,4
+Jake Court,1
+Jamaica Avenue,540
+James Street,3
+Jamie Lane,1
+Jane Street,5
+Jardine Place,2
+Jarvis Avenue,9
+Jasmine Avenue,1
+Java Street,8
+Jay Street,86
+Jeanette Avenue,2
+Jefferson Avenue,54
+Jefferson Boulevard,5
+Jefferson Place,5
+Jefferson Street,39
+Jennifer Lane,1
+Jennings Street,12
+Jerome Avenue,528
+Jerome Street,27
+Jersey Street,28
+Jesup Avenue,22
+Jewel Avenue,34
+Jewel Street,5
+Jewett Avenue,18
+Jodie Court,2
+John Street,13
+Johnson Avenue,71
+Johnson Street,20
+Joline Avenue,4
+Joralemon Street,17
+Jordan Avenue,1
+Judge Street,4
+Jules Drive,11
+Juliana Place,3
+Jumel Place,2
+Jumel Terrace,1
+Junction Boulevard,89
+Juniper Avenue,4
+Juniper Boulevard North,15
+Juniper Boulevard South,14
+Juniper Valley Road,7
+Junius Street,44
+Juno Street,3
+Justice Avenue,9
+K 186th Lane,1
+Kalmia Avenue,1
+Kalver Place,3
+Kane Street,1
+Kappock Street,7
+Katan Avenue,14
+Katonah Avenue,20
+Keap Street,11
+Kearney Avenue,6
+Keegans Lane,1
+Keeseville Avenue,6
+Kell Avenue,1
+Kelly Boulevard,5
+Kelly Street,26
+Kenilworth Avenue,3
+Kenilworth Place,4
+Kenmare Street,28
+Kennedy Street,13
+Kensington Avenue,4
+Kensington Street,1
+Kent Avenue,113
+Kent Street,12
+Kepler Avenue,1
+Kermit Place,3
+Kessel Street,1
+Kew Forest Lane,1
+Kimball Street,7
+Kimberly Place,1
+King Avenue,3
+King Road,1
+King Street,5
+Kinghorn Street,1
+Kings College Place,1
+Kings Highway,426
+Kings Place,1
+Kingsborough 2nd Walk,1
+Kingsborough 3rd Walk,4
+Kingsborough 4th Walk,1
+Kingsborough 5th Walk,1
+Kingsborough 7th Walk,1
+Kingsbridge Avenue,18
+Kingsbridge Terrace,25
+Kingsland Avenue,48
+Kingsley Avenue,1
+Kingston Avenue,83
+Kingston Place,4
+Kinsella Street,2
+Kirshon Avenue,1
+Kissena Boulevard,110
+Kiswick Street,2
+Klondike Avenue,8
+Knapp Street,33
+Knauth Place,1
+Knickerbocker Avenue,159
+Knolls Crescent,3
+Knox Place,3
+Koch Boulevard,3
+Korean War Vets Parkway,45
+Kosciusko Bridge,2
+Kosciuszko Street,33
+Kossuth Avenue,7
+Kossuth Place,2
+Kramer Street,2
+Kreischer Street,1
+L.I.E / G.C.P (Cdr),1
+Laburnum Avenue,12
+Lacombe Avenue,11
+Laconia Avenue,74
+Lafayette Avenue,212
+Lafayette Street,42
+Lafontaine Avenue,7
+Laguardia Avenue,5
+Laguardia Place,11
+Lahn Street,1
+Laight Street,6
+Lake Avenue,5
+Lake Street,6
+Lake View Place,5
+Lakeview Boulevard East,4
+Lakeview Lane,4
+Lakewood Avenue,8
+Lamberts Lane,13
+Lamoka Avenue,1
+Lamont Avenue,5
+Lamport Boulevard,3
+Lancaster Avenue,1
+Landing Road,4
+Lanett Avenue,1
+Langham Street,1
+Lansing Avenue,3
+Lasalle Avenue,2
+Lasalle Street,8
+Latimer Place,2
+Laurel Avenue,5
+Laurel Hill Boulevard,16
+Laurel Hill Terrace,11
+Laurelton Parkway,200
+Laurie Avenue,1
+Lawrence Avenue,9
+Lawrence Street,15
+Lawton Avenue,1
+Lawton Street,4
+Lax Avenue,1
+Layton Avenue,6
+Layton Street,1
+Leavitt Street,15
+Lebanon Street,1
+Lee Avenue,31
+Lefferts Avenue,46
+Lefferts Boulevard,143
+Lefferts Place,5
+Leggett Avenue,19
+Legion Street,9
+Leigh Avenue,1
+Leland Avenue,22
+Lenevar Avenue,5
+Lenox Avenue,193
+Lenox Road,118
+Lenox Terrace Place,1
+Leonard Avenue,4
+Leonard Street,33
+Leroy Street,2
+Leverett Avenue,4
+Lewis Avenue,85
+Lewis Place,1
+Lewiston Street,4
+Lexington Avenue,368
+Liberty Avenue,411
+Liberty Plaza,2
+Liberty Street,23
+Library Avenue,3
+Lie Lower Level (Cdr),3
+Lie Outer Roadway (Cdr),3
+Liebig Avenue,2
+Light Street,7
+Lily Pond Avenue,17
+Lincoln Avenue,65
+Lincoln Place,42
+Lincoln Road,7
+Lincoln Street,6
+Lindbergh Avenue,1
+Linden Boulevard,1002
+Linden Place,24
+Linden Street,44
+Lindenwood Road,1
+Linton Place,1
+Linwood Street,30
+Lion Street,2
+Lisk Avenue,3
+Little Clove Road,5
+Little Neck Parkway,54
+Little West 12th Street,2
+Livermore Avenue,5
+Liverpool Street,11
+Livingston Avenue,1
+Livingston Street,47
+Livonia Avenue,118
+Llewellyn Place,2
+Lloyd Street,1
+Lockman Avenue,4
+Lockman Place,1
+Locust Avenue,4
+Locust Street,1
+Lodovick Avenue,3
+Logan Avenue,13
+Logan Street,61
+Lombardy Street,8
+Long Island Expressway,1548
+Long Island Expressway (Cdr),3
+Long Street,10
+Longfellow Avenue,37
+Longstreet Avenue,2
+Longwood Avenue,45
+Lorillard Place,2
+Lorimer Street,74
+Loring Avenue,19
+Loring Place North,10
+Loring Place South,5
+Lorraine Street,15
+Lott Avenue,40
+Lott Street,2
+Loubet Street,5
+Louis Place,3
+Louisiana Avenue,33
+Low Terrace,1
+Lowell Street,2
+Lowerre Place,1
+Lucas Street,1
+Lucerne Street,2
+Ludlam Place,1
+Ludlow Street,40
+Ludlum Avenue,1
+Ludwig Lane,3
+Luquer Street,2
+Lurting Avenue,9
+Luten Avenue,3
+Lutheran Avenue,1
+Lydig Avenue,21
+Lyman Avenue,1
+Lyman Place,1
+Lyman Street,3
+Lynch Street,4
+Lyon Avenue,4
+Lyvere Street,5
+Mac Dougal Street,8
+Mac Gregor Street,1
+Macdonough Place,7
+Macdonough Street,40
+Macdougal Street,13
+Mace Avenue,34
+Macombs Dam Bridge,48
+Macombs Place,23
+Macombs Road,39
+Macon Street,16
+Macy Place,4
+Madison Avenue,314
+Madison Avenue Bridge,1
+Madison Place,2
+Madison Street,113
+Magaw Place,3
+Magenta Street,11
+Maguire Avenue,6
+Mahan Avenue,1
+Maiden Lane,19
+Main Avenue,4
+Main Street,206
+Maitland Avenue,1
+Major Deegan Expressway,1069
+Major Deegan Expressway Ramp,4
+Mallow Street,1
+Malta Street,6
+Mangin Avenue,17
+Manhattan Avenue,167
+Manhattan Br Lower,1
+Manhattan Br Upper,5
+Manhattan Bridge,2
+Manhattan College Parkway,9
+Manhattan Court,2
+Manida Street,12
+Mann Avenue,1
+Manor Avenue,14
+Manor Road,65
+Manse Street,1
+Mansion Avenue,1
+Mansion Street,1
+Manton Street,3
+Mapes Avenue,10
+Maple Avenue,10
+Maple Parkway,1
+Maple Street,19
+Maran Place,2
+Marathon Parkway,14
+Marble Hill Avenue,7
+Marconi Place,1
+Marcus Garvey Boulevard,103
+Marcy Avenue,107
+Marcy Place,9
+Marengo Street,1
+Marginal St East,3
+Marine Avenue,2
+Marine Parkway,2
+Marine Parkway Bridge,1
+Marine Way,1
+Mariners Lane,1
+Marion Avenue,49
+Marion Street,9
+Market Slip,4
+Market Street,4
+Markwood Road,1
+Marlborough Road,13
+Marmion Avenue,13
+Marne Place,3
+Marolla Place,3
+Mars Place,3
+Marscher Place,1
+Marsden Street,4
+Martense Avenue,5
+Martense Street,16
+Martha Avenue,2
+Martin Avenue,3
+Martin Luther King Jr,14
+Martling Avenue,7
+Marvin Road,1
+Mary Street,1
+Maryland Avenue,1
+Mason Avenue,13
+Maspeth Avenue,29
+Matilda Avenue,3
+Matthews Avenue,11
+Matthewson Road,1
+Maujer Street,21
+Maurice Avenue,54
+Mayda Road,7
+Mayfair Drive South,3
+Mayflower Avenue,3
+Mc Clancy Place,2
+Mc Donald Avenue,165
+Mc Guinness Blvd South,6
+Mc Guinness Boulevard,76
+Mc Keever Place,3
+Mc Kibbin Street,7
+Mc Kinley Avenue,9
+Mcbaine Avenue,1
+Mcbride Street,4
+Mcclean Avenue,19
+Mcclellan Street,8
+Mcdonald Street,1
+Mcgraw Avenue,6
+Mclaughlin Avenue,4
+Meadow Lane,1
+Meadow Street,11
+Meeker Avenue,95
+Meisner Avenue,1
+Melbourne Avenue,4
+Melrose Avenue,76
+Melrose Street,7
+Melville Street,2
+Melvin Avenue,4
+Memphis Avenue,2
+Menahan Street,20
+Mentone Avenue,3
+Mercer Street,14
+Meredith Avenue,2
+Merivale Lane,1
+Merle Place,5
+Mermaid Avenue,53
+Merriam Avenue,10
+Merrick Boulevard,329
+Merrill Avenue,3
+Merrill Street,2
+Merritt Avenue,7
+Merry Avenue,1
+Merrymount Street,1
+Mersereau Avenue,1
+Meserole Avenue,17
+Meserole Street,19
+Metcalf Avenue,31
+Metropolitan Avenue,402
+Metropolitan Oval,15
+Metrotech Center,9
+Mexico Street,1
+Meyer Avenue,1
+Mickle Avenue,9
+Middagh Street,2
+Middlemay Circle,1
+Middleton Street,11
+Middletown Road,12
+Midland Avenue,14
+Midland Parkway,9
+Midwood Street,17
+Milburn Street,1
+Mildred Avenue,1
+Miles Avenue,14
+Milford Drive,16
+Milford Street,11
+Mill Avenue,20
+Mill Road,3
+Mill Street,2
+Millennium Loop,1
+Miller Avenue,51
+Mills Avenue,6
+Milton Avenue,1
+Milton Street,2
+Minna Street,1
+Minnieford Avenue,4
+Minton Street,1
+Mitchell Place,1
+Mobile Avenue,3
+Moffat Street,11
+Mohegan Avenue,2
+Monitor Street,16
+Monroe Avenue,22
+Monroe Place,3
+Monroe Street,28
+Montague Street,6
+Montauk Avenue,17
+Montauk Street,9
+Monterey Avenue,3
+Montgomery Avenue,9
+Montgomery Street,52
+Monticello Avenue,4
+Montreal Avenue,3
+Montrose Avenue,18
+Montvale Place,1
+Monument Walk,5
+Moore Place,1
+Moore Street,27
+Morgan Avenue,75
+Morgan Place,1
+Morningside Avenue,19
+Morningside Drive,8
+Morningstar Road,25
+Morris Avenue,208
+Morris Park Avenue,134
+Morris Street,3
+Morrison Avenue,39
+Morton Place,3
+Morton Street,4
+Mosel Avenue,7
+Mosholu Avenue,9
+Mosholu Parkway,42
+Mosholu Parkway Extension,1
+Mott Avenue,33
+Mott Street,30
+Mount Eden Parkway,17
+Mount Hope Place,13
+Mount Morris Park West,3
+Mount Olivet Crescent,1
+Mountainview Avenue,1
+Mulberry Street,22
+Muliner Avenue,3
+Mundy Lane,1
+Murdock Avenue,63
+Murray Street,26
+Musket Street,1
+Myrtle Avenue,509
+Nagle Avenue,53
+Nameoke Avenue,2
+Nameoke Street,6
+Nancy Lane,1
+Naples Terrace,1
+Narrows Avenue,5
+Narrows Road North,42
+Narrows Road South,2
+Nashville Boulevard,6
+Nashville Street,1
+Nassau Avenue,27
+Nassau Boulevard,4
+Nassau Expressway,23
+Nassau Place,1
+Nassau Street,19
+Natick Street,3
+National Street,18
+Naughton Avenue,2
+Nautilus Avenue,1
+Navesink Place,1
+Navy Street,21
+Navy Walk,2
+Neal Dow Avenue,2
+Needham Avenue,16
+Nehring Avenue,1
+Neill Avenue,12
+Neilson Street,7
+Nellis Street,1
+Nelson Avenue,38
+Nelson Street,7
+Neptune Avenue,189
+Neptune Lane,3
+Neptune Place,3
+Nereid Avenue,43
+Netherland Avenue,9
+Nevins Street,34
+New Dorp Lane,26
+New Dorp Plaza,3
+New England Thruway,22
+New Haven Avenue,14
+New Jersey Avenue,28
+New Lots Avenue,129
+New Street,4
+New Utrecht Avenue,114
+New York Avenue,171
+Newark Avenue,3
+Newbold Avenue,14
+Newburg Street,9
+Newel Street,15
+Newell Street,1
+Newkirk Avenue,57
+Newman Avenue,4
+Newport Avenue,10
+Newport Street,42
+Newton Street,2
+Newtown Avenue,3
+Newtown Road,12
+Nichols Avenue,7
+Nippon Avenue,3
+Noble Avenue,18
+Noble Street,2
+Noel Avenue,1
+Noel Road,1
+Noll Street,5
+Nome Avenue,14
+Norfolk Street,14
+Norman Avenue,23
+Norman Street,5
+North 10th Street,9
+North 11th Street,9
+North 12th Street,7
+North 13th Street,1
+North 14th Street,3
+North 1st Street,2
+North 3rd Street,9
+North 4th Street,16
+North 5th Street,8
+North 6th Street,11
+North 7th Street,18
+North 8th Street,9
+North 9th Street,5
+North Avenue,1
+North Bridge Street,4
+North Burgher Avenue,2
+North Conduit Avenue,406
+North Drive,1
+North Elliott Place,1
+North End Avenue,6
+North Gannon Avenue,27
+North Henry Street,4
+North Market Street,1
+North Moore Street,8
+North Oak Drive,1
+North Oxford Street,3
+North Oxford Walk,1
+North Portland Avenue,20
+North Railroad Avenue,7
+North Saint Austins Place,1
+North Street,3
+Northern Boulevard,644
+Northfield Avenue,1
+Norton Avenue,1
+Norton Drive,5
+Norwalk Avenue,3
+Norway Avenue,3
+Norwood Avenue,9
+Nostrand Avenue,633
+Nunley Court,1
+Nurge Avenue,4
+Oak Avenue,5
+Oak Park Drive,1
+Oak Point Avenue,30
+Oak Street,2
+Oak Terrace,1
+Oakdale Street,7
+Oakland Avenue,5
+Oakland Place,2
+Oakley Street,3
+Obrien Avenue,1
+Occident Avenue,6
+Ocean Avenue,423
+Ocean Parkway,289
+Ocean Terrace,7
+Oceania Street,5
+Oceanic Avenue,1
+Oceanview Avenue,17
+Odell Street,4
+Ogden Avenue,63
+Ogorman Avenue,1
+Old Amboy Road,2
+Old Broadway,1
+Old Kingsbridge Road,1
+Old Mill Road,3
+Old New Utrecht Road,1
+Old Slip,3
+Old Town Road,4
+Olinville Avenue,25
+Olive Street,5
+Oliver Place,4
+Oliver Street,2
+Olmstead Avenue,24
+Olympia Boulevard,1
+Onderdonk Avenue,27
+Oneida Avenue,4
+Orange Avenue,1
+Orange Street,1
+Orchard Beach Road,24
+Orchard Street,12
+Oriental Boulevard,3
+Orinoco Place,1
+Orloff Avenue,5
+Osborn Street,5
+Osborne Place,1
+Osgood Avenue,5
+Osgood Street,1
+Oswego Street,1
+Otis Avenue,15
+Otto Road,10
+Outlook Avenue,3
+Overbaugh Place,3
+Overing Street,10
+Overlook Terrace,10
+Ovington Avenue,21
+Oxford Avenue,3
+Pacific Street,110
+Paerdegat 12th Street,1
+Paerdegat 2nd Street,1
+Paerdegat 3rd Street,3
+Paerdegat 7th Street,4
+Paerdegat Avenue North,2
+Page Avenue,30
+Page Place,1
+Paidge Avenue,1
+Paladino Avenue,3
+Palisade Avenue,5
+Palisade Place,2
+Palma Drive,3
+Palmer Avenue,5
+Palmetto Street,32
+Parade Place,7
+Park Avenue,559
+Park Avenue South,63
+Park Circle,20
+Park Drive,8
+Park Drive East,12
+Park Hill Avenue,20
+Park Hill Circle,1
+Park Hill Lane,3
+Park Lane,1
+Park Lane South,37
+Park Place,90
+Park Row,16
+Park Terrace West,1
+Parkchester Road,4
+Parker Street,4
+Parkinson Avenue,2
+Parkside Avenue,81
+Parkside Place,8
+Parkview Avenue,1
+Parkview Terrace,1
+Parkville Avenue,5
+Parrott Place,1
+Parsons Boulevard,151
+Patchen Avenue,53
+Patterson Avenue,1
+Paul Avenue,10
+Paulding Avenue,55
+Payson Avenue,6
+Pearl Street,63
+Pearsall Avenue,9
+Pearson Place,1
+Pearson Street,7
+Peartree Avenue,1
+Peck Avenue,3
+Peck Slip,4
+Peconic Street,3
+Pelham Parkway,15
+Pelham Parkway North,20
+Pelham Parkway South,36
+Pell Place,1
+Pelton Avenue,4
+Pendleton Place,2
+Penelope Avenue,12
+Penfield Street,1
+Penn Street,5
+Pennsylvania Avenue,515
+Pennsylvania Plaza,13
+Pennyfield Avenue,1
+Perkiomen Avenue,3
+Perot Street,3
+Perry Avenue,30
+Perry Street,1
+Peters Place,1
+Pettit Avenue,2
+Philip Avenue,14
+Piave Avenue,1
+Pidgeon Meadow Road,7
+Piedmont Avenue,1
+Pierce Avenue,8
+Pierce Street,3
+Pierrepont Street,5
+Pike Slip,1
+Pike Street,9
+Pilling Street,6
+Pilot Street,3
+Pine Street,24
+Pinegrove Street,6
+Pinehurst Avenue,6
+Pineville Lane,2
+Pinson Street,2
+Pitkin Avenue,323
+Pitman Avenue,19
+Pitt Street,22
+Plainview Avenue,3
+Platinum Avenue,4
+Platt Street,3
+Plattsburg Street,3
+Plattwood Avenue,1
+Plaza Street East,9
+Pleasant Avenue,5
+Pleasant Place,1
+Pleasantview Street,5
+Plimpton Avenue,14
+Plumb 1st Street,4
+Plumb 2nd Street,2
+Plymouth Avenue,1
+Polhemas Avenue,4
+Polhemus Place,1
+Police Plaza,2
+Poly Place,4
+Pompey Avenue,1
+Pond Place,3
+Pontiac Place,1
+Ponton Avenue,4
+Popham Avenue,3
+Poplar Avenue,1
+Poplar Street,2
+Pople Avenue,1
+Poppenhusen Avenue,1
+Port Richmond Avenue,31
+Portage Avenue,3
+Portal Street,2
+Porter Avenue,13
+Post Avenue,32
+Post Road,7
+Powell Avenue,6
+Powell Street,17
+Powells Cove Boulevard,4
+Powers Avenue,3
+Powers Street,3
+Poyer Street,3
+Pratt Avenue,8
+Prentiss Avenue,4
+Prescott Avenue,6
+President Street,47
+Preston Court,8
+Prince Street,51
+Princeton Street,14
+Prospect Avenue,138
+Prospect Court,1
+Prospect Expressway,4
+Prospect Expressway East,66
+Prospect Park Southwest,18
+Prospect Park West,26
+Prospect Place,56
+Prospect Street,24
+Provost Avenue,10
+Provost Street,9
+Pugsley Avenue,25
+Pulaski Avenue,4
+Pulaski Bridge,13
+Pulaski Street,31
+Purdy Avenue,2
+Purdy Street,6
+Puritan Avenue,1
+Putnam Avenue,64
+Putnam Avenue West,4
+Putnam Place,3
+Quarry Road,5
+Quay Street,1
+Queen Street,1
+Queens Boulevard,586
+Queens Midtown Tunnel,2
+Queens Midtown Tunnel Exit,6
+Queens Plaza North,25
+Queens Plaza South,69
+Queens Street,1
+Queensboro Bridge,17
+Queensboro Bridge Lower,7
+Queensboro Bridge Lower Roadway,5
+Queensboro Bridge Upper,6
+Queensboro Bridge Upper Roadway,6
+Quencer Road,4
+Quentin Road,73
+Quince Avenue,3
+Quincy Avenue,11
+Quincy Street,28
+Quinn Street,4
+Quintard Street,2
+R 10th Street,1
+Racal Court,3
+Radcliff Avenue,8
+Radnor Road,1
+Radnor Street,1
+Rae Avenue,3
+Railroad Avenue,3
+Raleigh Place,3
+Ralph Avenue,336
+Ramona Avenue,1
+Randall Avenue,94
+Randolph Street,2
+Rapelye Street,1
+Raritan Avenue,1
+Rathbun Avenue,3
+Raymond Place,1
+Reade Street,11
+Reads Lane,1
+Rector Place,8
+Rector Street,1
+Redfern Avenue,5
+Redwood Avenue,1
+Reed Street,2
+Reeds Mill Lane,8
+Reeve Place,1
+Reeves Avenue,6
+Regal Walk,1
+Regent Place,6
+Regina Avenue,1
+Regis Drive,10
+Reid Avenue,77
+Remington Street,11
+Remsen Avenue,271
+Remsen Place,3
+Remsen Street,7
+Renwick Avenue,1
+Renwick Street,1
+Reon Avenue,4
+Reservoir Avenue,36
+Reservoir Oval East,2
+Reservoir Oval West,2
+Retford Avenue,1
+Revere Avenue,8
+Revere Place,2
+Review Avenue,25
+Review Place,1
+Rewe Street,3
+Reynolds Avenue,1
+Rhinelander Avenue,27
+Richards Street,5
+Richardson Avenue,5
+Richardson Street,12
+Richmond Avenue,313
+Richmond Hill Road,43
+Richmond Road,162
+Richmond Street,3
+Richmond Terrace,148
+Richmond Valley Road,4
+Rider Avenue,6
+Ridge Boulevard,32
+Ridge Street,9
+Ridgecrest Avenue,1
+Ridgewood Avenue,75
+Ridgewood Place,2
+Riedel Avenue,1
+Rio Drive,1
+Ritter Place,1
+River Avenue,83
+River Road,1
+River Street,1
+Riverdale Avenue,130
+Riverside Boulevard,6
+Riverside Drive,196
+Riverton Street,1
+Rivington Avenue,6
+Rivington Street,15
+Robert F Wagner Place,6
+Roberts Avenue,5
+Robertson Place,3
+Robin Lane,1
+Robinson Street,11
+Rochambeau Avenue,8
+Rochester Avenue,91
+Rockaway Avenue,297
+Rockaway Beach Boulevard,97
+Rockaway Boulevard,379
+Rockaway Freeway,43
+Rockaway Parkway,374
+Rockaway Point Boulevard,7
+Rockefeller Plaza,1
+Rockland Avenue,28
+Rockwell Place,3
+Rockwood Street,2
+Rocky Hill Road,7
+Rodman Place,1
+Rodney Street,15
+Roebling Street,38
+Roff Street,2
+Rogers Avenue,243
+Rogers Place,4
+Roma Avenue,4
+Rombouts Avenue,11
+Rome Drive,1
+Roosevelt Avenue,201
+Roosevelt Drive,1
+Roosevelt Place,1
+Ropes Avenue,7
+Rose Avenue,3
+Rosebank Place,2
+Rosedale Avenue,49
+Rosewood Place,2
+Ross Avenue,3
+Ross Street,12
+Rossville Avenue,7
+Roswell Avenue,1
+Rowland Street,3
+Royce Place,3
+Ruby Street,1
+Rugby Road,10
+Rumson Road,1
+Rupert Avenue,1
+Ruppert Place,1
+Russek Drive,1
+Russell Street,8
+Rust Street,8
+Rutgers Slip,3
+Rutgers Street,2
+Rutherford Place,1
+Rutland Road,66
+Rutledge Avenue,1
+Rutledge Street,10
+Ryan Court,1
+Ryawa Avenue,1
+Ryder Avenue,1
+Ryder Street,1
+Ryer Avenue,29
+Ryerson Street,1
+Sable Avenue,2
+Sacket Avenue,1
+Sackett Street,17
+Sackman Street,18
+Sagamore Avenue,1
+Saint Albans Place,1
+Saint Anns Avenue,104
+Saint Clair Place,10
+Saint Edwards Street,14
+Saint Felix Avenue,1
+Saint Felix Street,2
+Saint Francis Place,1
+Saint James Place,23
+Saint John Avenue,2
+Saint Johns Avenue,4
+Saint Johns Place,167
+Saint Jude Place,2
+Saint Lawrence Avenue,22
+Saint Lukes Place,1
+Saint Marks Avenue,72
+Saint Marks Place,36
+Saint Marys Avenue,4
+Saint Marys Street,9
+Saint Nicholas,7
+Saint Nicholas Avenue,313
+Saint Nicholas Place,8
+Saint Nicholas Terrace,11
+Saint Ouen Street,1
+Saint Paul Avenue,2
+Saint Pauls Avenue,9
+Saint Pauls Court,2
+Saint Pauls Place,5
+Saint Peters Avenue,2
+Saint Raymond Avenue,9
+Saint Theresa Avenue,4
+Sampson Avenue,7
+Sand Lane,21
+Sandford Street,2
+Sands Place,1
+Sands Street,28
+Sanford Avenue,57
+Saratoga Avenue,122
+Saull Street,4
+Saultell Avenue,9
+Saunders Street,10
+Sayres Avenue,18
+Schaefer Street,15
+Schenck Avenue,39
+Schenck Court,1
+Schenck Street,6
+Schenectady Avenue,161
+Schermerhorn Street,34
+Schley Avenue,11
+Schmidts Lane,1
+Schofield Street,1
+Scholes Street,45
+School Road,7
+Schroeders Avenue,10
+Schurz Avenue,6
+Schuyler Street,3
+Scott Avenue,8
+Scribner Avenue,3
+Sea Breeze Avenue,4
+Seabring Street,1
+Seabury Avenue,4
+Seabury Place,2
+Seabury Street,5
+Seagirt Avenue,6
+Seagirt Boulevard,79
+Seaman Avenue,17
+Seaver Avenue,3
+Seaview Avenue,96
+Secor Avenue,5
+Seddon Street,1
+Sedgwick Avenue,150
+Sedgwick Place,2
+Seeley Street,5
+Seguine Avenue,5
+Seguine Loop,1
+Seguine Place,1
+Seigel Street,9
+Selfridge Street,3
+Selover Road,1
+Selwyn Avenue,11
+Senator Street,8
+Seneca Avenue,52
+Seneca Street,1
+Seton Avenue,3
+Seton Place,1
+Seward Avenue,39
+Sexton Place,4
+Seymour Avenue,15
+Shad Creek Road,1
+Shakespeare Avenue,28
+Shale Street,1
+Shaler Avenue,1
+Sharpe Avenue,7
+Sharrott Avenue,8
+Sharrotts Road,3
+Sheepshead Bay Road,35
+Sheffield Avenue,27
+Sheldon Avenue,2
+Shell Road,23
+Shepherd Avenue,25
+Sheraden Avenue,4
+Sheridan Avenue,67
+Sheridan Expressway,59
+Sherman Avenue,70
+Sherman Street,1
+Shiloh Avenue,1
+Shiloh Street,1
+Shirra Avenue,1
+Shore Avenue,5
+Shore Boulevard,34
+Shore Drive,1
+Shore Front Parkway,21
+Shore Parkway,121
+Shore Road,20
+Shore Road Drive,13
+Sidway Place,1
+Signs Road,11
+Silver Road,1
+Silver Street,9
+Simmons Lane,1
+Simonson Avenue,5
+Simonson Place,3
+Simpson Street,10
+Skidmore Avenue,4
+Skillman Avenue,44
+Skillman Street,15
+Sky Lane,1
+Slaight Street,1
+Slater Boulevard,3
+Slocum Place,1
+Slosson Avenue,23
+Smart Street,4
+Smedley Street,5
+Smith Place,1
+Smith Street,55
+Snediker Avenue,43
+Snyder Avenue,107
+Sobel Court,2
+Soho Drive,1
+Somers Street,6
+Somerset Street,2
+Sound View Avenue,68
+South 10th Street,3
+South 1st Street,19
+South 2nd Street,18
+South 3rd Street,21
+South 4th Street,29
+South 5th Place,6
+South 5th Street,16
+South 6th Street,2
+South 8th Street,9
+South 9th Street,5
+South Avenue,81
+South Bridge Street,1
+South Conduit Avenue,320
+South Elliott Place,5
+South End Avenue,17
+South Gannon Avenue,10
+South Goff Avenue,2
+South Oak Drive,5
+South Oxford Street,9
+South Pinehurst Avenue,1
+South Portland Avenue,10
+South Railroad Avenue,12
+South Railroad Street,1
+South Road,16
+South Street,50
+South William Street,1
+Southern Boulevard,322
+Southern Parkway,11
+Southgate Street,1
+Spark Place,1
+Sparkhill Avenue,1
+Spencer Avenue,2
+Spencer Court,2
+Spencer Place,1
+Spencer Street,17
+Spirit Lane,1
+Spofford Avenue,12
+Sprague Avenue,1
+Spratt Avenue,1
+Spring Street,38
+Springfield Boulevard,221
+Springhill Avenue,1
+Spritz Road,1
+Stadium Avenue,10
+Staff Street,2
+Stagg Street,4
+Stanhope Street,31
+Stanley Avenue,102
+Stanton Street,20
+Stanwich Street,1
+Stanwix Street,2
+Starling Avenue,8
+Starr Avenue,5
+Starr Street,20
+State Street,17
+Staten Island Expressway,292
+Station Road,7
+Stebbins Avenue,14
+Steenwick Avenue,2
+Steinway Avenue,3
+Steinway Street,98
+Stephen Loop,1
+Stephen Street,6
+Stephens Court,1
+Sterling Place,70
+Sterling Street,10
+Steuben Avenue,6
+Steuben Street,25
+Stewart Avenue,11
+Stewart Road,1
+Stewart Street,1
+Stickney Place,1
+Stillwell Avenue,115
+Stobe Avenue,1
+Stockholm Street,19
+Stone Avenue,89
+Stone Street,5
+Story Avenue,56
+Strang Avenue,7
+Stratford Avenue,26
+Stratford Road,5
+Strauss Street,21
+Street,28
+Strickland Avenue,6
+Stronghurst Avenue,1
+Stryker Street,1
+Stuart Street,8
+Sturges Street,1
+Stuyvesant Avenue,46
+Stuyvesant Place,7
+Suffolk Street,7
+Sullivan Place,10
+Sullivan Street,14
+Summerfield Avenue,1
+Summit Avenue,4
+Sumner Avenue,4
+Sumner Place,4
+Sumpter Street,9
+Sunnyside Avenue,4
+Sunnyside Terrace,2
+Sunrise Highway,48
+Surf Avenue,93
+Sutphin Boulevard,121
+Sutter Avenue,364
+Sutton Place,4
+Sutton Place South,1
+Sutton Street,1
+Suydam Street,14
+Swan Street,1
+Swinnerton Street,1
+Swinton Avenue,2
+Sycamore Street,3
+Taaffe Place,11
+Taipei Court,1
+Tapscott Street,31
+Targee Street,80
+Taylor Avenue,26
+Taylor Street,6
+Tehama Street,8
+Teller Avenue,33
+Ten Eyck Walk,1
+Tenbroeck Avenue,7
+Tenney Place,3
+Tennis Court,4
+Tennis Place,1
+Tennyson Drive,3
+Terrace Place,3
+Terrace Street,1
+Terrace View Avenue,7
+Thames Street,2
+Thatford Avenue,4
+Thayer Street,11
+Thieriot Avenue,20
+Thomas Street,2
+Thompson Street,13
+Thomson Avenue,53
+Thornton Place,1
+Thornycroft Avenue,1
+Throgs Neck Boulevard,3
+Throgs Neck Bridge,17
+Throgs Neck Expressway,15
+Throgs Neck Expy,1
+Throop Avenue,92
+Thursby Avenue,6
+Thurston Street,3
+Thwaites Place,5
+Tibbett Avenue,7
+Tiebout Avenue,6
+Tiemann Avenue,6
+Tiemann Place,2
+Tierney Place,1
+Tiffany Place,2
+Tiffany Street,69
+Tilden Avenue,69
+Tilden Street,4
+Tillary Street,89
+Tillotson Avenue,35
+Times Square,3
+Timpson Place,10
+Tinton Avenue,28
+Titus Avenue,1
+Todt Hill Road,22
+Token Street,1
+Tomlinson Avenue,8
+Tompkins Avenue,120
+Tompkins Place,1
+Tonsor Street,1
+Topping Avenue,15
+Torry Avenue,3
+Totten Street,1
+Tottenville Place,1
+Townsend Avenue,19
+Traffic Avenue,3
+Transverse Road Number Four,15
+Transverse Road Number One,15
+Transverse Road Number Three,8
+Transverse Road Number Two,22
+Trantor Place,3
+Tratman Avenue,5
+Travis Avenue,12
+Treadwell Avenue,2
+Triborough Bridge,31
+Trinity Avenue,7
+Trinity Place,6
+Trotting Course Lane,1
+Troutman Street,31
+Troy Avenue,97
+Truxton Street,11
+Tryon Avenue,4
+Tudor City Place,2
+Tudor Place,3
+Turf Road,1
+Turin Drive,1
+Turnbull Avenue,5
+Turner Avenue,1
+Tyler Avenue,4
+Tyndall Avenue,1
+Tysens Lane,24
+Ulmer Street,6
+Undercliff Avenue,23
+Underhill Avenue,34
+Union Avenue,123
+Union Hall Street,5
+Union Square East,8
+Union Square West,2
+Union Street,184
+Union Turnpike,189
+Unionport Road,28
+University Avenue,190
+University Park,2
+University Place,5
+Unknown,45
+Urbana Street,3
+Utica Avenue,670
+Utopia Parkway,72
+Utter Avenue,3
+Uxbridge Street,3
+Valentine Avenue,78
+Valentine Place,1
+Valles Avenue,1
+Van Brunt Street,10
+Van Buren Street,26
+Van Dam Street,2
+Van Sicklen Street,5
+Van Siclen Avenue,79
+Van Siderin Avenue,13
+Van Wyck Expressway (Cdr),1
+Van Wyck Expwy,961
+Vanallen Avenue,1
+Vanburen Street,3
+Vancortlandt Avenue,1
+Vancortlandt Avenue East,11
+Vancortlandt Avenue West,13
+Vancortlandt Park East,5
+Vancortlandt Park West,1
+Vandalia Avenue,19
+Vandam Street,98
+Vanderbilt Avenue,105
+Vanderbilt Street,2
+Vanderveer Place,1
+Vanderveer Street,1
+Vandoren Street,2
+Vanduzer Street,31
+Vanhorn Street,3
+Vanloon Street,3
+Vanname Avenue,1
+Vannest Avenue,20
+Vanriper Street,2
+Vanwyck Expressway,93
+Vanzandt Avenue,3
+Varet Street,3
+Varick Avenue,22
+Varick Street,70
+Vaughan Street,1
+Vermilyea Avenue,18
+Vermont Avenue,2
+Vermont Place,15
+Vermont Street,22
+Vernon Avenue,17
+Vernon Boulevard,98
+Verona Place,1
+Verona Street,3
+Veronica Place,9
+Verrazano Bridge,10
+Verrazano Bridge Lower,1
+Verrazano Bridge Upper,12
+Vesey Street,14
+Vestry Street,1
+Veterans Avenue,9
+Veterans Road East,2
+Veterans Road West,7
+Victor Street,5
+Victory Boulevard,179
+Viele Avenue,13
+Villa Avenue,11
+Village Road East,3
+Vincent Avenue,3
+Vine Street,1
+Vireo Avenue,2
+Virgil Place,3
+Virginia Avenue,10
+Virginia Place,1
+Virginia Street,5
+Visitation Place,1
+Vleigh Place,8
+Voorhies Avenue,26
+Vyse Avenue,28
+W Washington Avenue,3
+Wadsworth Avenue,32
+Wadsworth Terrace,6
+Wainwright Avenue,13
+Wakeman Place,7
+Walbrooke Avenue,2
+Waldo Avenue,8
+Waldorf Court,1
+Waldron Street,6
+Wales Avenue,13
+Walker Street,30
+Wall Street,13
+Wallabout Street,26
+Wallace Avenue,24
+Walloon Street,4
+Walnut Avenue,16
+Walsh Court,1
+Waltham Street,6
+Walton Avenue,131
+Walton Street,4
+Walworth Street,7
+Wanamaker Place,3
+Wandell Avenue,1
+Ward Avenue,10
+Waring Avenue,28
+Warren Street,43
+Warsoff Place,3
+Warwick Street,38
+Washington Avenue,267
+Washington Bridge,7
+Washington Bridge 181st St,4
+Washington Place,4
+Washington Square East,3
+Washington Square North,1
+Washington Square South,4
+Washington Square Village,1
+Washington Square West,3
+Washington Street,41
+Watchogue Road,14
+Water Street,47
+Waterbury Avenue,16
+Waterbury Street,10
+Waterloo Place,3
+Waters Place,26
+Watkins Avenue,3
+Watkins Street,5
+Watson Avenue,71
+Watson Place,3
+Watts Street,24
+Wave Street,2
+Waverly Avenue,13
+Waverly Place,3
+Wayne Avenue,16
+Wayne Street,1
+Webb Avenue,31
+Webster Avenue,476
+Weeks Avenue,7
+Weirfield Street,26
+Weldon Street,1
+Weller Avenue,3
+Weller Lane,2
+Wellman Avenue,2
+Wells Street,1
+Wentworth Avenue,1
+West 100th Street,16
+West 101st Street,5
+West 102nd Street,7
+West 103rd Street,12
+West 104th Street,18
+West 105th Street,21
+West 107th Street,11
+West 108th Street,16
+West 109th Street,18
+West 10th Street,49
+West 110th Street,35
+West 111th Street,29
+West 112th Street,27
+West 113th Street,23
+West 114th Street,19
+West 115th Street,27
+West 116th Street,84
+West 117th Street,16
+West 118th Street,17
+West 119th Street,29
+West 11th Street,16
+West 120th Street,23
+West 121st Street,25
+West 122nd Street,19
+West 123rd Street,26
+West 124th Street,15
+West 125th Street,205
+West 126th Street,43
+West 127th Street,50
+West 128th Street,12
+West 129th Street,45
+West 12th Street,35
+West 130th Street,29
+West 131st Street,32
+West 132nd Street,33
+West 133rd Street,43
+West 134th Street,22
+West 135th Street,97
+West 136th Street,30
+West 137th Street,41
+West 138th Street,27
+West 139th Street,27
+West 13th Road,1
+West 13th Street,18
+West 140th Street,49
+West 141st Street,54
+West 142nd Street,32
+West 143rd Street,40
+West 144th Street,38
+West 145th Street,213
+West 146th Street,28
+West 147th Street,17
+West 148th Street,26
+West 149th Street,21
+West 14th Street,43
+West 150th Street,22
+West 151st Street,27
+West 152nd Street,27
+West 153rd Street,12
+West 154th Street,11
+West 155th Street,78
+West 156th Street,9
+West 157th Street,20
+West 158th Street,22
+West 159th Street,19
+West 15th Street,49
+West 160th Street,10
+West 161st Street,24
+West 162nd Street,19
+West 163rd Street,26
+West 164th Street,20
+West 165th Street,42
+West 166th Street,9
+West 167th Street,30
+West 168th Street,39
+West 169th Street,35
+West 16th Street,48
+West 170th Street,49
+West 171st Street,20
+West 172nd Street,32
+West 173rd Street,22
+West 174th Street,34
+West 175th Street,13
+West 176th Street,26
+West 177th Street,37
+West 178th Street,36
+West 179th Street,48
+West 17th Street,36
+West 180th Street,19
+West 181st Street,80
+West 182nd Street,18
+West 183rd Street,30
+West 184th Street,18
+West 185th Street,7
+West 186th Street,8
+West 187th Street,18
+West 188th Street,8
+West 189th Street,4
+West 18th Street,36
+West 190th Street,15
+West 191st Street,8
+West 192nd Street,6
+West 193rd Street,6
+West 195th Street,13
+West 196th Street,5
+West 197th Street,1
+West 19th Street,30
+West 1st Street,5
+West 202nd Street,5
+West 203rd Street,1
+West 204th Street,20
+West 205th Street,3
+West 206th Street,5
+West 207th Street,96
+West 20th Street,14
+West 211th Street,5
+West 212th Street,1
+West 213th Street,5
+West 214th Street,1
+West 215th Street,9
+West 216th Street,1
+West 217th Street,1
+West 218th Street,11
+West 21st Street,36
+West 220th Street,1
+West 225th Street,23
+West 227th Street,2
+West 228th Street,2
+West 22nd Street,29
+West 230th Street,74
+West 231st Street,43
+West 232nd Street,4
+West 233rd Street,6
+West 234th Street,10
+West 235th Street,17
+West 236th Street,7
+West 237th Street,22
+West 238th Street,20
+West 239th Street,13
+West 23rd Street,70
+West 240th Street,7
+West 242nd Street,2
+West 245th Street,1
+West 246th Street,3
+West 24th Street,45
+West 250th Street,1
+West 254th Street,4
+West 255th Street,1
+West 256th Street,6
+West 259th Street,7
+West 25th Street,38
+West 260th Street,2
+West 261st Street,7
+West 262nd Street,4
+West 263rd Street,1
+West 26th Street,40
+West 27th Street,28
+West 28th Street,33
+West 29th Street,51
+West 2nd Street,18
+West 30th Street,50
+West 31st Street,40
+West 32nd Street,19
+West 33rd Street,46
+West 34th Street,108
+West 35th Street,45
+West 36th Street,61
+West 37th Street,62
+West 38th Street,44
+West 39th Street,42
+West 3rd Street,30
+West 40th Street,74
+West 41st Street,49
+West 42nd Street,157
+West 43rd Street,61
+West 44th Street,58
+West 45th Street,50
+West 46th Street,59
+West 47th Street,54
+West 48th Street,37
+West 49th Street,43
+West 4th Street,24
+West 50th Street,37
+West 51st Street,31
+West 52nd Street,18
+West 53rd Street,18
+West 54th Street,47
+West 55th Street,24
+West 56th Street,23
+West 57th Street,107
+West 58th Street,35
+West 59th Street,15
+West 5th Street,27
+West 60th Street,9
+West 61st Drive,3
+West 61st Street,10
+West 62nd Street,12
+West 63rd Street,1
+West 64th Street,4
+West 65th Street,25
+West 66th Street,19
+West 67th Street,6
+West 68th Street,5
+West 69th Street,8
+West 6th Street,33
+West 70th Street,15
+West 71st Street,16
+West 72nd Street,30
+West 73rd Street,10
+West 74th Street,11
+West 75th Street,11
+West 76th Street,10
+West 77th Street,7
+West 78th Street,7
+West 79th Street,21
+West 7th Street,9
+West 80th Street,12
+West 81st Street,11
+West 82nd Street,10
+West 83rd Street,15
+West 84th Street,8
+West 85th Street,11
+West 86th Street,15
+West 87th Street,15
+West 88th Street,8
+West 89th Street,12
+West 8th Street,45
+West 90th Street,18
+West 91st Street,9
+West 92nd Street,11
+West 93rd Street,16
+West 94th Street,6
+West 95th Street,22
+West 96th Street,38
+West 97th Street,21
+West 98th Street,5
+West 99th Street,4
+West 9th Street,40
+West Avenue,9
+West Brighton Avenue,6
+West Broadway,36
+West Burnside Avenue,53
+West Caswell Avenue,1
+West Clarke Place,1
+West Drive,32
+West End Avenue,78
+West Farms Road,19
+West Fingerboard Road,8
+West Fordham Road,283
+West Gun Hill Road,15
+West Houston Street,47
+West Kingsbridge Road,61
+West Lake Drive,3
+West Mosholu Parkway North,6
+West Mosholu Parkway South,2
+West Mount Eden Avenue,10
+West Service Road,1
+West Shore Expressway,85
+West Side Highway,1
+West Street,208
+West Thames Street,1
+West Tremont Avenue,67
+Westbourne Avenue,1
+Westchester Avenue,455
+Westchester Square,10
+Westcott Boulevard,1
+Western Avenue,3
+Westervelt Avenue,16
+Westgate Street,1
+Westmoreland Street,1
+Westside Avenue,2
+Westwood Avenue,3
+Wetherole Street,7
+Wexford Terrace,8
+Whalley Avenue,1
+Wharton Place,1
+Wheatley Street,2
+Wheeler Avenue,18
+Whipple Street,25
+White Plains Road,500
+White Street,8
+Whitehall Street,10
+Whitehall Terrace,2
+Whitestone Expressway,217
+Whitlock Avenue,9
+Whitman Avenue,1
+Whitney Avenue,15
+Whittemore Avenue,1
+Whittier Street,9
+Whitty Lane,1
+Wickham Avenue,14
+Wilcox Avenue,2
+Wilcox Street,5
+Wild Avenue,5
+Wilder Avenue,26
+Wilkens Avenue,2
+Wilkinson Avenue,1
+Willets Point Boulevard,16
+Willett Avenue,11
+Willett Street,3
+William Street,19
+Williams Avenue,52
+Williams Court,5
+Williams Place,3
+Williamsbridge Road,82
+Williamsburg Bridge,19
+Williamsburg Bridge Inner Roadwa,4
+Williamsburg Bridge Outer Roadwa,10
+Williamsburg Street East,16
+Williamsburg Street West,35
+Williamson Avenue,1
+Willis Ave Bridge,2
+Willis Avenue,76
+Willis Avenue Bridge Approach,4
+Willmohr Street,16
+Willoughby Avenue,59
+Willoughby Street,18
+Willow Avenue,7
+Willow Lane,3
+Willow Road West,6
+Willow Street,2
+Willowbrook Road,10
+Wilson Avenue,154
+Wilson Street,14
+Winant Avenue,7
+Winant Street,2
+Winchester Avenue,1
+Winchester Boulevard,12
+Windermere Road,3
+Windham Loop,2
+Windsor Place,4
+Windsor Road,3
+Wingham Street,1
+Winham Avenue,1
+Winter Avenue,1
+Winthrop Street,143
+Wissman Avenue,4
+Withers Street,9
+Witthoff Street,3
+Wolcott Avenue,3
+Wolcott Street,1
+Wolkoff Lane,1
+Wood Avenue,6
+Wood Road,6
+Wood Street,8
+Woodbine Street,16
+Woodcrest Road,1
+Woodhaven Boulevard,405
+Woodhaven Court,1
+Woodhull Avenue,10
+Woodpoint Road,1
+Woodrow Road,10
+Woodruff Avenue,9
+Woodruff Lane,1
+Woods Of Arden Road,8
+Woods Place,7
+Woodside Avenue,36
+Woodvale Avenue,1
+Woodward Avenue,40
+Woodycrest Avenue,18
+Woolley Avenue,6
+Wooster Street,3
+Worth Street,15
+Worthen Street,2
+Wortman Avenue,57
+Wright Street,3
+Wyatt Street,8
+Wyckoff Avenue,85
+Wyckoff Street,7
+Wyona Street,39
+Wythe Avenue,89
+Wythe Place,10
+Yates Avenue,18
+Yellowstone Boulevard,44
+Yetman Avenue,1
+York Avenue,96
+York Street,4
+Young Avenue,4
+Young Street,1
+Yukon Avenue,6
+Zeiser Place,1
+Zerega Avenue,65
+Zulette Avenue,7

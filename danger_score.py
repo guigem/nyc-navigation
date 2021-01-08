@@ -1,21 +1,14 @@
-
+from regex import add_termination, remove_houses_numbers
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-import matplotlib as mpl
-mpl.use("TKAgg")
-from datetime import datetime
-from dateutil import parser
 import re
 
-crash_data = 'nyc_database.csv'
-df = pd.read_csv(crash_data, low_memory=False)
+crash_data = 'data_100000_out_final.csv'
+df = pd.read_csv(crash_data)
 
-drop_list = ['off_street_name', ]
+#drop_list = ['off_street_name', ]
 
-df = df.drop(df.loc[:, 'Accelerator Defective':'Van'].columns, axis=1)
-df = df.drop(drop_list, axis=1)
+#df = df.drop(df.loc[:, 'Accelerator Defective':'Van'].columns, axis=1)
+#df = df.drop(drop_list, axis=1)
 
 #print(df.columns)
 
@@ -48,8 +41,23 @@ def dangerous_score(df):
     return x
 
 # Add the danger score column in the database
-df['danger_score'] = df.apply(dangerous_score)
+df['danger_score'] = df.apply(dangerous_score, axis = 1)
 
-street = df.grouby(['on_street_name']).count()
+df['on_street_name'] = df['on_street_name'].apply(add_termination)
+df['on_street_name'] = df['on_street_name'].apply(remove_houses_numbers)
 
-print(df.head())
+
+street = df.groupby('on_street_name')['danger_score'].sum()
+#print(type(street))
+
+
+street_test = street.to_frame()
+street_test.reset_index(inplace = True)
+
+
+#print(street_test)
+
+street_test.to_csv("street.csv", index=False)
+
+
+#print(df.head())
