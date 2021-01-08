@@ -10,7 +10,6 @@ df = pd.read_csv(crash_data)
 #df = df.drop(df.loc[:, 'Accelerator Defective':'Van'].columns, axis=1)
 #df = df.drop(drop_list, axis=1)
 
-#print(df.columns)
 
 #Calculate the dangerous score based on dummy variable values of different columns
 def dangerous_score(df):
