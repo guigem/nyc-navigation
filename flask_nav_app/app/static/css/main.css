@@ -1,0 +1,45 @@
+
+body {
+  margin-left: 25px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+  background-color :#d6cbd3;
+}
+
+.header_menu {
+  margin-top: 50px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background-color :  #dbbabd;
+  height: 35px;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 10px;
+}
+
+.authors{
+  font-weight: bold;
+}
+
+
+a:hover {
+  color: #bd9bb5;
+}
+
+a:visited {
+  color: #ecd7e7;
+}
+
+.link_menu{
+  text-decoration: none;
+}
+
+.user_coord{
+  margin-left: 35px;
+  font: large;
+}
+
+#result{
+  width: 250px;
+  height: 250px;
+}
