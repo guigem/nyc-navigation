@@ -12,7 +12,7 @@ df = pd.read_csv(crash_data)
 
 
 #Calculate the dangerous score based on dummy variable values of different columns
-def dangerous_score(df):
+def dangerous_score_global(df:pd.DataFrame) -> int:
     '''
     Score based on values in dummy variables
     If someone was killed, add 2 to the score
@@ -21,6 +21,7 @@ def dangerous_score(df):
     Start score with 1 as an accident still occurred.
     '''
     x = 1
+
     if df['persons_killed'] == 1:
         x += 2
     if df['persons_injured'] == 1:
@@ -37,26 +38,74 @@ def dangerous_score(df):
         x += 2
     if df['motorist_injured'] == 1:
         x += 1
+    
     return x
 
-# Add the danger score column in the database
-df['danger_score'] = df.apply(dangerous_score, axis = 1)
 
+def dangerous_score_pedestrians(df:pd.DataFrame) -> int:
+    x = 1
+
+    if df['pedestrians_killed'] == 1:
+        x += 2
+    if df['pedestrians_injured'] == 1:
+        x += 1
+    
+    return x
+
+def dangerous_score_cyclists(df:pd.DataFrame) -> int:
+    x=1
+
+    if df['cyclist_killed'] == 1:
+        x += 2
+    if df['cyclist_injured'] == 1:
+        x += 1
+    
+    return x
+
+def dangerous_score_motorists(df:pd.DataFrame) -> int:
+    x = 1
+
+    if df['motorist_killed'] == 1:
+        x += 2
+    if df['motorist_injured'] == 1:
+        x += 1
+    
+    return x
+
+def dangerous_score_reversed(df:pd.DataFrame, user:str) -> pd.DataFrame:
+    column = df[f"danger_score_{user}"]
+    max_danger_score = column.max()
+
+    df[f"reversed_danger_score_{user}"] = max_danger_score
+
+    df[f"reversed_danger_score_{user}"] = df[f"reversed_danger_score_{user}"] - df[f"danger_score_{user}"]
+
+    return df
+
+# Add dangers scores columns in the database.
+df['danger_score_global'] = df.apply(dangerous_score_global, axis = 1)
+df['danger_score_pedestrians'] = df.apply(dangerous_score_pedestrians, axis = 1)
+df['danger_score_cyclists'] = df.apply(dangerous_score_cyclists, axis = 1)
+df['danger_score_motorists'] = df.apply(dangerous_score_motorists, axis = 1)
+
+# Clean streets names.
 df['on_street_name'] = df['on_street_name'].apply(add_termination)
 df['on_street_name'] = df['on_street_name'].apply(remove_houses_numbers)
 
+# Group data by streets names.
+columns_list = ["danger_score_global", 
+               "danger_score_pedestrians", 
+               "danger_score_cyclists", 
+               "danger_score_motorists", 
+               ]
+street = df.groupby('on_street_name')[columns_list].sum()
 
-street = df.groupby('on_street_name')['danger_score'].sum()
-#print(type(street))
+# Add the reversed danger scores in the database.
+dangerous_score_reversed(street, "global")
+dangerous_score_reversed(street, "pedestrians")
+dangerous_score_reversed(street, "cyclists")
+dangerous_score_reversed(street, "motorists")
 
+street.reset_index(inplace = True)
 
-street_test = street.to_frame()
-street_test.reset_index(inplace = True)
-
-
-#print(street_test)
-
-street_test.to_csv("street.csv", index=False)
-
-
-#print(df.head())
+street.to_csv("street.csv", index=False)
