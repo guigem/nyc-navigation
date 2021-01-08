@@ -54,7 +54,7 @@ def animation_map (start, end) :
         end = lat_long_place(end)
 
     ox.config(use_cache=True, log_console=True)
-    G  = create_graph("Gothenburg", 2500, "drive")
+    G  = create_graph("New York", 100, "drive")
 
     # impute missing edge speeds and add travel times
     G = ox.add_edge_speeds(G) 
@@ -130,4 +130,4 @@ def animation_map (start, end) :
     fig.show()
 
 # call the function animation map 
-animation_map((57.715495, 12.004210),((57.707166, 11.978388)))
+animation_map((40.7518, -73.817314),((40.624958,-74.145775)))
