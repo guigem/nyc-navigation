@@ -6,7 +6,7 @@ import osmnx as ox
 
 
 
-def generate_dic_edges(data: pd.DataFrame, edges: list) -> dict:
+def generate_dic_edges(data: pd.DataFrame, edges: list, most_dangerous: bool =False) -> dict:
     '''
     
 
@@ -30,8 +30,13 @@ def generate_dic_edges(data: pd.DataFrame, edges: list) -> dict:
     for j in data["on_street_name"]:
         for i in range(len(edges)):
             if edges[i][3].get("name") == j:
-
-                dic[edges[i][0], edges[i][1],edges[i][2]] = data[data["on_street_name"]== j]['danger_score'].item()
+                
+                if most_dangerous == False:
+                    dic[edges[i][0], edges[i][1],edges[i][2]] = data[data["on_street_name"]== j]['danger_score'].item()
+                    
+                else:
+                    dic[edges[i][0], edges[i][1],edges[i][2]] = (data[data["on_street_name"]== j]['danger_score'].item())
+                   
     #print(dic)
     return dic
 
