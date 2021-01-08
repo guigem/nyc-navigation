@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        {% if title %}
+        <title>{{ title }}</title>
+        {% else %}
+        <title>Ny-Nav</title>
+        {% endif %}
+    </head>
+    <body>
+        <div class ="header_menu">
+            <p id = "menu">
+            <a id="link_nav" href="{{ url_for('nav') }}">Navigate</a>
+            <a class="link_menu" href="{{ url_for('index') }}">Our App</a>
+            <a class="link_menu" href="{{ url_for('about') }}">About Us</a>
+            <a class="link_menu" href="{{ url_for('authors') }}">The Team</a>
+            
+            </p>
+        </div>
+    {% block content %}{% endblock %}
+    </body>
+</html>

@@ -1,0 +1,2 @@
+FLASK_APP=navigation.py
+FLASK_DEBUG = TRUE
