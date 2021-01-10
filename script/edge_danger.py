@@ -32,10 +32,10 @@ def generate_dic_edges(data: pd.DataFrame, edges: list, most_dangerous: bool =Fa
             if edges[i][3].get("name") == j:
                 
                 if most_dangerous == False:
-                    dic[edges[i][0], edges[i][1],edges[i][2]] = data[data["on_street_name"]== j]['danger_score'].item()
+                    dic[edges[i][0], edges[i][1],edges[i][2]] = data[data["on_street_name"]== j]['danger_score_global'].item()
                     
                 else:
-                    dic[edges[i][0], edges[i][1],edges[i][2]] = (data[data["on_street_name"]== j]['danger_score'].item())
+                    dic[edges[i][0], edges[i][1],edges[i][2]] = data[data["on_street_name"]== j]['reversed_danger_score_global'].item()
                    
     #print(dic)
     return dic
@@ -64,7 +64,7 @@ def add_edge_danger(data: object, G: classmethod) -> object:
     edges = list(G.edges(keys=True, data=True))
     
     #creating the dictionnary 
-    dic_edges = generate_dic_edges(data, edges)
+    dic_edges = generate_dic_edges(data, edges, most_dangerous=False)
     print(dic_edges)
     #Add the attribute danger and set it as 0
     nx.set_edge_attributes(G, 0, 'danger')
@@ -72,21 +72,29 @@ def add_edge_danger(data: object, G: classmethod) -> object:
     #Assign the danger score to street concerned 
     nx.set_edge_attributes(G, dic_edges, 'danger')
     
+    adj_matrix = nx.to_pandas_edgelist(G)
+    
+    adj_matrix.to_csv()
+    
+    
+    
     #print(nx.get_edge_attributes(G, 'danger'))
     
     return G
 
 
-def pick_location(location: str, trip_type: str) -> classmethod:
 
-    G = ox.graph_from_place(location, network_type=trip_type)   
+def pick_location(start_lat: float, start_long: float, end_lat: float, end_long: float, weight: list = ["length"], trip_type: str = "drive") -> classmethod:
+
+    G = ox.graph_from_place('Manhattan, New York, USA', network_type=trip_type)   
     
-    data_danger = pd.read_csv("./street.csv")
+    data_danger = pd.read_csv(r"C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\street.csv")
     
     G_danger = add_edge_danger(data_danger, G)
     
-    start = (40.740132, -73.986336)
-    end = (40.757354, -73.986006)
+    
+    start = (start_lat, start_long)
+    end = (end_lat, end_long)
     
     start_node = ox.get_nearest_node(G_danger, start) 
     end_node = ox.get_nearest_node(G_danger, end)
@@ -99,7 +107,6 @@ def pick_location(location: str, trip_type: str) -> classmethod:
      #ox.plot_graph_route(G, route, route_linewidth=6, node_size=0, bgcolor='k')            
 
 
-pick_location('Manhattan, New York, USA','drive')
+pick_location(40.709042, -74.010474, 40.841742, -73.9394)
  
- 
- 
+

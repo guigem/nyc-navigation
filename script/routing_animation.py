@@ -40,7 +40,7 @@ def lat_long_place(place: str) -> float:
     return latitude, longitude 
 
 def create_graph(loc, dist, transport_mode, loc_type="address"):
-    """Transport mode = ‘walk’, ‘bike’, ‘drive’, ‘drive_service’, ‘all’, ‘all_private’, ‘none’"""
+    """Transport mode = ‘walk’, ‘bike’, ‘drive’"""
     if loc_type == "address":
         G = ox.graph_from_address(loc, dist=dist, network_type=transport_mode)
     elif loc_type == "points":
