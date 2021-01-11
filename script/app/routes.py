@@ -36,6 +36,7 @@ def nav():
         [type]: [description]
     """    
     form = Location()
+    form.location_start.data = "<default_value>"
 
     if form.validate_on_submit():
         #forms fields

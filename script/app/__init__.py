@@ -11,7 +11,6 @@ from script.app.routing_animation import create_graph
 navig = Flask(__name__)
 navig.config.from_object(Config)
 
-<<<<<<< HEAD
 #G = ox.graph_from_place('Manhattan, New York, USA', network_type="drive")
 #G = ox.add_edge_speeds(G) 
 #G = ox.add_edge_travel_times(G)
@@ -23,14 +22,11 @@ navig.config.from_object(Config)
 
 #G.update(nodes=nodes)
 
-G = osmnx.graph.graph_from_xml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\test.osm')
+#G = osmnx.graph.graph_from_xml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\test.osm')
+#G = ox.add_edge_speeds(G) 
+#G = ox.add_edge_travel_times(G) 
+G = create_graph("Gothenburg", 2500, "drive")
 G = ox.add_edge_speeds(G) 
 G = ox.add_edge_travel_times(G) 
-#G = create_graph("Gothenburg", 2500, "drive")
-#G = ox.add_edge_speeds(G) 
-#G = ox.add_edge_travel_times(G) '
-=======
->>>>>>> 328662bf29872e68c55ec301a36573856a9901b3
-
 from script.app import routes
 
