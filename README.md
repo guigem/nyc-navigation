@@ -24,7 +24,7 @@ Give the possibility to find the safer way in New York according to the mode of 
 ## How
 
 ### CSV file used
-- Use the [NYC dataset completed] (/CSV/data_100000_out_final.csv)
+- Use the [NYC dataset completed](CSV/data_100000_out_final.csv)
 - Standardize the street names.
 
 ### Calcul danger scores
