@@ -7,42 +7,28 @@
 
     <form action="" method="post" novalidate>
         {{ form.hidden_tag() }}
+        <p>Enter a location or enter a latitude and a lagitude  :</p>
         <p>
-            {{ form.location.label }}<br>
-            {{ form.location(size=32) }}
-        </p>
-
-        <p>
-            {{ form.starting_point_long.label }}<br>
-            {{ form.starting_point_long(size=32) }}
-            {% for error in form.starting_point_long.errors %}
-            <span style="color: red;">[{{ error }}]</span>
-            {% endfor %}
-        </p>
-        
-        <p>
-            {{ form.starting_point_lat.label }}<br>
-            {{ form.starting_point_lat(size=32) }}
-            {% for error in form.starting_point_lat.errors %}
+            {{ form.location_start.label }}<br>
+            {{ form.location_to(size=32) }}
+            {% for error in form.location_start.errors %}
             <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
         </p>
 
         <p>
-            {{ form.dest_point_long.label }}<br>
-            {{ form.dest_point_long(size=32) }}
-            {% for error in form.dest_point_long.errors %}
+            {{ form.location_to.label }}<br>
+            {{ form.location_to(size=32) }}
+            {% for error in form.location_to.errors %}
             <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
         </p>
-            {{ form.dest_point_lat.label }}<br>
-            {{ form.dest_point_lat(size=32) }}
-            {% for error in form.dest_point_lat.errors %}
-            <span style="color: red;">[{{ error }}]</span>
-            {% endfor %}
+
+        <p>
+            {{form.transportation}}
         </p>
         <p>
-        {{form.transportation}}
+            {{form.pick}}
         </p>
         <p>
             {{ form.submit() }}
