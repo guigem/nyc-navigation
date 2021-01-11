@@ -3,37 +3,49 @@
 {% block content %}
 
 <div class ="main_content">
-    <h2>Navigation</h2>
+        <h1>Navigation</h1>
 
-    <form action="" method="post" novalidate>
-        {{ form.hidden_tag() }}
-        <p>Enter a location or enter a latitude and a lagitude in format (lat/long)  :</p>
-        <p>
-            {{ form.location_start.label }}<br>
-            {{ form.location_to(size=32) }}
-            {% for error in form.location_start.errors %}
-            <span style="color: red;">[{{ error }}]</span>
-            {% endfor %}
-        </p>
+        <div id=main_nav>
+        <form id="navigate" action="" method="post" novalidate>
+            {{ form.hidden_tag() }}
+            <p class="consign">Veuillez entrer une adresse ou des coordonnées au format (lat,long) :</p>
+            <p>
+                {{ form.location_start.label }}<br>
+                {{ form.location_start(size=32) }}
+                {% for error in form.location_start.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
 
-        <p>
-            {{ form.location_to.label }}<br>
-            {{ form.location_to(size=32) }}
-            {% for error in form.location_to.errors %}
-            <span style="color: red;">[{{ error }}]</span>
-            {% endfor %}
-        </p>
+            <p>
+                {{ form.location_to.label }}<br>
+                {{ form.location_to(size=32) }}
+                {% for error in form.location_to.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </p>
 
-        <p>
-            {{form.transportation}}
-        </p>
-        <p>
-            {{form.pick}}
-        </p>
-        <p>
-            {{ form.submit() }}
-        </p>
-    </form>
-
+            <div>
+                <p class="form_p"> 
+                    Choisissez votre moyen de locomotion
+                    <span>
+                        {{form.transportation}}
+                    </span>
+                </p>  
+            </div>
+            <div>
+                <p class="form_p">
+                    Choisissez vos préférences de trajet:
+                    <span>
+                        {{form.pick}}
+                    </span>
+                </p>  
+            </div>
+            <p>
+                <button class="button"> {{ form.submit() }}</button>
+            
+            </p>
+        </form>
+    </div>
 </div>
 {% endblock %}
