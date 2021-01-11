@@ -9,7 +9,7 @@
 * [Christian Melot](https://github.com/Ezamey)
 
 ## Purpose
-Create a Python script/application that, given two addresses (or coordinates) in New York city, can give the *least dangerous* path between those two points
+To create a Python script/application that, given two addresses (or coordinates) in New York city, can give the *least dangerous* path between those two points according to a client request. 
 
 ## Objectives
 - Learn and apply graph theory
@@ -22,4 +22,4 @@ Create a Python script/application that, given two addresses (or coordinates) in
 
 
 ## How
-- Use the NYC 
+- Use the [NYC dataset completed](./CSV/data_100000_out_final.csv)
