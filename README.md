@@ -33,7 +33,7 @@ Give the possibility to find the safer way in New York according to the mode of 
 ### Features
 - Graphical interface on a browser to enter coordinates GPS or adress between 2 points, mode of transport (bike, drive and walk) and choose between the least dangerous or most dangerous path
 - Create a graph of edges and vertices mapping to roads and intersections
-- Apply an algorithm to find the *least dangerous path*  between two streets and/or coordinates.
+- Apply an algorithm to find the *least dangerous path*  between two streets and/or coordinates
 - Build a graphical interface that shows the *least dangerous path* on a map of New York
 
 ### Deployment 
