@@ -19,7 +19,34 @@ To create a Python script/application that, given two addresses (or coordinates)
 - Work in a dev-client relationship
 
 ## Why
-
+Give the possibility to find the safer way in New York according to the mode of transport (bike, drive and walk)
 
 ## How
-- Use the [NYC dataset completed](./CSV/data_100000_out_final.csv)
+
+### CSV file used
+- Use the [NYC dataset completed](CSV/data_100000_out_final.csv)
+- Standardize the street names.
+
+### Calcul danger scores
+- Create a danger scores per street by mode of transport :  start score with 1 as an accident,  if at least one person was injured we add 1 to the score,  if at least one person was killed we add 2 to the score.  The higher the score is the most dangerous street
+
+### Features
+- Graphical interface on a browser to enter coordinates GPS or adress between 2 points, mode of transport (bike, drive and walk) and choose between the least dangerous or most dangerous path
+- Create a graph of edges and vertices mapping to roads and intersections
+- Apply an algorithm to find the *least dangerous path*  between two streets and/or coordinates
+- Build a graphical interface that shows the *least dangerous path* on a map of New York
+
+### Deployment 
+
+## Run
+To run this application, launch
+```python
+python main.py
+```
+
+## Requirements
+[See requirements.txt](requirements.txt)
+
+## When
+
+5 days to complete (06/01/2021 PM -- 13/01/2021 AM)

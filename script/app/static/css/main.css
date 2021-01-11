@@ -1,11 +1,18 @@
 
 body {
-  margin-left: 25px;
+  max-width: 850px;
+  margin: auto;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444;
   background-color :#d6cbd3;
 }
 
+.main_content{
+  background-color :  #dbbabd;
+}
+h1{
+  color: azure;
+}
 .header_menu {
   margin-top: 50px;
   padding-top: 5px;
@@ -15,31 +22,28 @@ body {
   width: 100%;
   opacity: .9;
   margin-bottom: 10px;
+  
 }
-
+.consign{
+  font-weight: bolder;
+}
 .authors{
   font-weight: bold;
 }
-
-
-a:hover {
-  color: #bd9bb5;
+a.link_menu{
+  color: azure;
+  text-decoration: none;
+  margin-left: 1em;
 }
 
+a.link_menu:hover {
+  color :darkgoldenrod;
+}
+a:visited:hover{
+  color :darkgoldenrod;
+}
 a:visited {
-  color: #ecd7e7;
-}
-
-.link_menu{
+  color: azure;
   text-decoration: none;
 }
 
-.user_coord{
-  margin-left: 35px;
-  font: large;
-}
-
-#result{
-  width: 250px;
-  height: 250px;
-}

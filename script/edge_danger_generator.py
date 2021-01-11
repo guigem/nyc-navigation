@@ -121,11 +121,6 @@ def add_edge_danger(data: object, G: classmethod, trip_type:str, most_dangerous:
     
     return G
 
-def nodes_to_csv(G, savepath):
-    unpacked = [pd.DataFrame({**{'node': node, **data}}, index=[i]) for i, (node, data) in enumerate(G.nodes(data=True))]
-    df = pd.concat(unpacked)
-    df.to_csv(savepath)
-    return df
 
 
 def pick_location(trip_type: str = "drive", most_dangerous: bool =False) -> str:
@@ -146,7 +141,7 @@ def pick_location(trip_type: str = "drive", most_dangerous: bool =False) -> str:
 
     '''
     #Generate the network of NYC based on the trip_type
-    G = ox.graph_from_place('Manhattan, New York, USA', network_type=trip_type)   
+    G = ox.graph_from_place('New York City, New York, USA', network_type=trip_type)   
     
     #nodes_to_csv(G, "drive_safe_node.csv")
     
@@ -156,17 +151,12 @@ def pick_location(trip_type: str = "drive", most_dangerous: bool =False) -> str:
     G_danger = add_edge_danger(data_danger, G, trip_type, most_dangerous)
     G_danger = ox.add_edge_speeds(G_danger) 
     G_danger = ox.add_edge_travel_times(G_danger) 
-    osmnx.io.save_graphml(G_danger)
-    #ox.io.save_graph_xml(G_danger, filepath='test2.osm', edge_attrs=["id", "travel_time", "danger"])
-    #Transform the network as a pandas dataframe 
-    #adj_matrix = nx.to_pandas_edgelist(G_danger)
-    
-    #Export the csv file
-    #adj_matrix.to_csv("walk_dangerous.csv")
+    osmnx.io.save_graphml(G_danger, filepath="bike_dangerous.graphml")
+
     
     return "Done"
 
-pick_location("drive", False)
+pick_location("bike", True)
 
 
 #G_danger = nx.from_pandas_edgelist(adj_matrix, create_using=nx.MultiDiGraph)

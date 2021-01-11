@@ -8,9 +8,10 @@ import networkx as nx
 import osmnx as ox
 import osmnx
 
+from script.app.location_moderator import verif_user_input, change_type
 from script.app import navig
 from script.app.forms import Location
-from script.app.routing_animation import create_line_gdf,create_graph,lat_long_place
+from script.app.routing_animation import create_line_gdf,create_graph
 
 
 #W = create_graph("New York",2500,'walk')
@@ -31,11 +32,11 @@ def authors():
 @navig.route("/nav",methods=["GET", "POST"])
 def nav():
     """[summary]
-
     Returns:
         [type]: [description]
     """    
     form = Location()
+    form.location_start.data = "Adresse or (lat/long)"
 
     if form.validate_on_submit():
         #forms fields
@@ -65,84 +66,54 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
     Returns:
         [type]: [description]
     """  
-    print('Datas passed : \n{} \n{} \n{} \n{}'.format(start_lat,start_long,arrived_lat,arrived_long,choice_user,location))
-    #Calling John function to determine if location_start and location to are string or long/lat datas 45.22 45.5
-        # if long lat the function should return a list of two tuples [(lat_start,long_start),(lat_to,long_to)]
-        # if its a str should call guillaume function :
-        #lat_long_place
-    
     #Network Creation en fonction de choice_user
+    if choice_weight == "safe" or choice_weight == "fast":
+        
+        if choice_user == "drive": 
+            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\drive_safest.graphml')   
 
-    G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\test.graphml')    #G = ox.add_edge_speeds(G) 
-    #G = ox.add_edge_travel_times(G) 
-    
-    #call csv.file and build network
-    #G = ...
+        if choice_user == "walk": 
+            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\walk_safest.graphml')   
+        
+        if choice_user == "bike": 
+            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\bike_safest.graphml')   
 
+
+    if choice_weight == "do you want to die?":
+        
+
+        if choice_user == "drive": 
+            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\drive_dangerous.graphml')   
+
+        if choice_user == "walk": 
+            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\walk_dangerous.graphml')   
+        
+        if choice_user == "bike": 
+            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\bike_dangerous.graphml')   
+
+    G = change_type(G)
+
+
+    print('Datas passed : \n{} \n{} \n{} \n{}'.format(location_start,location_to,choice_user,choice_weight))
     #Conversions to float
-    start_lat = float(start_lat)
-    start_long = float(start_long)
-    arrived_lat = float(arrived_lat)
-    arrived_long = float(arrived_long)
-
-    start = (start_long,start_lat)
-    end = (arrived_long,arrived_lat)
+    
+    start = verif_user_input(location_start, location_to)[0]
+    end = verif_user_input(location_start,location_to)[1]
+    
 
     start_node = ox.get_nearest_node(G, start) 
     end_node = ox.get_nearest_node(G, end)
-    route = nx.shortest_path(G, start_node, end_node, weight=choice_user)
     
+    if choice_weight == "do you want to die?" or choice_weight == "safe":
+
+        route = nx.shortest_path(G, start_node, end_node, weight="danger")
+    
+    else:
     #see the travel time for the whole route
-    travel_time = nx.shortest_path_length(G, start_node, end_node, weight=choice_user)
-
-    #create list 
-    node_start = []
-    node_end = []
-    X_to = []
-    Y_to = []
-    X_from = []
-    Y_from = []
-    length = [] # distance
-    travel_time = []
-
+        route = nx.shortest_path_length(G, start_node, end_node, weight="travel_time")
     
-    for u, v in zip(route[:-1], route[1:]):
-        node_start.append(u) 
-        node_end.append(v)
-        length.append(round(G.edges[(u, v, 0)]['length']))
-        travel_time.append(G.edges[(u, v, 0)]['danger'])
-        X_from.append(G.nodes[u]['x']) # create a list with X from start
-        Y_from.append(G.nodes[u]['y']) # create a list with y from start
-        X_to.append(G.nodes[v]['x']) # create a list with x from end
-        Y_to.append(G.nodes[v]['y']) # create a list with y from end
-
-    df = pd.DataFrame(list(zip(node_start, node_end, X_from, Y_from,  X_to, Y_to, length, travel_time)), 
-                columns =["node_start", "node_end", "X_from", "Y_from",  "X_to", "Y_to", "length", "travel_time"]) 
-
-    df.reset_index(inplace=True)
-    print(df.head())
-    #line_gdf = create_line_gdf(df)
-
-    #line_gdf.plot()
-    
-
-    start = df[df["node_start"] == start_node]
-    end = df[df["node_end"] == end_node]
-
-    px.set_mapbox_access_token("pk.eyJ1IjoiZXphbWV5IiwiYSI6ImNramxnaXBmczBudmsyc3MyOXF1YnNrY2IifQ.EpHSD0OIJkZUICkuQA-gtQ")
-    px.scatter_mapbox(df, lon= "X_from", lat="Y_from", zoom=12)
-
-
-    fig = px.scatter_mapbox(df, lon= "X_from", lat="Y_from", zoom=13, width=1600, height=800, animation_frame="index",mapbox_style="dark")
-    fig.data[0].marker = dict(size = 12, color="black")
-    fig.add_trace(px.scatter_mapbox(start, lon= "X_from", lat="Y_from").data[0])
-    fig.data[1].marker = dict(size = 15, color="red")
-    fig.add_trace(px.scatter_mapbox(end, lon= "X_from", lat="Y_from").data[0])
-    fig.data[2].marker = dict(size = 15, color="green")
-    fig.add_trace(px.line_mapbox(df, lon= "X_from", lat="Y_from").data[0])
-
-    div = fig.to_html(full_html=False)
-    fig.write_html("calculated_path.html")
+    folium_map = osmnx.folium.plot_route_folium(G, route=route)
+    folium_map.save("folium_map.html")
     
     
     #return render_template("road.html",title ="Path", div=div)
@@ -154,7 +125,7 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
         </head>
             <body>
         {{ div_placeholder|safe }}
-            </body>''', div_placeholder=div)
+            </body>''', div_placeholder=folium_map._repr_html_())
     
 
 
