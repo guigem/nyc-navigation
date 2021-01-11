@@ -10,7 +10,7 @@ from geopy.geocoders import Nominatim
 
 from script.app import navig, G
 from script.app.forms import Location
-from script.app.routing_animation import create_line_gdf,create_graph,lat_long_place
+from script.app.routing_animation import create_line_gdf,create_graph
 
 
 #W = create_graph("New York",2500,'walk')
