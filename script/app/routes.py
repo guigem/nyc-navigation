@@ -40,14 +40,16 @@ def nav():
         start_lat = form.starting_point_lat.data
         arrived_long = form.dest_point_long.data
         arrived_lat = form.dest_point_lat.data
+        choice_user = form.user_choice.label
         return redirect(url_for("road",start_long=start_long,
                                         start_lat=start_lat,
                                         arrived_long=arrived_long,
-                                        arrived_lat=arrived_lat))
+                                        arrived_lat=arrived_lat,
+                                        choice_user=choice_user))
     return render_template("nav.html" , title = "Ny-Nav",form=form)
 
-@navig.route("/road/<start_long>/<start_lat>/<arrived_long>/<arrived_lat>")
-def road(start_long :float,start_lat : float,arrived_long:float,arrived_lat:float):
+@navig.route("/road/<start_lat>/<start_long>/<arrived_lat>/<arrived_long>/<choice_user>")
+def road(start_lat :float,start_long : float,arrived_lat:float,arrived_long:float,choice_user:str):
     """[summary]
 
     Args:
@@ -55,10 +57,15 @@ def road(start_long :float,start_lat : float,arrived_long:float,arrived_lat:floa
         start_lat (float): [description]
         arrived_long (float): [description]
         arrived_lat (float): [description]
+        choice_user(str): [description]
 
     Returns:
         [type]: [description]
     """  
+    #Network Creation :
+
+    #call csv.file and build network
+
     print('Datas passed : \n{} \n{} \n{} \n{}'.format(start_long,start_lat,arrived_long,arrived_lat))
     #Conversions to float
     start_lat = float(start_lat)
@@ -127,7 +134,7 @@ def road(start_long :float,start_lat : float,arrived_long:float,arrived_lat:floa
     fig.add_trace(px.line_mapbox(df, lon= "X_from", lat="Y_from").data[0])
 
     div = fig.to_html(full_html=False)
-
+    div.write_html("calculated_path.html")
     return render_template("road.html",title ="Path", div=div)
 
     """
