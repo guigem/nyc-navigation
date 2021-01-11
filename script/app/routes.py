@@ -35,21 +35,27 @@ def nav():
         [type]: [description]
     """    
     form = Location()
+
     if form.validate_on_submit():
+        #forms fields
+        location = form.location.data
         start_long = form.starting_point_long.data
         start_lat = form.starting_point_lat.data
         arrived_long = form.dest_point_long.data
         arrived_lat = form.dest_point_lat.data
         choice_user = form.user_choice.label
+
         return redirect(url_for("road",start_long=start_long,
                                         start_lat=start_lat,
                                         arrived_long=arrived_long,
                                         arrived_lat=arrived_lat,
-                                        choice_user=choice_user))
+                                        choice_user=choice_user,
+                                        location=location))
+
     return render_template("nav.html" , title = "Ny-Nav",form=form)
 
 @navig.route("/road/<start_lat>/<start_long>/<arrived_lat>/<arrived_long>/<choice_user>")
-def road(start_lat :float,start_long : float,arrived_lat:float,arrived_long:float,choice_user:str):
+def road(start_lat :float,start_long : float,arrived_lat:float,arrived_long:float,choice_user:str,location:str=None):
     """[summary]
 
     Args:
@@ -62,7 +68,9 @@ def road(start_lat :float,start_long : float,arrived_lat:float,arrived_long:floa
     Returns:
         [type]: [description]
     """  
-    #Network Creation :
+    #Network Creation en fonction de choice_user
+
+    #G = ...
 
     #call csv.file and build network
 
@@ -72,7 +80,10 @@ def road(start_lat :float,start_long : float,arrived_lat:float,arrived_long:floa
     start_long = float(start_long)
     arrived_lat = float(arrived_lat)
     arrived_long = float(arrived_long)
-    
+
+    #if location is not none > create a function to find lat/long of this location
+        #start_lat ,start_long,arrived_lat,arrived_long = thatfunction(location)
+
     start = (start_long,start_lat)
     end = (arrived_long,arrived_lat)
 
