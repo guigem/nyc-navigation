@@ -8,7 +8,7 @@ import networkx as nx
 import osmnx as ox
 
 from script.app import navig, G
-from script.app.forms import Location,GraphLoc
+from script.app.forms import Location
 from script.app.routing_animation import create_line_gdf,create_graph
 
 
@@ -35,19 +35,30 @@ def nav():
         [type]: [description]
     """    
     form = Location()
+
     if form.validate_on_submit():
+        #forms fields
+        location = form.location.data
         start_long = form.starting_point_long.data
         start_lat = form.starting_point_lat.data
         arrived_long = form.dest_point_long.data
         arrived_lat = form.dest_point_lat.data
+        choice_user = form.transportation.data
+
+        if location=="":
+            location = "NONE"
+
         return redirect(url_for("road",start_long=start_long,
                                         start_lat=start_lat,
                                         arrived_long=arrived_long,
-                                        arrived_lat=arrived_lat))
+                                        arrived_lat=arrived_lat,
+                                        choice_user=choice_user,
+                                        location=location))
+
     return render_template("nav.html" , title = "Ny-Nav",form=form)
 
-@navig.route("/road/<start_long>/<start_lat>/<arrived_long>/<arrived_lat>")
-def road(start_long :float,start_lat : float,arrived_long:float,arrived_lat:float):
+@navig.route("/road/<start_lat>/<start_long>/<arrived_lat>/<arrived_long>/<choice_user>/<location>")
+def road(start_lat :float,start_long : float,arrived_lat:float,arrived_long:float,choice_user:str,location:str):
     """[summary]
 
     Args:
@@ -55,17 +66,27 @@ def road(start_long :float,start_lat : float,arrived_long:float,arrived_lat:floa
         start_lat (float): [description]
         arrived_long (float): [description]
         arrived_lat (float): [description]
+        choice_user(str): [description]
 
     Returns:
         [type]: [description]
     """  
-    print('Datas passed : \n{} \n{} \n{} \n{}'.format(start_long,start_lat,arrived_long,arrived_lat))
+    #Network Creation en fonction de choice_user
+
+    #G = ...
+
+    #call csv.file and build network
+
+    print('Datas passed : \n{} \n{} \n{} \n{}'.format(start_lat,start_long,arrived_lat,arrived_long,choice_user,location))
     #Conversions to float
     start_lat = float(start_lat)
     start_long = float(start_long)
     arrived_lat = float(arrived_lat)
     arrived_long = float(arrived_long)
-    
+
+    #if location is not none > create a function to find lat/long of this location
+        #start_lat ,start_long,arrived_lat,arrived_long = thatfunction(location)
+
     start = (start_long,start_lat)
     end = (arrived_long,arrived_lat)
 
@@ -131,7 +152,7 @@ def road(start_long :float,start_lat : float,arrived_long:float,arrived_lat:floa
     fig.add_trace(px.line_mapbox(df, lon= "X_from", lat="Y_from").data[0])
 
     div = fig.to_html(full_html=False)
-
+    fig.write_html("calculated_path.html")
     return render_template("road.html",title ="Path", div=div)
 
     """
