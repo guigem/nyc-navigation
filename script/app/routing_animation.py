@@ -7,6 +7,7 @@ import plotly_express as px
 
 import networkx as nx
 import osmnx as ox
+from geopy.geocoders import Nominatim
 
 ox.config(use_cache=True, log_console=True)
 
@@ -17,58 +18,33 @@ def create_graph(loc, dist, transport_mode, loc_type="address"):
     elif loc_type == "points":
         G = ox.graph_from_point(loc, dist=dist, network_type=transport_mode )
     return G
-"""
-G = create_graph("Gothenburg", 2500, "drive")
-#ox.plot_graph(G)
 
-# impute missing edge speeds and add travel times
-G = ox.add_edge_speeds(G) 
-G = ox.add_edge_travel_times(G) 
+def lat_long_place(place: str) -> float:
+    '''
+    Get the latitude and longitude from any place.
 
-start = (57.715495, 12.004210)
-end = (57.707166, 11.978388)
-start_node = ox.get_nearest_node(G, start) 
-end_node = ox.get_nearest_node(G, end)
-route = nx.shortest_path(G, start_node, end_node, weight='travel_time') 
+    Parameters
+    ----------
+    place : str
+        String with the name of a place wanted.
 
-#affiche les routes entre le node de départ et le node d'arrivé 
-print('voici route',route)
+    Returns
+    -------
+    float
+        Latitude and longitude values as float.
 
-#ox.plot_graph_route(G, route, route_linewidth=6, node_size=0, bgcolor='k')
+    '''
+    geolocator = Nominatim(user_agent="nyc-navigation")
+    
+    #Getting the location
+    location = geolocator.geocode(place)
+    
+    #Getting latitude and longitude
+    latitude = location.latitude
+    longitude = location.longitude
+    
+    return latitude, longitude 
 
-nx.shortest_path_length
-
-#see the travel time for the whole route
-travel_time = nx.shortest_path_length(G, start_node, end_node, weight='travel_time')
-print(round(travel_time))
-
-#create list 
-node_start = []
-node_end = []
-X_to = []
-Y_to = []
-X_from = []
-Y_from = []
-length = [] # distance
-travel_time = []
-
-
-for u, v in zip(route[:-1], route[1:]):
-    node_start.append(u) 
-    node_end.append(v)
-    length.append(round(G.edges[(u, v, 0)]['length']))
-    travel_time.append(round(G.edges[(u, v, 0)]['travel_time']))
-    X_from.append(G.nodes[u]['x']) # create a list with X from start
-    Y_from.append(G.nodes[u]['y']) # create a list with y from start
-    X_to.append(G.nodes[v]['x']) # create a list with x from end
-    Y_to.append(G.nodes[v]['y']) # create a list with y from end
-
-df = pd.DataFrame(list(zip(node_start, node_end, X_from, Y_from,  X_to, Y_to, length, travel_time)), 
-               columns =["node_start", "node_end", "X_from", "Y_from",  "X_to", "Y_to", "length", "travel_time"]) 
-
-df.reset_index(inplace=True)
-print(df.head())
-"""
 # create a LineString Geodataframe that connects all these nodes coordinates
 def create_line_gdf(df):
     gdf = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df.X_from, df.Y_from))

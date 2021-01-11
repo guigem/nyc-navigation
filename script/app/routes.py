@@ -10,7 +10,7 @@ import osmnx
 
 from script.app import navig
 from script.app.forms import Location
-from script.app.routing_animation import create_line_gdf,create_graph
+from script.app.routing_animation import create_line_gdf,create_graph,lat_long_place
 
 
 #W = create_graph("New York",2500,'walk')
@@ -39,27 +39,20 @@ def nav():
 
     if form.validate_on_submit():
         #forms fields
-        location = form.location.data
-        start_long = form.starting_point_long.data
-        start_lat = form.starting_point_lat.data
-        arrived_long = form.dest_point_long.data
-        arrived_lat = form.dest_point_lat.data
+        location_start = form.location_start.data
+        location_to = form.location_to.data
         choice_user = form.transportation.data
-
-        if location=="":
-            location = "NONE"
-
-        return redirect(url_for("road",start_long=start_long,
-                                        start_lat=start_lat,
-                                        arrived_long=arrived_long,
-                                        arrived_lat=arrived_lat,
+        choice_weight = form.pick.data
+  
+        return redirect(url_for("road",location_start=location_start,
+                                        location_to=location_to,
                                         choice_user=choice_user,
-                                        location=location))
+                                        choice_weight = choice_weight))
 
     return render_template("nav.html" , title = "Ny-Nav",form=form)
 
-@navig.route("/road/<start_lat>/<start_long>/<arrived_lat>/<arrived_long>/<choice_user>/<location>")
-def road(start_lat :float,start_long : float,arrived_lat:float,arrived_long:float,choice_user:str,location:str):
+@navig.route("/road/<location_start>/<location_to>/<choice_user>/<choice_weight>")
+def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
     """[summary]
 
     Args:
@@ -72,22 +65,25 @@ def road(start_lat :float,start_long : float,arrived_lat:float,arrived_long:floa
     Returns:
         [type]: [description]
     """  
+    print('Datas passed : \n{} \n{} \n{} \n{}'.format(start_lat,start_long,arrived_lat,arrived_long,choice_user,location))
+    #Calling John function to determine if location_start and location to are string or long/lat datas 45.22 45.5
+        # if long lat the function should return a list of two tuples [(lat_start,long_start),(lat_to,long_to)]
+        # if its a str should call guillaume function :
+        #lat_long_place
+    
     #Network Creation en fonction de choice_user
 
     G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\test.graphml')    #G = ox.add_edge_speeds(G) 
     #G = ox.add_edge_travel_times(G) 
     
     #call csv.file and build network
+    #G = ...
 
-    print('Datas passed : \n{} \n{} \n{} \n{}'.format(start_lat,start_long,arrived_lat,arrived_long,choice_user,location))
     #Conversions to float
     start_lat = float(start_lat)
     start_long = float(start_long)
     arrived_lat = float(arrived_lat)
     arrived_long = float(arrived_long)
-
-    #if location is not none > create a function to find lat/long of this location
-        #start_lat ,start_long,arrived_lat,arrived_long = thatfunction(location)
 
     start = (start_long,start_lat)
     end = (arrived_long,arrived_lat)
