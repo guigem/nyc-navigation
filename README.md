@@ -24,7 +24,7 @@ Give the possibility to find the safer way in New York according to the mode of 
 ## How
 
 ### CSV file used
-- Use the [NYC dataset completed] (./CSV/data_100000_out_final.csv)
+- Use the [NYC dataset completed] (/CSV/data_100000_out_final.csv)
 - Standardize the street names.
 
 ### Calcul danger scores
@@ -37,3 +37,16 @@ Give the possibility to find the safer way in New York according to the mode of 
 - Build a graphical interface that shows the *least dangerous path* on a map of New York
 
 ### Deployment 
+
+## Run
+To run this application, launch
+```python
+python main.py
+```
+
+## Requirements
+[See requirements.txt](requirements.txt)
+
+## When
+
+5 days to complete (06/01/2021 PM -- 13/01/2021 AM)
