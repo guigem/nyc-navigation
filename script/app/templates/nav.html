@@ -9,17 +9,18 @@
         {{ form.hidden_tag() }}
         <p>
             {{ form.location.label }}<br>
-            {{ form.starting_point_long(size=32) }}
-            {% for error in form.starting_point_long.errors %}
-            <span style="color: red;">[{{ error }}]</span>
-            {% endfor %}
+            {{ form.location(size=32) }}
         </p>
+
         <p>
             {{ form.starting_point_long.label }}<br>
             {{ form.starting_point_long(size=32) }}
             {% for error in form.starting_point_long.errors %}
             <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
+        </p>
+        
+        <p>
             {{ form.starting_point_lat.label }}<br>
             {{ form.starting_point_lat(size=32) }}
             {% for error in form.starting_point_lat.errors %}
@@ -33,6 +34,7 @@
             {% for error in form.dest_point_long.errors %}
             <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
+        </p>
             {{ form.dest_point_lat.label }}<br>
             {{ form.dest_point_lat(size=32) }}
             {% for error in form.dest_point_lat.errors %}
@@ -42,7 +44,9 @@
         <p>
         {{form.transportation}}
         </p>
-        <p>{{ form.submit() }}</p>
+        <p>
+            {{ form.submit() }}
+        </p>
     </form>
 
 </div>

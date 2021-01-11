@@ -8,7 +8,7 @@ import networkx as nx
 import osmnx as ox
 
 from script.app import navig, G
-from script.app.forms import Location,GraphLoc
+from script.app.forms import Location
 from script.app.routing_animation import create_line_gdf,create_graph
 
 
@@ -43,7 +43,10 @@ def nav():
         start_lat = form.starting_point_lat.data
         arrived_long = form.dest_point_long.data
         arrived_lat = form.dest_point_lat.data
-        choice_user = form.user_choice.label
+        choice_user = form.transportation.data
+
+        if location=="":
+            location = "NONE"
 
         return redirect(url_for("road",start_long=start_long,
                                         start_lat=start_lat,
@@ -54,8 +57,8 @@ def nav():
 
     return render_template("nav.html" , title = "Ny-Nav",form=form)
 
-@navig.route("/road/<start_lat>/<start_long>/<arrived_lat>/<arrived_long>/<choice_user>")
-def road(start_lat :float,start_long : float,arrived_lat:float,arrived_long:float,choice_user:str,location:str=None):
+@navig.route("/road/<start_lat>/<start_long>/<arrived_lat>/<arrived_long>/<choice_user>/<location>")
+def road(start_lat :float,start_long : float,arrived_lat:float,arrived_long:float,choice_user:str,location:str):
     """[summary]
 
     Args:
@@ -74,7 +77,7 @@ def road(start_lat :float,start_long : float,arrived_lat:float,arrived_long:floa
 
     #call csv.file and build network
 
-    print('Datas passed : \n{} \n{} \n{} \n{}'.format(start_long,start_lat,arrived_long,arrived_lat))
+    print('Datas passed : \n{} \n{} \n{} \n{}'.format(start_lat,start_long,arrived_lat,arrived_long,choice_user,location))
     #Conversions to float
     start_lat = float(start_lat)
     start_long = float(start_long)
@@ -145,7 +148,7 @@ def road(start_lat :float,start_long : float,arrived_lat:float,arrived_long:floa
     fig.add_trace(px.line_mapbox(df, lon= "X_from", lat="Y_from").data[0])
 
     div = fig.to_html(full_html=False)
-    div.write_html("calculated_path.html")
+    fig.write_html("calculated_path.html")
     return render_template("road.html",title ="Path", div=div)
 
     """
