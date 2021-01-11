@@ -21,7 +21,6 @@ def nodes_from_csv(path):
 navig = Flask(__name__)
 navig.config.from_object(Config)
 
-<<<<<<< HEAD
 #G = ox.graph_from_place('Manhattan, New York, USA', network_type="drive")
 #G = ox.add_edge_speeds(G) 
 #G = ox.add_edge_travel_times(G)
@@ -34,9 +33,6 @@ navig.config.from_object(Config)
 #G.update(nodes=nodes)
 
 G = osmnx.graph.graph_from_xml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\test.osm')
-=======
-G = create_graph("Gothenburg", 2500, "drive") #En attendant les csv
->>>>>>> d7b057f2c3c6a1bb124daf7cb0781f8e6b598937
 G = ox.add_edge_speeds(G) 
 G = ox.add_edge_travel_times(G) 
 #G = create_graph("Gothenburg", 2500, "drive")
