@@ -101,7 +101,7 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
     length = [] # distance
     travel_time = []
 
-
+    
     for u, v in zip(route[:-1], route[1:]):
         node_start.append(u) 
         node_end.append(v)
@@ -117,9 +117,13 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
 
     df.reset_index(inplace=True)
     print(df.head())
-    line_gdf = create_line_gdf(df)
+    #line_gdf = create_line_gdf(df)
 
     #line_gdf.plot()
+    
+    
+    df = pd.DataFrame(list(zip(node_start, node_end, X_from, Y_from,  X_to, Y_to, length, travel_time)), 
+            columns =["node_start", "node_end", "X_from", "Y_from",  "X_to", "Y_to", "length", "travel_time"]) 
 
     start = df[df["node_start"] == start_node]
     end = df[df["node_end"] == end_node]
