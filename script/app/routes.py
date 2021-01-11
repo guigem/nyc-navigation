@@ -1,4 +1,4 @@
-from flask import render_template,url_for,redirect
+from flask import render_template,url_for,redirect, render_template_string
 import pandas as pd
 import geopandas as gpd
 from shapely.geometry import Point, LineString
@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 import plotly_express as px
 import networkx as nx
 import osmnx as ox
-from geopy.geocoders import Nominatim
+import osmnx
 
-from script.app import navig, G
+from script.app import navig
 from script.app.forms import Location
 from script.app.routing_animation import create_line_gdf,create_graph
 
@@ -72,6 +72,10 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
         #lat_long_place
     
     #Network Creation en fonction de choice_user
+
+    G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\test.graphml')    #G = ox.add_edge_speeds(G) 
+    #G = ox.add_edge_travel_times(G) 
+    
     #call csv.file and build network
     #G = ...
 
@@ -86,10 +90,10 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
 
     start_node = ox.get_nearest_node(G, start) 
     end_node = ox.get_nearest_node(G, end)
-    route = nx.shortest_path(G, start_node, end_node, weight='travel_time')
+    route = nx.shortest_path(G, start_node, end_node, weight=choice_user)
     
     #see the travel time for the whole route
-    travel_time = nx.shortest_path_length(G, start_node, end_node, weight='travel_time')
+    travel_time = nx.shortest_path_length(G, start_node, end_node, weight=choice_user)
 
     #create list 
     node_start = []
@@ -106,7 +110,7 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
         node_start.append(u) 
         node_end.append(v)
         length.append(round(G.edges[(u, v, 0)]['length']))
-        travel_time.append(round(G.edges[(u, v, 0)]['travel_time']))
+        travel_time.append(G.edges[(u, v, 0)]['danger'])
         X_from.append(G.nodes[u]['x']) # create a list with X from start
         Y_from.append(G.nodes[u]['y']) # create a list with y from start
         X_to.append(G.nodes[v]['x']) # create a list with x from end
@@ -121,9 +125,6 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
 
     #line_gdf.plot()
     
-    
-    df = pd.DataFrame(list(zip(node_start, node_end, X_from, Y_from,  X_to, Y_to, length, travel_time)), 
-            columns =["node_start", "node_end", "X_from", "Y_from",  "X_to", "Y_to", "length", "travel_time"]) 
 
     start = df[df["node_start"] == start_node]
     end = df[df["node_end"] == end_node]
@@ -132,12 +133,7 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
     px.scatter_mapbox(df, lon= "X_from", lat="Y_from", zoom=12)
 
 
-    fig = px.scatter_mapbox(df, lon= "X_from", lat="Y_from", width=800, height=400, zoom=12)
-    fig.add_trace(px.line_mapbox(df, lon= "X_from", lat="Y_from").data[0])
-
-    fig.show()
-
-    fig = px.scatter_mapbox(df, lon= "X_from", lat="Y_from", zoom=13, width=1000, height=800, animation_frame="index",mapbox_style="dark")
+    fig = px.scatter_mapbox(df, lon= "X_from", lat="Y_from", zoom=13, width=1600, height=800, animation_frame="index",mapbox_style="dark")
     fig.data[0].marker = dict(size = 12, color="black")
     fig.add_trace(px.scatter_mapbox(start, lon= "X_from", lat="Y_from").data[0])
     fig.data[1].marker = dict(size = 15, color="red")
@@ -147,9 +143,11 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
 
     div = fig.to_html(full_html=False)
     fig.write_html("calculated_path.html")
-    return render_template("road.html",title ="Path", div=div)
+    
+    
+    #return render_template("road.html",title ="Path", div=div)
 
-    """
+    
     return render_template_string('''
         <head>
             <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
@@ -157,7 +155,6 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
             <body>
         {{ div_placeholder|safe }}
             </body>''', div_placeholder=div)
-    """
     
 
 

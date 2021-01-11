@@ -7,20 +7,11 @@ import osmnx
 from script.app.config import Config
 from script.app.routing_animation import create_graph
 
-def nodes_from_csv(path):
-    df = pd.read_csv(path, index_col=0)
-    nodes = []
-    
-    for ix , row in df.iterrows():
-        d = dict(row)
-        node = d.pop('node')
-        nodes.append((node, {k:v for k,v in d.items() if v}))
-        
-    return nodes
 
 navig = Flask(__name__)
 navig.config.from_object(Config)
 
+<<<<<<< HEAD
 #G = ox.graph_from_place('Manhattan, New York, USA', network_type="drive")
 #G = ox.add_edge_speeds(G) 
 #G = ox.add_edge_travel_times(G)
@@ -38,6 +29,8 @@ G = ox.add_edge_travel_times(G)
 #G = create_graph("Gothenburg", 2500, "drive")
 #G = ox.add_edge_speeds(G) 
 #G = ox.add_edge_travel_times(G) '
+=======
+>>>>>>> 328662bf29872e68c55ec301a36573856a9901b3
 
 from script.app import routes
 
