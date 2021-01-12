@@ -9,6 +9,8 @@ body {
 
 .main_content{
   background-color :  #dbbabd;
+  padding-left: 10px;
+  padding-bottom: 15px;
 }
 h1{
   color: azure;
@@ -17,11 +19,10 @@ h1{
   margin-top: 50px;
   padding-top: 5px;
   padding-bottom: 10px;
+  padding-left: 10px;
   background-color :  #dbbabd;
   height: 35px;
   width: 100%;
-  opacity: .9;
-  margin-bottom: 10px;
 }
 .consign{
   font-weight: bolder;
@@ -48,11 +49,12 @@ a:visited {
 }
 
 .footer{
+  margin-top: 25px;
   max-width: 1250px;
-  background-image : url("../static/img/NYC-Central-Park.jpg")
+  height: 350px;
+  background-image : url("NYC-Central-Park.jpg")
 }
 
 img:img_ny{
   width: 1250px;
 }
-
