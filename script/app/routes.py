@@ -12,6 +12,7 @@ from script.app.location_moderator import verif_user_input, change_type
 from script.app import navig
 from script.app.forms import Location
 from script.app.routing_animation import create_line_gdf,create_graph
+from script.app.config import Config
 
 
 #W = create_graph("New York",2500,'walk')
@@ -70,26 +71,26 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
     if choice_weight == "safe" or choice_weight == "fast":
         
         if choice_user == "drive": 
-            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\drive_safest.graphml')   
+            G = osmnx.io.load_graphml(filepath=Config.drive_safest)   
 
         if choice_user == "walk": 
-            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\walk_safest.graphml')   
+            G = osmnx.io.load_graphml(filepath=Config.walk_safest)   
         
         if choice_user == "bike": 
-            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\bike_safest.graphml')   
+            G = osmnx.io.load_graphml(filepath=Config.bike_safest)   
 
 
     if choice_weight == "do you want to die?":
         
 
         if choice_user == "drive": 
-            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\drive_dangerous.graphml')   
+            G = osmnx.io.load_graphml(filepath=Config.drive_dangerous)   
 
         if choice_user == "walk": 
-            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\walk_dangerous.graphml')   
+            G = osmnx.io.load_graphml(filepath=Config.walk_dangerous)   
         
         if choice_user == "bike": 
-            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\bike_dangerous.graphml')   
+            G = osmnx.io.load_graphml(filepath=Config.bike_dangerous)   
 
     G = change_type(G)
 

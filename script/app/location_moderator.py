@@ -70,7 +70,7 @@ def verif_user_input(location_start:str,location_to:str):
         
         coord_start = lat_long_place(location_start)
         coord_end = lat_long_place(location_to)
-        
+        print(coord_start,coord_end)
         return coord_start, coord_end
 
 def change_type(G):
