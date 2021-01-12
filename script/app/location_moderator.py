@@ -42,9 +42,13 @@ def verif_user_input(location_start:str,location_to:str):
 
     return a list two tuples [(lat_start,long_start),(lat_to,long_to)]
     """
+<<<<<<< HEAD
     
     # Detect the first input type and change change it if needed.
     if location_start[0] == "(":
+=======
+    if location_start[0]=="(":
+>>>>>>> b58ed62d051870b56a7f415ef21f406ed21d947a
         
         location_start = location_start.split(",")
         
@@ -78,6 +82,7 @@ def verif_user_input(location_start:str,location_to:str):
         coord_to = (lat_to, long_to)
 
     else:
+<<<<<<< HEAD
 
         coord_to = lat_long_place(location_to)
     
@@ -85,6 +90,12 @@ def verif_user_input(location_start:str,location_to:str):
     result = [coord_start, coord_to]
 
     return result
+=======
+        coord_start = lat_long_place(location_start)
+        coord_end = lat_long_place(location_to)
+        print(coord_start,coord_end)
+        return coord_start, coord_end
+>>>>>>> b58ed62d051870b56a7f415ef21f406ed21d947a
 
 def change_type(G):
     edges = list(G.edges(keys=True, data=True))

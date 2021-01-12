@@ -15,7 +15,6 @@ from script.app.routing_animation import create_line_gdf,create_graph
 from script.app.config import Config
 
 
-#W = create_graph("New York",2500,'walk')
 
 @navig.route('/')
 @navig.route('/index')
@@ -29,6 +28,10 @@ def about():
 @navig.route("/authors")
 def authors():
     return render_template("authors.html", title = "The Authors")
+
+@navig.route("/error/<error_type>")
+def error(error_type:str):
+    return render_template("error.html",title="Error",error_type=error_type)
 
 @navig.route("/nav",methods=["GET", "POST"])
 def nav():
@@ -47,7 +50,12 @@ def nav():
         choice_weight = form.pick.data
 
         print(location_start,location_to,choice_user,choice_weight)
-  
+        
+        #call error_raiser function:
+            #if true: cool
+            #if false : return error.html
+        return redirect(url_for("error",error_type="TESTING"))
+
         return redirect(url_for("road",location_start=location_start,
                                         location_to=location_to,
                                         choice_user=choice_user,
