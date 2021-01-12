@@ -34,7 +34,7 @@ def lat_long_place(place: str) -> float:
 
 def verif_user_input(location_start:str,location_to:str):
 
-    """Function to determine if the types of user input
+    """Function to determine the types of user input
 
     Args:
         location_start (str): a location or two numbers separated by a space
@@ -42,7 +42,13 @@ def verif_user_input(location_start:str,location_to:str):
 
     return a list two tuples [(lat_start,long_start),(lat_to,long_to)]
     """
+<<<<<<< HEAD
+    
+    # Detect the first input type and change change it if needed.
+    if location_start[0] == "(":
+=======
     if location_start[0]=="(":
+>>>>>>> b58ed62d051870b56a7f415ef21f406ed21d947a
         
         location_start = location_start.split(",")
         
@@ -53,8 +59,18 @@ def verif_user_input(location_start:str,location_to:str):
         lat_start = location_start[0]
         lat_start = lat_start[1:]
         lat_start = float(lat_start)
+
+        coord_start = (lat_start, long_start)
+
+    else:
         
+        coord_start = lat_long_place(location_start)
+    
+    # Detect the second input type and change change it if needed.
+    if location_to[0] == "(":
+
         location_to = location_to.split(",")
+
         long_to = location_to[1]
         long_to = long_to[:-1]
         long_to = float(long_to)
@@ -63,13 +79,23 @@ def verif_user_input(location_start:str,location_to:str):
         lat_to = lat_to[1:]
         lat_to = float(lat_to)
 
-        return (lat_start, long_start), (lat_to, long_to)
+        coord_to = (lat_to, long_to)
 
     else:
+<<<<<<< HEAD
+
+        coord_to = lat_long_place(location_to)
+    
+    # Make a list with the results.
+    result = [coord_start, coord_to]
+
+    return result
+=======
         coord_start = lat_long_place(location_start)
         coord_end = lat_long_place(location_to)
         print(coord_start,coord_end)
         return coord_start, coord_end
+>>>>>>> b58ed62d051870b56a7f415ef21f406ed21d947a
 
 def change_type(G):
     edges = list(G.edges(keys=True, data=True))
@@ -85,4 +111,27 @@ def change_type(G):
         
     return G
 
+def error_raiser(entry_one:str , entry_two:str) -> tuple:
+    """
+
+    """
+
+    # Dectect if the two entries are the same.
+    if entry_one == entry_two:
+        return False, "Same entries"
+    
+    # Detect if the entries are valid.
+    if entry_one[0] != "(":
+        try:
+            coor_sart = lat_long_place(entry_one)
+        except AttributeError:
+            return False, "Wrong entry"
+    
+    if entry_two[0] != "(":
+        try:
+            coor_to = lat_long_place(entry_two)
+        except:
+            return False, "Wrong entry"
+    
+    return True
 
