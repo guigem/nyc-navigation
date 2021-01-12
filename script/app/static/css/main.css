@@ -1,6 +1,6 @@
 
 body {
-  max-width: 850px;
+  max-width: 1250px;
   margin: auto;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444;
@@ -9,6 +9,8 @@ body {
 
 .main_content{
   background-color :  #dbbabd;
+  padding-left: 10px;
+  padding-bottom: 15px;
 }
 h1{
   color: azure;
@@ -17,23 +19,23 @@ h1{
   margin-top: 50px;
   padding-top: 5px;
   padding-bottom: 10px;
+  padding-left: 10px;
   background-color :  #dbbabd;
   height: 35px;
   width: 100%;
-  opacity: .9;
-  margin-bottom: 10px;
-  
 }
 .consign{
   font-weight: bolder;
 }
 .authors{
+  padding-top: 20px;
   font-weight: bold;
 }
 a.link_menu{
   color: azure;
   text-decoration: none;
   margin-left: 1em;
+  padding-left: 2em;
 }
 
 a.link_menu:hover {
@@ -47,3 +49,13 @@ a:visited {
   text-decoration: none;
 }
 
+.footer{
+  margin-top: 25px;
+  max-width: 1250px;
+  height: 350px;
+  background-image : url("NYC-Central-Park.jpg")
+}
+
+img:img_ny{
+  width: 1250px;
+}
