@@ -82,7 +82,7 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
             G = ox.io.load_graphml(filepath=Config.bike_safest)   
 
 
-    if choice_weight == "do you want to die?":
+    elif choice_weight == "do you want to die?":
         
 
         if choice_user == "drive": 
@@ -110,8 +110,9 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
     if choice_weight == "do you want to die?" or choice_weight == "safe":
 
         route = nx.shortest_path(G, start_node, end_node, weight="danger")
-    
-    else:
+        
+        
+    elif choice_weight == "fast":
     #see the travel time for the whole route
         route = nx.shortest_path_length(G, start_node, end_node, weight="travel_time")
     

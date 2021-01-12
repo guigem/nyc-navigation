@@ -142,15 +142,15 @@ def pick_location(trip_type: str = "drive", most_dangerous: bool =False) -> str:
     '''
     #Generate the network of NYC based on the trip_type
     G = ox.graph_from_place('New York City, New York, USA', network_type=trip_type)   
-    
+    G = ox.add_edge_speeds(G) 
+    G = ox.add_edge_travel_times(G) 
     #nodes_to_csv(G, "drive_safe_node.csv")
     
     #csv file with the danger scores
     data_danger = pd.read_csv(r"C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\street.csv")
     
     G_danger = add_edge_danger(data_danger, G, trip_type, most_dangerous)
-    G_danger = ox.add_edge_speeds(G_danger) 
-    G_danger = ox.add_edge_travel_times(G_danger) 
+
     osmnx.io.save_graphml(G_danger, filepath="bike_dangerous.graphml")
 
     
