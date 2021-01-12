@@ -29,8 +29,11 @@ def lat_long_place(place: str) -> tuple:
     location = geolocator.geocode(place)
     
     #Getting latitude and longitude
-    latitude = location.latitude
-    longitude = location.longitude
+    try:
+        latitude = location.latitude
+        longitude = location.longitude
+    except AttributeError:
+        return False
     
     return latitude, longitude 
 
@@ -106,28 +109,38 @@ def verif_user_input(location_start:str,location_to:str) -> tuple:
     return result
 
 def error_raiser(entry_one:str , entry_two:str) -> tuple:
-    """
+    """Function to catch possible errors
 
+    Args:
+        entry_one (str): [description]
+        entry_two (str): [description]
+
+    Returns:
+        tuple: [description]
     """
 
     # Dectect if the two entries are the same.
     if entry_one == entry_two:
-        return False, "Same entries"
+        return False, "Départ et Arrivée doivent être différents"
     
     # Detect if the entries are valid.
     if entry_one[0] != "(":
         try:
             coor_sart = lat_long_place(entry_one)
+            if not coor_sart:
+                return False, "Entrez des coordonnées au format (lat,long)"
         except AttributeError:
-            return False, "Wrong entry"
+            return False, "Entrez des coordonnées au format (lat,long)"
     
     if entry_two[0] != "(":
         try:
             coor_to = lat_long_place(entry_two)
+            if not coor_sart:
+                return False, "Entrez des coordonnées au format (lat,long)"
         except:
-            return False, "Wrong entry"
+            return False, "Entrez des coordonnées au format (lat,long)"
     
-    return True
+    return True,True
 
 def choose_right_network(choice_weight: str, choice_user: str) -> classmethod:
     '''
