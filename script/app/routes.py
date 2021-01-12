@@ -93,7 +93,7 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
     route = compute_route(G, start_node, end_node, choice_weight)       
     
     #Drawing the path on an open map street 
-    folium_map = ox.folium.plot_route_folium(G, route=route, popup_attribute="length", tiles="openstreetmap", route_color="blue")
+    folium_map = ox.folium.plot_route_folium(G, route=route, popup_attribute="name", tiles="openstreetmap", route_color="blue")
     
     #DRawing markers to show in green the starting point and in red the ending point
     start = list(start)
