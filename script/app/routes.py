@@ -36,7 +36,7 @@ def nav():
         [type]: [description]
     """    
     form = Location()
-    form.location_start.data = "Adresse or (lat/long)"
+    
 
     if form.validate_on_submit():
         #forms fields

@@ -1,5 +1,7 @@
 
 from geopy.geocoders import Nominatim
+from geopy.extra.rate_limiter import RateLimiter
+import geopy.geocoders
 
 
 def lat_long_place(place: str) -> float:
@@ -17,7 +19,8 @@ def lat_long_place(place: str) -> float:
         Latitude and longitude values as float.
 
     '''
-    geolocator = Nominatim(user_agent="nyc-navigation")
+    geopy.geocoders.options.default_timeout = None
+    geolocator = Nominatim(user_agent="nyc-navigation", scheme='http')
     
     #Getting the location
     location = geolocator.geocode(place)
