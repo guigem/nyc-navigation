@@ -94,6 +94,19 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
         if choice_user == "bike": 
             G = ox.io.load_graphml(filepath=Config.bike_dangerous)   
 
+    elif choice_weight == "ratio safe/fast":
+        
+        if choice_user == "drive": 
+            G = ox.io.load_graphml(filepath=Config.drive_safest_ratio)   
+
+        if choice_user == "walk": 
+            G = ox.io.load_graphml(filepath=Config.walk_safest_ratio)   
+        
+        if choice_user == "bike": 
+            G = ox.io.load_graphml(filepath=Config.bike_safest_ratio)    
+        
+        
+        
     G = change_type(G)
 
 
@@ -115,6 +128,10 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
     elif choice_weight == "fast":
     #see the travel time for the whole route
         route = nx.shortest_path_length(G, start_node, end_node, weight="travel_time")
+    
+    elif choice_weight == "ratio safe/fast":
+    
+           route = nx.shortest_path_length(G, start_node, end_node, weight="ratio")         
     
     folium_map = ox.folium.plot_route_folium(G, route=route)
     folium_map.save("folium_map.html")

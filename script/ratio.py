@@ -7,7 +7,7 @@ import plotly_express as px
 import networkx as nx
 import osmnx as ox
 
-from script.app.config import Config
+from app.config import Config
 
 from app.location_moderator import change_type
 
@@ -62,8 +62,8 @@ def ratio(safe:bool = True, choice_user:str = "drive"):
 
         edges[i][3]["ratio"] = edges[i][3]["danger"] + edges[i][3]["travel_time"]
     
-    ox.io.save_graphml(G, filepath="drive_safest_ratio.graphml")
+    ox.io.save_graphml(G, filepath="bike_safest_ratio.graphml")
 
     return G
 
-ratio(True, "drive")
+ratio(True, "bike")
