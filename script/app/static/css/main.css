@@ -1,6 +1,6 @@
 
 body {
-  max-width: 1250px;
+  max-width: 850px;
   margin: auto;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444;
@@ -50,7 +50,6 @@ a:visited {
 }
 
 .footer{
-  margin-top: 25px;
   max-width: 1250px;
   height: 250px;
   background-image : url("NYC-Central-Park.jpg");
@@ -62,7 +61,6 @@ img:img_ny{
 
 .profiles{
   width: auto;
-  background-color:#d6cbd3;
 }
 .profile{
   border: 1px solid #ddd;
