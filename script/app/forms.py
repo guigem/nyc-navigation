@@ -3,7 +3,7 @@ from wtforms import StringField,widgets,SelectField,SubmitField
 from wtforms.validators import DataRequired
 
 choices = ["bike","walk","drive"]
-weight = ["fast","safe","do you want to die?"]
+weight = ["fast","safe","do you want to die?","ratio safe/fast"]
 
 class Location(FlaskForm):
     location_start = StringField(label= "Point de départ",validators=[DataRequired()])
