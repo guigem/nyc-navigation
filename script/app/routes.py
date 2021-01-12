@@ -47,7 +47,7 @@ def nav():
         #call error_raiser function:
             #if true: cool
             #if false : return error.html
-        return redirect(url_for("error",error_type="TESTING"))
+        #return redirect(url_for("error",error_type="TESTING"))
 
         return redirect(url_for("road",location_start=location_start,
                                         location_to=location_to,
