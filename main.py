@@ -1,3 +1,3 @@
 from script.app import navig
 
-navig.run(debug=False)
+navig.run(debug=True)

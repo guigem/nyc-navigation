@@ -54,10 +54,13 @@ def verif_user_input(location_start:str,location_to:str) -> tuple:
             - latitude and longitude of the starting point
             - latitude and longitude of the ending point.
 
+
     '''
-    #If our first character is a "(", it means we are dealing with gps coordonates 
-    if location_start[0]=="(":
-        
+
+    
+    # Detect the first input type and change change it if needed.
+    if location_start[0] == "(":
+       
         #Spliting latitude an longitude
         location_start = location_start.split(",")
         
@@ -71,8 +74,17 @@ def verif_user_input(location_start:str,location_to:str) -> tuple:
         lat_start = lat_start[1:]
         lat_start = float(lat_start)
 
-        #Removing remaining "(" from longitude and turning it into float for ending point 
+        coord_start = (lat_start, long_start)
+
+    else:
+        
+        coord_start = lat_long_place(location_start)
+    
+    # Detect the second input type and change change it if needed.
+    if location_to[0] == "(":
+
         location_to = location_to.split(",")
+
         long_to = location_to[1]
         long_to = long_to[:-1]
         long_to = float(long_to)
@@ -82,15 +94,17 @@ def verif_user_input(location_start:str,location_to:str) -> tuple:
         lat_to = lat_to[1:]
         lat_to = float(lat_to)
 
-        return (lat_start, long_start), (lat_to, long_to)
+        coord_to = (lat_to, long_to)
 
     else:
-        
-        #Using geopy to transform a place into coordinates
-        coord_start = lat_long_place(location_start)
-        coord_end = lat_long_place(location_to)
-        
-        return coord_start, coord_end
+
+        coord_to = lat_long_place(location_to)
+    
+    # Make a list with the results.
+    result = [coord_start, coord_to]
+
+    return result
+
 
 def change_type(G: classmethod) -> classmethod:
     '''
@@ -127,6 +141,29 @@ def change_type(G: classmethod) -> classmethod:
         
     return G
 
+def error_raiser(entry_one:str , entry_two:str) -> tuple:
+    """
+
+    """
+
+    # Dectect if the two entries are the same.
+    if entry_one == entry_two:
+        return False, "Same entries"
+    
+    # Detect if the entries are valid.
+    if entry_one[0] != "(":
+        try:
+            coor_sart = lat_long_place(entry_one)
+        except AttributeError:
+            return False, "Wrong entry"
+    
+    if entry_two[0] != "(":
+        try:
+            coor_to = lat_long_place(entry_two)
+        except:
+            return False, "Wrong entry"
+    
+    return True
 
 def choose_right_network(choice_weight: str, choice_user: str) -> classmethod:
     '''
