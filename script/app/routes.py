@@ -8,10 +8,6 @@ from script.app import navig
 from script.app.forms import Location
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> defd7fbdc39a01f55af609e2da27c8f8565a8809
 @navig.route('/')
 @navig.route('/index')
 def index():
