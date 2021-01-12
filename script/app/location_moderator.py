@@ -1,5 +1,7 @@
 
 from geopy.geocoders import Nominatim
+from geopy.extra.rate_limiter import RateLimiter
+import geopy.geocoders
 
 
 def lat_long_place(place: str) -> float:
@@ -17,7 +19,8 @@ def lat_long_place(place: str) -> float:
         Latitude and longitude values as float.
 
     '''
-    geolocator = Nominatim(user_agent="nyc-navigation")
+    geopy.geocoders.options.default_timeout = None
+    geolocator = Nominatim(user_agent="nyc-navigation", scheme='http')
     
     #Getting the location
     location = geolocator.geocode(place)
@@ -67,7 +70,7 @@ def verif_user_input(location_start:str,location_to:str):
         
         coord_start = lat_long_place(location_start)
         coord_end = lat_long_place(location_to)
-        
+        print(coord_start,coord_end)
         return coord_start, coord_end
 
 def change_type(G):
@@ -76,7 +79,8 @@ def change_type(G):
     for i in range(len(edges)):
         
         edges[i][3]["danger"] = int(edges[i][3]["danger"])
-        edges[i][3]["travel_time"] = int(round(edges[i][3]["travel_time"]))
+        edges[i][3]["travel_time"] = float(edges[i][3]["travel_time"])
+        #edges[i][3]["length"] = int(round(edges[i][3]["length"]))
         
     return G
 

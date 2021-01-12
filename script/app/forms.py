@@ -10,4 +10,4 @@ class Location(FlaskForm):
     location_to = StringField(label = "Destination",validators=[DataRequired()])
     transportation = SelectField(u"Transportation",choices=choices)
     pick = SelectField(u"Transportation",choices=weight)
-    submit = SubmitField("Navigate !")
+    submit = SubmitField("Navigate!")

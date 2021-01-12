@@ -6,12 +6,13 @@ import matplotlib.pyplot as plt
 import plotly_express as px
 import networkx as nx
 import osmnx as ox
-import osmnx
+
 
 from script.app.location_moderator import verif_user_input, change_type
 from script.app import navig
 from script.app.forms import Location
 from script.app.routing_animation import create_line_gdf,create_graph
+from script.app.config import Config
 
 
 #W = create_graph("New York",2500,'walk')
@@ -36,7 +37,7 @@ def nav():
         [type]: [description]
     """    
     form = Location()
-    form.location_start.data = "Adresse or (lat/long)"
+    
 
     if form.validate_on_submit():
         #forms fields
@@ -44,6 +45,8 @@ def nav():
         location_to = form.location_to.data
         choice_user = form.transportation.data
         choice_weight = form.pick.data
+
+        print(location_start,location_to,choice_user,choice_weight)
   
         return redirect(url_for("road",location_start=location_start,
                                         location_to=location_to,
@@ -70,26 +73,26 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
     if choice_weight == "safe" or choice_weight == "fast":
         
         if choice_user == "drive": 
-            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\drive_safest.graphml')   
+            G = ox.io.load_graphml(filepath=Config.drive_safest)   
 
         if choice_user == "walk": 
-            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\walk_safest.graphml')   
+            G = ox.io.load_graphml(filepath=Config.walk_safest)   
         
         if choice_user == "bike": 
-            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\bike_safest.graphml')   
+            G = ox.io.load_graphml(filepath=Config.bike_safest)   
 
 
-    if choice_weight == "do you want to die?":
+    elif choice_weight == "do you want to die?":
         
 
         if choice_user == "drive": 
-            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\drive_dangerous.graphml')   
+            G = ox.io.load_graphml(filepath=Config.drive_dangerous)   
 
         if choice_user == "walk": 
-            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\walk_dangerous.graphml')   
+            G = ox.io.load_graphml(filepath=Config.walk_dangerous)   
         
         if choice_user == "bike": 
-            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\bike_dangerous.graphml')   
+            G = ox.io.load_graphml(filepath=Config.bike_dangerous)   
 
     G = change_type(G)
 
@@ -107,12 +110,13 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
     if choice_weight == "do you want to die?" or choice_weight == "safe":
 
         route = nx.shortest_path(G, start_node, end_node, weight="danger")
-    
-    else:
+        
+        
+    elif choice_weight == "fast":
     #see the travel time for the whole route
         route = nx.shortest_path_length(G, start_node, end_node, weight="travel_time")
     
-    folium_map = osmnx.folium.plot_route_folium(G, route=route)
+    folium_map = ox.folium.plot_route_folium(G, route=route)
     folium_map.save("folium_map.html")
     
     
