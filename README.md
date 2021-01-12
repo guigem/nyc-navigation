@@ -18,25 +18,26 @@ To create a Python script/application that, given two addresses (or coordinates)
 - Work with geolocalized data
 - Work in a dev-client relationship
 
-## Why
-Give the possibility to find the safer way in New York according to the mode of transport (bike, drive and walk)
-
 ## How
+The project consists of using the below dataset that is a snapshot of data created everyday by the police departments of NYC. This dataset includes the traffic accidents that occurred, their location, time, vehicles involved, etc. With this dataset we are able to define a danger score to each street as explained in the below section.
+Based on that information and our map we have our environment of streets with their danger scores.
+Our application is able to calculate different routes based on the criterias that are defined in the navigation panel and calculate the most appropriate path based on those.
 
 ### CSV file used
 - Use the [NYC dataset completed](CSV/data_100000_out_final.csv)
 - Standardize the street names.
 
-### Calcul danger scores
-- Create a danger scores per street by mode of transport :  start score with 1 as an accident,  if at least one person was injured we add 1 to the score,  if at least one person was killed we add 2 to the score.  The higher the score is the most dangerous street
+### Define danger scores
+- Create a danger scores per street by mode of transport :  start score with 1 as an accident,  if at least one person was injured we add 1 to the score,  if at least one person was killed we add 2 to the score.  The higher the score for a street the mpre dangerous it is.
 
 ### Features
-- Graphical interface on a browser to enter coordinates GPS or adress between 2 points, mode of transport (bike, drive and walk) and choose between the least dangerous or most dangerous path
-- Create a graph of edges and vertices mapping to roads and intersections
+- Graphical interface on a browser to enter GPS coordinates or address between 2 points, mode of transport (bike, drive and walk) and choice between the least dangerous, most dangerous path, and hybrid path between fastest and safest.
+- Create a graph of edges and vertices mapping the roads and intersections
 - Apply an algorithm to find the *least dangerous path*  between two streets and/or coordinates
 - Build a graphical interface that shows the *least dangerous path* on a map of New York
 
 ### Deployment 
+TO BE COMPLETED
 
 ## Run
 To run this application, launch
@@ -48,5 +49,4 @@ python main.py
 [See requirements.txt](requirements.txt)
 
 ## When
-
 5 days to complete (06/01/2021 PM -- 13/01/2021 AM)
