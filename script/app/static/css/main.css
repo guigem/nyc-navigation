@@ -52,10 +52,19 @@ a:visited {
 .footer{
   margin-top: 25px;
   max-width: 1250px;
-  height: 350px;
+  height: 250px;
   background-image : url("NYC-Central-Park.jpg");
 }
 
 img:img_ny{
   width: 1250px;
+}
+
+.profiles{
+  width: auto;
+  background-color:#d6cbd3;
+}
+.profile{
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }

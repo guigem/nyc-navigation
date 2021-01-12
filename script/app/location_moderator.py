@@ -42,7 +42,6 @@ def verif_user_input(location_start:str,location_to:str):
 
     return a list two tuples [(lat_start,long_start),(lat_to,long_to)]
     """
-    
     if location_start[0]=="(":
         
         location_start = location_start.split(",")
@@ -67,7 +66,6 @@ def verif_user_input(location_start:str,location_to:str):
         return (lat_start, long_start), (lat_to, long_to)
 
     else:
-        
         coord_start = lat_long_place(location_start)
         coord_end = lat_long_place(location_to)
         print(coord_start,coord_end)
