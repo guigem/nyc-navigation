@@ -25,8 +25,8 @@ navig.config.from_object(Config)
 #G = osmnx.graph.graph_from_xml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\test.osm')
 #G = ox.add_edge_speeds(G) 
 #G = ox.add_edge_travel_times(G) 
-G = create_graph("Gothenburg", 2500, "drive")
-G = ox.add_edge_speeds(G) 
-G = ox.add_edge_travel_times(G) 
+#G = create_graph("Gothenburg", 2500, "drive")
+#G = ox.add_edge_speeds(G) 
+#G = ox.add_edge_travel_times(G) 
 from script.app import routes
 
