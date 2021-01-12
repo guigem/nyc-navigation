@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import plotly_express as px
 import networkx as nx
 import osmnx as ox
-import osmnx
 
+from script.app.config import Config
 
 from app.location_moderator import change_type
 
@@ -17,26 +17,25 @@ def ratio(safe:bool = True, choice_user:str = "drive"):
     if safe:
         
         if choice_user == "drive": 
-            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\drive_safest.graphml')   
+            G = ox.io.load_graphml(filepath=Config.drive_safest)   
 
         if choice_user == "walk": 
-            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\walk_safest.graphml')   
+            G = ox.io.load_graphml(filepath=Config.walk_safest)   
         
         if choice_user == "bike": 
-            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\bike_safest.graphml')   
-
+            G = ox.io.load_graphml(filepath=Config.bike_safest)   
 
     else:
         
 
         if choice_user == "drive": 
-            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\drive_dangerous.graphml')   
+            G = ox.io.load_graphml(filepath=Config.drive_dangerous)   
 
         if choice_user == "walk": 
-            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\walk_dangerous.graphml')   
+            G = ox.io.load_graphml(filepath=Config.walk_dangerous)   
         
         if choice_user == "bike": 
-            G = osmnx.io.load_graphml(filepath=r'C:\Users\Guillaume\Documents\git\nyc-navigation\CSV\bike_dangerous.graphml')   
+            G = ox.io.load_graphml(filepath=Config.bike_dangerous)   
 
     G = change_type(G)
 
@@ -63,6 +62,8 @@ def ratio(safe:bool = True, choice_user:str = "drive"):
 
         edges[i][3]["ratio"] = edges[i][3]["danger"] + edges[i][3]["travel_time"]
     
-    osmnx.io.save_graphml(G, filepath=f"{choice_user}_ratio.graphml")
+    ox.io.save_graphml(G, filepath="drive_safest_ratio.graphml")
 
     return G
+
+ratio(True, "drive")
