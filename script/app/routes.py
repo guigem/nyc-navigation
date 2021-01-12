@@ -55,8 +55,6 @@ def nav():
 @navig.route("/road/<location_start>/<location_to>/<choice_user>/<choice_weight>")
 def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
     '''
-    
-
     Parameters
     ----------
     location_start : str
@@ -74,7 +72,6 @@ def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
         Returns a html page with the open street map.
 
     '''
-    
     
     #Selecting the right network based on the user choice
     G = choose_right_network(choice_weight,choice_user)

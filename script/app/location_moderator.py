@@ -105,42 +105,6 @@ def verif_user_input(location_start:str,location_to:str) -> tuple:
 
     return result
 
-
-def change_type(G: classmethod) -> classmethod:
-    '''
-    Changing type of attributes of edges for the network because of the graphml import.
-    
-
-    Parameters
-    ----------
-    G : classmethod
-        Network of NYC with only strings as types.
-
-    Returns
-    -------
-    classmethod
-        Network of NYC with float for danger, travel_time and ratio (when present) as types.
-
-    '''
-    
-    #Generate the edges
-    edges = list(G.edges(keys=True, data=True))
-    
-    #Iterate on all edges
-    for i in range(len(edges)):
-        
-        #Change types as float
-        edges[i][3]["danger"] = float(edges[i][3]["danger"])
-        edges[i][3]["travel_time"] = float(edges[i][3]["travel_time"])
-        
-        #Change radio only when it is present 
-        try:
-            edges[i][3]["ratio"] = float(edges[i][3]["ratio"])
-        except:
-            continue
-        
-    return G
-
 def error_raiser(entry_one:str , entry_two:str) -> tuple:
     """
 
@@ -184,12 +148,11 @@ def choose_right_network(choice_weight: str, choice_user: str) -> classmethod:
 
     '''
     
-    
     if choice_weight == "safe" or choice_weight == "fast":
     
         if choice_user == "drive": 
             #G = ox.io.load_graphml(filepath=Config.drive_safest)
-            G = Config.drive_safest   
+            G = Config.G_drive_safest   
     
         if choice_user == "walk": 
             #G = ox.io.load_graphml(filepath=Config.walk_safest)   
@@ -212,25 +175,59 @@ def choose_right_network(choice_weight: str, choice_user: str) -> classmethod:
 
         if choice_user == "bike": 
             #G = ox.io.load_graphml(filepath=Config.bike_dangerous)   
-            G = Config.bike_dangerous
+            G = Config.G_bike_dangerous
 
     elif choice_weight == "ratio safe-fast":
     
         if choice_user == "drive": 
             #G = ox.io.load_graphml(filepath=Config.drive_safest_ratio) 
-            G = Config.drive_safest_ratio  
+            G = Config.G_drive_safest_ratio  
     
         if choice_user == "walk": 
             #G = ox.io.load_graphml(filepath=Config.walk_safest_ratio)   
-            G = Config.walk_safest_ratio
+            G = Config.G_walk_safest_ratio
         
         if choice_user == "bike": 
             #G = ox.io.load_graphml(filepath=Config.bike_safest_ratio)  
-            G = Config.bike_safest_ratio  
+            G = Config.G_bike_safest_ratio
         
     #Changing the type of a few attributes    
     G = change_type(G)
     
+    return G
+
+def change_type(G: classmethod) -> classmethod:
+    '''
+    Changing type of attributes of edges for the network because of the graphml import.
+    
+    Parameters
+    ----------
+    G : classmethod
+        Network of NYC with only strings as types.
+
+    Returns
+    -------
+    classmethod
+        Network of NYC with float for danger, travel_time and ratio (when present) as types.
+
+    '''
+    print(type(G))
+    #Generate the edges
+    edges = list(G.edges(keys=True, data=True))
+    
+    #Iterate on all edges
+    for i in range(len(edges)):
+        
+        #Change types as float
+        edges[i][3]["danger"] = float(edges[i][3]["danger"])
+        edges[i][3]["travel_time"] = float(edges[i][3]["travel_time"])
+        
+        #Change radio only when it is present 
+        try:
+            edges[i][3]["ratio"] = float(edges[i][3]["ratio"])
+        except:
+            continue
+        
     return G
 
 def compute_route(G : classmethod, start_node: tuple, end_node: tuple, choice_weight: str) -> list:
@@ -254,7 +251,6 @@ def compute_route(G : classmethod, start_node: tuple, end_node: tuple, choice_we
         List of nodes where our optimal path will go through.
 
     '''
-    
     
     if choice_weight == "do you want to die?" or choice_weight == "safe":
 
