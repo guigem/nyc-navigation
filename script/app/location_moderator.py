@@ -78,8 +78,12 @@ def change_type(G):
 
     for i in range(len(edges)):
         
-        edges[i][3]["danger"] = int(edges[i][3]["danger"])
+        edges[i][3]["danger"] = float(edges[i][3]["danger"])
         edges[i][3]["travel_time"] = float(edges[i][3]["travel_time"])
+        try:
+            edges[i][3]["ratio"] = float(edges[i][3]["ratio"])
+        except:
+            continue
         
     return G
 
