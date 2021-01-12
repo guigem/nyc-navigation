@@ -3,7 +3,7 @@ import osmnx as ox
 import folium
 
 
-from script.app.location_moderator import verif_user_input, choose_right_network, compute_route
+from script.app.location_moderator import verif_user_input, choose_right_network, compute_route,error_raiser
 from script.app import navig
 from script.app.forms import Location
 
@@ -30,7 +30,6 @@ def nav():
 
     form = Location()
     
-
     if form.validate_on_submit():
         #forms fields
         location_start = form.location_start.data
@@ -41,9 +40,9 @@ def nav():
         print(location_start,location_to,choice_user,choice_weight)
         
         #call error_raiser function:
-            #if true: cool
-            #if false : return error.html
-        #return redirect(url_for("error",error_type="TESTING"))
+        is_correct , message = error_raiser(entry_one=location_start,entry_two=location_to)
+        if not is_correct:
+            return redirect(url_for("error",error_type=message))
 
         return redirect(url_for("road",location_start=location_start,
                                         location_to=location_to,

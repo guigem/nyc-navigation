@@ -11,10 +11,15 @@ body {
   background-color :  #dbbabd;
   padding-left: 10px;
   padding-bottom: 15px;
-}
-h1{
   color: azure;
 }
+.text_content{
+  padding-top: 15px;
+}
+h1{
+  color: rgb(177, 241, 241);
+}
+
 .header_menu {
   margin-top: 50px;
   padding-top: 5px;
@@ -24,29 +29,53 @@ h1{
   height: 35px;
   width: 100%;
 }
+
 .consign{
   font-weight: bolder;
 }
+
 .authors{
   padding-top: 20px;
   font-weight: bold;
 }
-a.link_menu{
+
+.link_menu{
   color: azure;
   text-decoration: none;
-  margin-left: 1em;
-  padding-left: 2em;
+  margin-left: 15px;
+  font-weight: bold;
 }
 
-a.link_menu:hover {
+.link_menu:hover {
   color :darkgoldenrod;
 }
-a:visited:hover{
+.link_menu:visited:hover{
   color :darkgoldenrod;
 }
-a:visited {
+.link_menu:visited {
   color: azure;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.git{
+  color: rgb(6, 31, 31);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.git:visited{
+  color: rgb(6, 31, 31);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.git:hover {
+  color :darkgoldenrod;
+}
+
+.git:visited:hover{
+  color :darkgoldenrod;
 }
 
 .footer{
@@ -65,4 +94,39 @@ img:img_ny{
 .profile{
   border: 1px solid #ddd;
   border-radius: 4px;
+}
+
+.details{
+  margin-top: 20px;
+  color: rgb(62, 87, 110);
+}
+
+.error{
+  font-weight: bold;
+}
+
+.button {
+  margin-top: 20px;
+	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+	background-color:#fc8d83;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+.button:hover {
+	background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+	background-color:#e4685d;
+}
+.button:active {
+	position:relative;
+	top:1px;
 }
