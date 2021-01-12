@@ -104,7 +104,7 @@ def pick_location(start_lat: float, start_long: float, end_lat: float, end_long:
     route_colors = ["r","b"]
     
     return ox.plot_graph_routes(G_danger, list_route, route_colors, route_linewidth=2, node_size=0)
-     #ox.plot_graph_route(G, route, route_linewidth=6, node_size=0, bgcolor='k')            
+    #ox.plot_graph_route(G, route, route_linewidth=6, node_size=0, bgcolor='k')            
 
 
 pick_location(40.709042, -74.010474, 40.841742, -73.9394)
