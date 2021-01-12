@@ -1,6 +1,6 @@
 
 body {
-  max-width: 850px;
+  max-width: 1250px;
   margin: auto;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444;
@@ -22,7 +22,6 @@ h1{
   width: 100%;
   opacity: .9;
   margin-bottom: 10px;
-  
 }
 .consign{
   font-weight: bolder;
@@ -34,6 +33,7 @@ a.link_menu{
   color: azure;
   text-decoration: none;
   margin-left: 1em;
+  padding-left: 2em;
 }
 
 a.link_menu:hover {
@@ -45,5 +45,14 @@ a:visited:hover{
 a:visited {
   color: azure;
   text-decoration: none;
+}
+
+.footer{
+  max-width: 1250px;
+  background-image : url("../static/img/NYC-Central-Park.jpg")
+}
+
+img:img_ny{
+  width: 1250px;
 }
 
