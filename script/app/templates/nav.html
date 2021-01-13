@@ -1,10 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-
     <h1>Navigation</h1>
-
-    <div id=main_nav>
     <form id="navigate" action="" method="post" novalidate>
         {{ form.hidden_tag() }}
         <p class="consign">Veuillez entrer une adresse ou des coordonnées au format (lat,long) :</p>
@@ -25,9 +22,7 @@
         </p>
         <p class="form_p"> 
             Choisissez votre moyen de locomotion
-            <span>
-                {{form.transportation}}
-            </span>
+            {{form.transportation}}
         </p>  
         <p class="form_p">
             Choisissez vos préférences de trajet:
@@ -35,13 +30,7 @@
                 {{form.pick}}
             </span>
         </p>  
-        <nav>
-            <button>{{ form.submit() }}</button>
-        </nav>
-        
+
+        <button class="button">{{ form.submit() }}</button> 
     </form>
-</div>
-<div class="footer">
-    <!--<img id="img_ny"src="../static/img/NYC-Central-Park.jpg" alt="NewYork">-->
-</div>
 {% endblock %}

@@ -10,7 +10,7 @@
     <body>
         <div class ="header_menu">
             <p id = "menu">
-            <a id="link_nav" href="{{ url_for('nav') }}">/Navigate</a>
+            <a class="link_menu" href="{{ url_for('nav') }}">/Navigate</a>
             <a class="link_menu" href="{{ url_for('index') }}">    /Our App</a>
             <a class="link_menu" href="{{ url_for('authors') }}">  /The Team</a>
             
@@ -18,6 +18,9 @@
         </div>
     <div class="main_content">
     {% block content %}{% endblock %}
+    </div>
+    <div class="footer">
+        <!--<img id="img_ny"src="../static/img/NYC-Central-Park.jpg" alt="NewYork">-->
     </div>
     </body>
 </html>

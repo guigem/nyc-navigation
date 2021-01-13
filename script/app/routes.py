@@ -1,19 +1,11 @@
 from flask import render_template,url_for,redirect, render_template_string
-import pandas as pd
-import geopandas as gpd
-from shapely.geometry import Point, LineString
-import matplotlib.pyplot as plt
-import plotly_express as px
-import networkx as nx
 import osmnx as ox
+import folium
 
 
-from script.app.location_moderator import verif_user_input, change_type
+from script.app.location_moderator import verif_user_input, choose_right_network, compute_route,error_raiser
 from script.app import navig
 from script.app.forms import Location
-from script.app.routing_animation import create_line_gdf,create_graph
-from script.app.config import Config
-
 
 
 @navig.route('/')
@@ -35,13 +27,9 @@ def error(error_type:str):
 
 @navig.route("/nav",methods=["GET", "POST"])
 def nav():
-    """[summary]
-    Returns:
-        [type]: [description]
-    """    
+
     form = Location()
     
-
     if form.validate_on_submit():
         #forms fields
         location_start = form.location_start.data
@@ -52,9 +40,9 @@ def nav():
         print(location_start,location_to,choice_user,choice_weight)
         
         #call error_raiser function:
-            #if true: cool
-            #if false : return error.html
-        return redirect(url_for("error",error_type="TESTING"))
+        is_correct , message = error_raiser(entry_one=location_start,entry_two=location_to)
+        if not is_correct:
+            return redirect(url_for("error",error_type=message))
 
         return redirect(url_for("road",location_start=location_start,
                                         location_to=location_to,
@@ -65,88 +53,57 @@ def nav():
 
 @navig.route("/road/<location_start>/<location_to>/<choice_user>/<choice_weight>")
 def road(location_start:str,location_to:str,choice_user:str,choice_weight:str):
-    """[summary]
+    '''
+    Parameters
+    ----------
+    location_start : str
+        String with starting point as coordinates or place.
+    location_to : str
+        String with ending point as coordinates or place.
+    choice_user : str
+        DESCRIPTION.
+    choice_weight : str
+        What movement type the user takes.
 
-    Args:
-        start_long (float): [description]
-        start_lat (float): [description]
-        arrived_long (float): [description]
-        arrived_lat (float): [description]
-        choice_user(str): [description]
+    Returns
+    -------
+    Web page
+        Returns a html page with the open street map.
 
-    Returns:
-        [type]: [description]
-    """  
-    #Network Creation en fonction de choice_user
-    if choice_weight == "safe" or choice_weight == "fast":
-        
-        if choice_user == "drive": 
-            G = ox.io.load_graphml(filepath=Config.drive_safest)   
-
-        if choice_user == "walk": 
-            G = ox.io.load_graphml(filepath=Config.walk_safest)   
-        
-        if choice_user == "bike": 
-            G = ox.io.load_graphml(filepath=Config.bike_safest)   
-
-
-    elif choice_weight == "do you want to die?":
-        
-
-        if choice_user == "drive": 
-            G = ox.io.load_graphml(filepath=Config.drive_dangerous)   
-
-        if choice_user == "walk": 
-            G = ox.io.load_graphml(filepath=Config.walk_dangerous)   
-        
-        if choice_user == "bike": 
-            G = ox.io.load_graphml(filepath=Config.bike_dangerous)   
-
-    elif choice_weight == "ratio safe-fast":
-        
-        if choice_user == "drive": 
-            G = ox.io.load_graphml(filepath=Config.drive_safest_ratio)   
-
-        if choice_user == "walk": 
-            G = ox.io.load_graphml(filepath=Config.walk_safest_ratio)   
-        
-        if choice_user == "bike": 
-            G = ox.io.load_graphml(filepath=Config.bike_safest_ratio)    
-        
-             
-    G = change_type(G)
-
+    '''
+    
+    #Selecting the right network based on the user choice
+    G = choose_right_network(choice_weight,choice_user)
 
     print('Datas passed : \n{} \n{} \n{} \n{}'.format(location_start,location_to,choice_user,choice_weight))
-    #Conversions to float
     
+    #Generate the tuples with the right coordinates for the starting and ending points
     start = verif_user_input(location_start, location_to)[0]
     end = verif_user_input(location_start,location_to)[1]
     
-
+    #Computing the nearest node based on the tuples given just above
     start_node = ox.get_nearest_node(G, start) 
     end_node = ox.get_nearest_node(G, end)
     
-    if choice_weight == "do you want to die?" or choice_weight == "safe":
-
-        route = nx.shortest_path(G, start_node, end_node, weight="danger")
-        
-        
-    elif choice_weight == "fast":
-    #see the travel time for the whole route
-        route = nx.shortest_path(G, start_node, end_node, weight="travel_time")
+    #Computing the optimal route for our path
+    route = compute_route(G, start_node, end_node, choice_weight)       
     
-    elif choice_weight == "ratio safe-fast":
+    #Drawing the path on an open map street 
+    folium_map = ox.folium.plot_route_folium(G, route=route, popup_attribute="name", tiles="openstreetmap", route_color="blue")
     
-           route = nx.shortest_path(G, start_node, end_node, weight="ratio")         
+    #DRawing markers to show in green the starting point and in red the ending point
+    start = list(start)
+    end = list(end)
+    folium.Marker(location = start, popup="Start", icon=folium.Icon(color='green')).add_to(folium_map)
+    folium.Marker(location = end, popup="End", icon=folium.Icon(color='red')).add_to(folium_map)
     
-    folium_map = ox.folium.plot_route_folium(G, route=route)
+    #Saving the folium map as html
     folium_map.save("folium_map.html")
     
     
     #return render_template("road.html",title ="Path", div=div)
 
-    
+    #Returning the map in the html
     return render_template_string('''
         <head>
             <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
