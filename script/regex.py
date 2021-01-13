@@ -1,7 +1,7 @@
 import re
 
 
-def add_termination(address:str) -> str:
+def add_termination(address: str) -> str:
     """
     Returns the addresses with potitionnal numbers.
 
@@ -24,7 +24,7 @@ def add_termination(address:str) -> str:
             else:
                 i += "st"
                 new_numbers += [i]
-        
+
         elif i[-1] == "2":
             if i[-2:] == "12":
                 i += "th"
@@ -32,7 +32,7 @@ def add_termination(address:str) -> str:
             else:
                 i += "nd"
                 new_numbers += [i]
-        
+
         elif i[-1] == "3":
             if i[-2:] == "13":
                 i += "th"
@@ -46,18 +46,18 @@ def add_termination(address:str) -> str:
 
     change_dict = dict(zip(numbers_in_address, new_numbers))
     address = address.split(" ")
-    
 
     for i in range(len(address)):
         word = address[i]
         if word in change_dict.keys():
             address[i] = change_dict[word]
-    
+
     address = " ".join(address)
-    
+
     return address
 
-def remove_houses_numbers(address:str) -> str :
+
+def remove_houses_numbers(address: str) -> str:
     """
     Remove the houses' numbers in the addresses.
 
@@ -72,5 +72,5 @@ def remove_houses_numbers(address:str) -> str :
 
     for i in houses_numbers:
         address = address.replace(i, "")
-    
+
     return address
