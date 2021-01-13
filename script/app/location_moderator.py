@@ -1,16 +1,13 @@
 
 from geopy.geocoders import Nominatim
-<<<<<<< HEAD
 from geopy.extra.rate_limiter import RateLimiter
 
 
 import geopy.geocoders
 import reverse_geocoder as rg
-=======
 import geopy.geocoders
 import osmnx as ox
 import networkx as nx
->>>>>>> 8a9dbf678e2df3507f910f755eb11d9ab30a570a
 
 from script.app.config import Config
 
@@ -68,20 +65,11 @@ def verif_user_input(location_start:str,location_to:str) -> tuple:
 
     '''
 
-<<<<<<< HEAD
-    return a list two tuples [(lat_start,long_start),(lat_to,long_to)]
-    """
-    
-    # Detect the first input type and change change it if needed.
-    if location_start[0] == "(":
-        
-=======
     
     # Detect the first input type and change change it if needed.
     if location_start[0] == "(":
        
         #Spliting latitude an longitude
->>>>>>> 8a9dbf678e2df3507f910f755eb11d9ab30a570a
         location_start = location_start.split(",")
         
         #Removing remaining "(" from longitude and turning it into float for starting point 
@@ -124,33 +112,6 @@ def verif_user_input(location_start:str,location_to:str) -> tuple:
     result = [coord_start, coord_to]
 
     return result
-<<<<<<< HEAD
-
-def change_type(G):
-    edges = list(G.edges(keys=True, data=True))
-
-    for i in range(len(edges)):
-        
-        edges[i][3]["danger"] = float(edges[i][3]["danger"])
-        edges[i][3]["travel_time"] = float(edges[i][3]["travel_time"])
-        try:
-            edges[i][3]["ratio"] = float(edges[i][3]["ratio"])
-        except:
-            continue
-        
-    return G
-
-def error_raiser(entry_one:str , entry_two:str) -> tuple:
-    """ Check the user's entries. If there will be a problem, return False and the problem.
-    param :
-        entry_one(str) : First user's entry
-        entry_two(str) : Second user's entry
-
-    return :
-        bool : False if there will be an error
-               True if everything is fine
-        str : The name of the error
-=======
 
 def error_raiser(entry_one:str , entry_two:str) -> tuple:
     """Function to catch possible errors
@@ -158,7 +119,6 @@ def error_raiser(entry_one:str , entry_two:str) -> tuple:
     Args:
         entry_one (str): [description]
         entry_two (str): [description]
->>>>>>> 8a9dbf678e2df3507f910f755eb11d9ab30a570a
 
     Returns:
         tuple: [description]
@@ -171,33 +131,6 @@ def error_raiser(entry_one:str , entry_two:str) -> tuple:
     # Detect if the entries are valid.
     if entry_one[0] != "(":
         try:
-<<<<<<< HEAD
-            coor_start = lat_long_place(entry_one)
-
-            if reverseGeocode(coor_start) != "New York":
-                return False, "Not in NYC"
-            
-        except AttributeError:
-            return False, "Wrong entry"
-
-    if entry_two[0] != "(":
-        try:
-            coor_to = lat_long_place(entry_two)
-
-            if reverseGeocode(coor_to) != "New York":
-                return False, "Not in NYC"
-            
-        except AttributeError:
-            return False, "Wrong entry"
-    
-    if reverseGeocode(entry_one) != "New York":
-        return False, "Not in NYC"
-
-    if reverseGeocode(entry_two) != "New York":
-        return False, "Not in NYC"
-    
-    return True
-=======
             coor_sart = lat_long_place(entry_one)
             if not coor_sart:
                 return False, "Entrez des coordonnées au format (lat,long)"
@@ -353,7 +286,6 @@ def compute_route(G : classmethod, start_node: tuple, end_node: tuple, choice_we
     return route
 
 
->>>>>>> 8a9dbf678e2df3507f910f755eb11d9ab30a570a
 
 def reverseGeocode(coordinates):
     """ Take lat and long coord and give back the name of the place.
