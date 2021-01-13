@@ -1,7 +1,10 @@
 
 from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
+
+
 import geopy.geocoders
+import reverse_geocoder as rg
 
 
 def lat_long_place(place: str) -> float:
@@ -42,13 +45,9 @@ def verif_user_input(location_start:str,location_to:str):
 
     return a list two tuples [(lat_start,long_start),(lat_to,long_to)]
     """
-<<<<<<< HEAD
     
     # Detect the first input type and change change it if needed.
     if location_start[0] == "(":
-=======
-    if location_start[0]=="(":
->>>>>>> b58ed62d051870b56a7f415ef21f406ed21d947a
         
         location_start = location_start.split(",")
         
@@ -82,7 +81,6 @@ def verif_user_input(location_start:str,location_to:str):
         coord_to = (lat_to, long_to)
 
     else:
-<<<<<<< HEAD
 
         coord_to = lat_long_place(location_to)
     
@@ -90,12 +88,6 @@ def verif_user_input(location_start:str,location_to:str):
     result = [coord_start, coord_to]
 
     return result
-=======
-        coord_start = lat_long_place(location_start)
-        coord_end = lat_long_place(location_to)
-        print(coord_start,coord_end)
-        return coord_start, coord_end
->>>>>>> b58ed62d051870b56a7f415ef21f406ed21d947a
 
 def change_type(G):
     edges = list(G.edges(keys=True, data=True))
@@ -112,7 +104,15 @@ def change_type(G):
     return G
 
 def error_raiser(entry_one:str , entry_two:str) -> tuple:
-    """
+    """ Check the user's entries. If there will be a problem, return False and the problem.
+    param :
+        entry_one(str) : First user's entry
+        entry_two(str) : Second user's entry
+
+    return :
+        bool : False if there will be an error
+               True if everything is fine
+        str : The name of the error
 
     """
 
@@ -123,15 +123,41 @@ def error_raiser(entry_one:str , entry_two:str) -> tuple:
     # Detect if the entries are valid.
     if entry_one[0] != "(":
         try:
-            coor_sart = lat_long_place(entry_one)
+            coor_start = lat_long_place(entry_one)
+
+            if reverseGeocode(coor_start) != "New York":
+                return False, "Not in NYC"
+            
         except AttributeError:
             return False, "Wrong entry"
-    
+
     if entry_two[0] != "(":
         try:
             coor_to = lat_long_place(entry_two)
-        except:
+
+            if reverseGeocode(coor_to) != "New York":
+                return False, "Not in NYC"
+            
+        except AttributeError:
             return False, "Wrong entry"
+    
+    if reverseGeocode(entry_one) != "New York":
+        return False, "Not in NYC"
+
+    if reverseGeocode(entry_two) != "New York":
+        return False, "Not in NYC"
     
     return True
 
+def reverseGeocode(coordinates):
+    """ Take lat and long coord and give back the name of the place.
+    param:
+        coordinates(tuple) : lat and long.
+    
+    return:
+        Name of the place.
+
+    """ 
+    result = rg.search(coordinates) 
+    
+    return result[0]["name"]
